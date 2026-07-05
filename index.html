@@ -489,18 +489,28 @@
 
             var scorersHtml = '';
             if (data.topScorers && data.topScorers.length > 0) {
+                var hasAssists = data.topScorers.some(function(p) { return p.assists > 0; });
                 scorersHtml = '<section id="players" class="fade-in"><div class="grid-2">' +
                     '<div class="card"><div class="card-header"><h2 class="card-title">射手榜</h2></div>' +
                     data.topScorers.slice(0, 5).map(function(p, i) {
                         return renderPlayerItem(p, i + 1, p.goals, '球');
                     }).join('') +
                     '</div>' +
-                    '<div class="card"><div class="card-header"><h2 class="card-title">助攻榜</h2></div>' +
-                    data.topScorers.filter(function(p) { return p.assists > 0; })
-                        .sort(function(a, b) { return b.assists - a.assists; })
-                        .slice(0, 5).map(function(p, i) {
-                            return renderPlayerItem(p, i + 1, p.assists, '次');
-                        }).join('') +
+                    '<div class="card"><div class="card-header"><h2 class="card-title">' +
+                    (hasAssists ? '助攻榜' : '综合贡献榜') + '</h2></div>' +
+                    (hasAssists ?
+                        data.topScorers.filter(function(p) { return p.assists > 0; })
+                            .sort(function(a, b) { return b.assists - a.assists; })
+                            .slice(0, 5).map(function(p, i) {
+                                return renderPlayerItem(p, i + 1, p.assists, '次');
+                            }).join('') :
+                        data.topScorers.slice().sort(function(a, b) {
+                            return (b.goals + (b.assists||0)*0.5) - (a.goals + (a.assists||0)*0.5);
+                        }).slice(0, 5).map(function(p, i) {
+                            var total = p.goals + (p.assists||0);
+                            return renderPlayerItem(p, i + 1, p.goals + '+' + (p.assists||0), '');
+                        }).join('')
+                    ) +
                     '</div></div></section>';
             }
 
@@ -509,7 +519,7 @@
             if (stageKeys.length > 0) {
                 stagesHtml = '<section id="stages" class="fade-in"><div class="card">' +
                     '<div class="card-header"><h2 class="card-title">赛事阶段</h2></div>' +
-                    '<div class="grid-3">';
+                    '<div class="grid-3" style="margin-bottom:1.5rem;">';
                 stageKeys.forEach(function(s) {
                     var st = stages[s];
                     var percent = st.total > 0 ? Math.round(st.finished / st.total * 100) : 0;
@@ -519,7 +529,37 @@
                         '<div class="stat-value" style="font-size:1.5rem;">' + st.finished + '/' + st.total + '</div>' +
                         '<div class="stat-label">' + s + ' (' + percent + '%)</div></div>';
                 });
-                stagesHtml += '</div></div></section>';
+                stagesHtml += '</div>';
+
+                if (data.knockoutMatches && data.knockoutMatches.length > 0) {
+                    stagesHtml += '<div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1rem;">' +
+                        '<div style="font-size:0.85rem;color:var(--accent-orange);margin-bottom:1rem;font-weight:500;">近期淘汰赛</div>';
+                    data.knockoutMatches.slice(0, 8).forEach(function(m) {
+                        var isFinished = m.status === 'FINISHED';
+                        var scoreText = (m.score.home !== null) ? m.score.home + ' - ' + m.score.away : 'VS';
+                        var statusDot = isFinished ? '✅' : (m.status === 'IN_PLAY' ? '🔴' : '⏳');
+                        var evts = (data.matchEvents && (data.matchEvents[m.id] || data.matchEvents[String(m.id)])) || [];
+                        var evtHtml = '';
+                        if (evts.length > 0) {
+                            evtHtml = '<div style="margin-top:0.5rem;padding-left:1.5rem;">' +
+                                evts.map(function(e) {
+                                    var icon = e.type === 'halftime' ? '⏱' : e.type === 'fulltime' ? '🏁' : e.type === 'result' ? '🏆' : '🔥';
+                                    return '<div style="font-size:0.75rem;color:var(--text-secondary);margin-top:0.25rem;">' + icon + ' ' + e.text + '</div>';
+                                }).join('') + '</div>';
+                        }
+                        stagesHtml += '<div style="padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">' +
+                            '<div style="display:flex;align-items:center;gap:0.75rem;">' +
+                            '<span style="font-size:0.75rem;">' + statusDot + '</span>' +
+                            '<span style="font-size:0.75rem;color:var(--text-muted);min-width:60px;">' + m.stage + '</span>' +
+                            '<span style="flex:1;font-size:0.85rem;">' + m.homeTeam.shortName + '</span>' +
+                            '<span style="font-family:Orbitron;font-size:0.9rem;font-weight:700;color:var(--accent-green);min-width:50px;text-align:center;">' + scoreText + '</span>' +
+                            '<span style="flex:1;font-size:0.85rem;text-align:right;">' + m.awayTeam.shortName + '</span>' +
+                            '<span style="font-size:0.7rem;color:var(--text-muted);min-width:70px;text-align:right;">' + (isFinished ? '' : m.date + ' ' + m.time) + '</span>' +
+                            '</div>' + evtHtml + '</div>';
+                    });
+                    stagesHtml += '</div>';
+                }
+                stagesHtml += '</div></section>';
             }
 
             app.innerHTML =

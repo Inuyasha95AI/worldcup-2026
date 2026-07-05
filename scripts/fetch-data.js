@@ -2,7 +2,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const API_TOKEN = process.env.FOOTBALL_API_TOKEN || 'YOUR_TOKEN_HERE';
+const API_TOKEN = process.env.FOOTBALL_API_TOKEN || '2e38ac7c7bc149f4810a2024e2041251';
 const BASE_URL = 'https://api.football-data.org/v4';
 
 const TEAM_CN = {
@@ -153,7 +153,7 @@ async function main() {
   const [matchesData, standingsData, scorersData] = await Promise.all([
     fetch(BASE_URL+'/competitions/WC/matches'),
     fetch(BASE_URL+'/competitions/WC/standings'),
-    fetch(BASE_URL+'/competitions/WC/scorers?limit=10')
+    fetch(BASE_URL+'/competitions/WC/scorers?limit=20')
   ]);
 
   const now = new Date();
@@ -223,11 +223,51 @@ async function main() {
     if (m.status==='FINISHED') stages[sn].finished++;
   });
 
+  const knockoutMatches = allMatches
+    .filter(m => m.stage !== 'GROUP_STAGE')
+    .sort((a,b) => new Date(a.utcDate) - new Date(b.utcDate))
+    .map(processMatch);
+
+  function generateMatchEvents(m) {
+    const events = [];
+    if (m.status !== 'FINISHED') return events;
+    const ht = m.score?.halfTime || {};
+    const ft = m.score?.fullTime || {};
+    const homeHT = ht.home || 0, awayHT = ht.away || 0;
+    const homeFT = ft.home || 0, awayFT = ft.away || 0;
+    const homeSecond = homeFT - homeHT, awaySecond = awayFT - awayHT;
+
+    if (homeHT > 0 || awayHT > 0) {
+      events.push({ type: 'halftime', text: '半场 ' + homeHT + '-' + awayHT });
+    }
+    if (homeSecond > 0 || awaySecond > 0) {
+      events.push({ type: 'fulltime', text: '全场 ' + homeFT + '-' + awayFT });
+    }
+    if (m.winner === 'HOME_TEAM') {
+      events.push({ type: 'result', text: m.homeTeam.shortName + ' 晋级' });
+    } else if (m.winner === 'AWAY_TEAM') {
+      events.push({ type: 'result', text: m.awayTeam.shortName + ' 晋级' });
+    } else if (m.winner === 'PENALTIES') {
+      events.push({ type: 'result', text: '点球大战决胜' });
+    }
+    const totalGoals = homeFT + awayFT;
+    if (totalGoals >= 3) {
+      events.push({ type: 'highlight', text: '全场共 ' + totalGoals + ' 粒进球' });
+    }
+    return events;
+  }
+
+  const matchEvents = {};
+  finished.forEach(m => {
+    const evts = generateMatchEvents(m);
+    if (evts.length > 0) matchEvents[String(m.id)] = evts;
+  });
+
   const result = {
     lastUpdated: new Date().toISOString(),
     lastUpdatedBeijing: beijingNow.getFullYear()+'-'+String(beijingNow.getMonth()+1).padStart(2,'0')+'-'+String(beijingNow.getDate()).padStart(2,'0')+' '+String(beijingNow.getHours()).padStart(2,'0')+':'+String(beijingNow.getMinutes()).padStart(2,'0'),
     stats: { totalMatches:allMatches.length, finishedMatches:finished.length, totalGoals, avgGoals:finished.length>0?(totalGoals/finished.length).toFixed(2):'0', liveMatches:live.length },
-    stages, yesterdayMatches, todayMatches, upcomingMatches, groups, topScorers
+    stages, knockoutMatches, matchEvents, yesterdayMatches, todayMatches, upcomingMatches, groups, topScorers
   };
 
   fs.writeFileSync(path.join(__dirname,'..','data.json'), JSON.stringify(result,null,2), 'utf8');
