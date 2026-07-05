@@ -427,6 +427,10 @@
                 if (t && t.length >= 2) totalAdvanced += 2;
             });
 
+            var now = new Date();
+            var bjNow = new Date(now.getTime() + 8*3600*1000);
+            var today = bjNow.getFullYear() + '-' + String(bjNow.getMonth()+1).padStart(2,'0') + '-' + String(bjNow.getDate()).padStart(2,'0');
+
             var statusBadge = '';
             if (data.stats.liveMatches > 0) {
                 statusBadge = '<div class="live-badge"><span class="live-dot"></span><span>🔴 正在进行 ' + data.stats.liveMatches + ' 场比赛</span></div>';
@@ -532,9 +536,19 @@
                 stagesHtml += '</div>';
 
                 if (data.knockoutMatches && data.knockoutMatches.length > 0) {
+                    var sorted = data.knockoutMatches.slice().sort(function(a, b) {
+                        var aToday = a.dateFull && a.dateFull.indexOf(today) >= 0 ? 0 : 2;
+                        var bToday = b.dateFull && b.dateFull.indexOf(today) >= 0 ? 0 : 2;
+                        if (aToday !== bToday) return aToday - bToday;
+                        if (a.status === 'IN_PLAY' && b.status !== 'IN_PLAY') return -1;
+                        if (b.status === 'IN_PLAY' && a.status !== 'IN_PLAY') return 1;
+                        if (a.status === 'TIMED' && b.status === 'FINISHED') return -1;
+                        if (b.status === 'TIMED' && a.status === 'FINISHED') return 1;
+                        return 0;
+                    });
                     stagesHtml += '<div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1rem;">' +
                         '<div style="font-size:0.85rem;color:var(--accent-orange);margin-bottom:1rem;font-weight:500;">近期淘汰赛</div>';
-                    data.knockoutMatches.slice(0, 8).forEach(function(m) {
+                    sorted.slice(0, 8).forEach(function(m) {
                         var isFinished = m.status === 'FINISHED';
                         var scoreText = (m.score.home !== null) ? m.score.home + ' - ' + m.score.away : 'VS';
                         var statusDot = isFinished ? '✅' : (m.status === 'IN_PLAY' ? '🔴' : '⏳');

@@ -225,7 +225,8 @@ async function main() {
 
   const knockoutMatches = allMatches
     .filter(m => m.stage !== 'GROUP_STAGE')
-    .sort((a,b) => new Date(a.utcDate) - new Date(b.utcDate))
+    .sort((a,b) => new Date(b.utcDate) - new Date(a.utcDate))
+    .slice(0, 16)
     .map(processMatch);
 
   function generateMatchEvents(m) {
