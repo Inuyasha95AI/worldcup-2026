@@ -536,7 +536,9 @@
                 stagesHtml += '</div>';
 
                 if (data.knockoutMatches && data.knockoutMatches.length > 0) {
-                    var sorted = data.knockoutMatches.slice().sort(function(a, b) {
+                    var sorted = data.knockoutMatches.slice()
+                        .filter(function(m) { return m.homeTeam.shortName && m.awayTeam.shortName; })
+                        .sort(function(a, b) {
                         var aToday = a.dateFull && a.dateFull.indexOf(today) >= 0 ? 0 : 2;
                         var bToday = b.dateFull && b.dateFull.indexOf(today) >= 0 ? 0 : 2;
                         if (aToday !== bToday) return aToday - bToday;
