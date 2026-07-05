@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-05T12:59:09.873Z",
-  "lastUpdatedBeijing": "2026-07-05 20:59",
+  "lastUpdated": "2026-07-05T13:13:26.549Z",
+  "lastUpdatedBeijing": "2026-07-06 05:13",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 90,
@@ -40,108 +40,10 @@
   },
   "yesterdayMatches": [
     {
-      "id": 537428,
-      "date": "7月4日",
-      "time": "02:00",
-      "dateFull": "7-04 02:00",
-      "stage": "32强",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "Australia",
-        "shortName": "Australia",
-        "tla": "AUS",
-        "crest": "https://crests.football-data.org/779.svg"
-      },
-      "awayTeam": {
-        "name": "Egypt",
-        "shortName": "Egypt",
-        "tla": "EGY",
-        "crest": "https://crests.football-data.org/825.svg"
-      },
-      "score": {
-        "home": 3,
-        "away": 5
-      },
-      "halfTime": {
-        "home": 0,
-        "away": 1
-      },
-      "winner": "AWAY_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    },
-    {
-      "id": 537427,
-      "date": "7月4日",
-      "time": "06:00",
-      "dateFull": "7-04 06:00",
-      "stage": "32强",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "Argentina",
-        "shortName": "Argentina",
-        "tla": "ARG",
-        "crest": "https://crests.football-data.org/762.png"
-      },
-      "awayTeam": {
-        "name": "Cape Verde Islands",
-        "shortName": "Cape Verde",
-        "tla": "CPV",
-        "crest": "https://crests.football-data.org/cape_verde.svg"
-      },
-      "score": {
-        "home": 3,
-        "away": 2
-      },
-      "halfTime": {
-        "home": 1,
-        "away": 0
-      },
-      "winner": "HOME_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    },
-    {
-      "id": 537430,
-      "date": "7月4日",
-      "time": "09:30",
-      "dateFull": "7-04 09:30",
-      "stage": "32强",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "Colombia",
-        "shortName": "Colombia",
-        "tla": "COL",
-        "crest": "https://crests.football-data.org/818.svg"
-      },
-      "awayTeam": {
-        "name": "Ghana",
-        "shortName": "Ghana",
-        "tla": "GHA",
-        "crest": "https://crests.football-data.org/ghana.svg"
-      },
-      "score": {
-        "home": 1,
-        "away": 0
-      },
-      "halfTime": {
-        "home": 1,
-        "away": 0
-      },
-      "winner": "HOME_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    }
-  ],
-  "todayMatches": [
-    {
       "id": 537376,
       "date": "7月5日",
-      "time": "01:00",
-      "dateFull": "7-05 01:00",
+      "time": "09:00",
+      "dateFull": "7-05 09:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -172,8 +74,8 @@
     {
       "id": 537375,
       "date": "7月5日",
-      "time": "05:00",
-      "dateFull": "7-05 05:00",
+      "time": "13:00",
+      "dateFull": "7-05 13:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -202,12 +104,12 @@
       "venue": null
     }
   ],
-  "upcomingMatches": [
+  "todayMatches": [
     {
       "id": 537377,
       "date": "7月6日",
-      "time": "04:00",
-      "dateFull": "7-06 04:00",
+      "time": "12:00",
+      "dateFull": "7-06 12:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -238,8 +140,74 @@
     {
       "id": 537378,
       "date": "7月6日",
-      "time": "08:00",
-      "dateFull": "7-06 08:00",
+      "time": "16:00",
+      "dateFull": "7-06 16:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "Mexico",
+        "shortName": "Mexico",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/769.svg"
+      },
+      "awayTeam": {
+        "name": "England",
+        "shortName": "England",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "halfTime": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "status": "TIMED",
+      "venue": null
+    }
+  ],
+  "upcomingMatches": [
+    {
+      "id": 537377,
+      "date": "7月6日",
+      "time": "12:00",
+      "dateFull": "7-06 12:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "Brazil",
+        "shortName": "Brazil",
+        "tla": "BRA",
+        "crest": "https://crests.football-data.org/764.svg"
+      },
+      "awayTeam": {
+        "name": "Norway",
+        "shortName": "Norway",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg"
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "halfTime": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "status": "TIMED",
+      "venue": null
+    },
+    {
+      "id": 537378,
+      "date": "7月6日",
+      "time": "16:00",
+      "dateFull": "7-06 16:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -270,8 +238,8 @@
     {
       "id": 537379,
       "date": "7月7日",
-      "time": "03:00",
-      "dateFull": "7-07 03:00",
+      "time": "11:00",
+      "dateFull": "7-07 11:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -302,8 +270,8 @@
     {
       "id": 537380,
       "date": "7月7日",
-      "time": "08:00",
-      "dateFull": "7-07 08:00",
+      "time": "16:00",
+      "dateFull": "7-07 16:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -334,8 +302,8 @@
     {
       "id": 537381,
       "date": "7月8日",
-      "time": "00:00",
-      "dateFull": "7-08 00:00",
+      "time": "08:00",
+      "dateFull": "7-08 08:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -366,8 +334,8 @@
     {
       "id": 537382,
       "date": "7月8日",
-      "time": "04:00",
-      "dateFull": "7-08 04:00",
+      "time": "12:00",
+      "dateFull": "7-08 12:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -398,8 +366,8 @@
     {
       "id": 537383,
       "date": "7月10日",
-      "time": "04:00",
-      "dateFull": "7-10 04:00",
+      "time": "12:00",
+      "dateFull": "7-10 12:00",
       "stage": "1/4决赛",
       "group": "",
       "matchday": null,
@@ -430,8 +398,8 @@
     {
       "id": 537384,
       "date": "7月11日",
-      "time": "03:00",
-      "dateFull": "7-11 03:00",
+      "time": "11:00",
+      "dateFull": "7-11 11:00",
       "stage": "1/4决赛",
       "group": "",
       "matchday": null,
