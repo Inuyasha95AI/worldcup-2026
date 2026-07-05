@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-05T14:11:06.022Z",
-  "lastUpdatedBeijing": "2026-07-06 06:11",
+  "lastUpdated": "2026-07-05T14:20:48.112Z",
+  "lastUpdatedBeijing": "2026-07-06 06:20",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 90,
@@ -3204,6 +3204,108 @@
       "assists": 1,
       "penalties": 0,
       "playedMatches": 3
+    }
+  ],
+  "teamGoalsRank": [
+    {
+      "team": {
+        "name": "德国",
+        "shortName": "德国",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg"
+      },
+      "goals": 14,
+      "played": 4
+    },
+    {
+      "team": {
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
+      },
+      "goals": 14,
+      "played": 5
+    },
+    {
+      "team": {
+        "name": "摩洛哥",
+        "shortName": "摩洛哥",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/morocco.svg"
+      },
+      "goals": 13,
+      "played": 5
+    },
+    {
+      "team": {
+        "name": "荷兰",
+        "shortName": "荷兰",
+        "tla": "NED",
+        "crest": "https://crests.football-data.org/8601.svg"
+      },
+      "goals": 13,
+      "played": 4
+    },
+    {
+      "team": {
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
+      },
+      "goals": 11,
+      "played": 4
+    },
+    {
+      "team": {
+        "name": "美国",
+        "shortName": "美国",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg"
+      },
+      "goals": 10,
+      "played": 4
+    },
+    {
+      "team": {
+        "name": "埃及",
+        "shortName": "埃及",
+        "tla": "EGY",
+        "crest": "https://crests.football-data.org/825.svg"
+      },
+      "goals": 10,
+      "played": 4
+    },
+    {
+      "team": {
+        "name": "塞内加尔",
+        "shortName": "塞内加尔",
+        "tla": "SEN",
+        "crest": "https://crests.football-data.org/senegal.svg"
+      },
+      "goals": 10,
+      "played": 4
+    },
+    {
+      "team": {
+        "name": "挪威",
+        "shortName": "挪威",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg"
+      },
+      "goals": 10,
+      "played": 4
+    },
+    {
+      "team": {
+        "name": "加拿大",
+        "shortName": "加拿大",
+        "tla": "CAN",
+        "crest": "https://crests.football-data.org/canada.svg"
+      },
+      "goals": 9,
+      "played": 5
     }
   ]
 }

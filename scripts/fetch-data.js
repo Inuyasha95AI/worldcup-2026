@@ -230,6 +230,21 @@ async function main() {
     if (m.status==='FINISHED') stages[sn].finished++;
   });
 
+  const teamGoals = {};
+  finished.forEach(m => {
+    if (m.score?.winner === 'PENS') return;
+    const h = m.homeTeam.name, a = m.awayTeam.name;
+    const hg = m.score?.fullTime?.home || 0;
+    const ag = m.score?.fullTime?.away || 0;
+    if (!teamGoals[h]) teamGoals[h] = { team: toCnTeam(m.homeTeam), goals: 0, played: 0 };
+    if (!teamGoals[a]) teamGoals[a] = { team: toCnTeam(m.awayTeam), goals: 0, played: 0 };
+    teamGoals[h].goals += hg;
+    teamGoals[h].played++;
+    teamGoals[a].goals += ag;
+    teamGoals[a].played++;
+  });
+  const teamGoalsRank = Object.values(teamGoals).sort((a, b) => b.goals - a.goals).slice(0, 10);
+
   const knockoutMatches = allMatches
     .filter(m => m.stage !== 'GROUP_STAGE')
     .sort((a,b) => new Date(b.utcDate) - new Date(a.utcDate))
@@ -275,7 +290,7 @@ async function main() {
     lastUpdated: new Date().toISOString(),
     lastUpdatedBeijing: beijingNow.getFullYear()+'-'+String(beijingNow.getMonth()+1).padStart(2,'0')+'-'+String(beijingNow.getDate()).padStart(2,'0')+' '+String(beijingNow.getHours()).padStart(2,'0')+':'+String(beijingNow.getMinutes()).padStart(2,'0'),
     stats: { totalMatches:allMatches.length, finishedMatches:finished.length, totalGoals, avgGoals:finished.length>0?(totalGoals/finished.length).toFixed(2):'0', liveMatches:live.length },
-    stages, knockoutMatches, matchEvents, yesterdayMatches, todayMatches, upcomingMatches, groups, topScorers
+    stages, knockoutMatches, matchEvents, yesterdayMatches, todayMatches, upcomingMatches, groups, topScorers, teamGoalsRank
   };
 
   fs.writeFileSync(path.join(__dirname,'..','data.json'), JSON.stringify(result,null,2), 'utf8');

@@ -511,6 +511,22 @@
                     '</div></div></section>';
             }
 
+            var teamGoalsHtml = '';
+            if (data.teamGoalsRank && data.teamGoalsRank.length > 0) {
+                teamGoalsHtml = '<section class="fade-in"><div class="grid-2">' +
+                    '<div class="card"><div class="card-header"><h2 class="card-title">球队进球榜</h2></div>' +
+                    data.teamGoalsRank.slice(0, 5).map(function(t, i) {
+                        return renderPlayerItem(t.team, i + 1, t.goals, '球');
+                    }).join('') +
+                    '</div>' +
+                    '<div class="card"><div class="card-header"><h2 class="card-title">球队场均进球</h2></div>' +
+                    data.teamGoalsRank.slice().sort(function(a, b) { return (b.goals/b.played) - (a.goals/a.played); })
+                        .slice(0, 5).map(function(t, i) {
+                            return renderPlayerItem(t.team, i + 1, (t.goals/t.played).toFixed(1), '球/场');
+                        }).join('') +
+                    '</div></div></section>';
+            }
+
             var stagesHtml = '';
             var stageKeys = Object.keys(stages);
             if (stageKeys.length > 0) {
@@ -597,6 +613,7 @@
 
                 groupsHtml +
                 scorersHtml +
+                teamGoalsHtml +
                 stagesHtml +
 
                 '<div class="update-info">数据来源: football-data.org · 上次更新: ' + data.lastUpdatedBeijing + '</div>' +
