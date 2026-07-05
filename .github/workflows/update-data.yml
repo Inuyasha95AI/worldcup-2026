@@ -8,12 +8,17 @@ on:
     - cron: '0 4 * * *'
   workflow_dispatch: # 支持手动触发
 
+permissions:
+  contents: write
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
