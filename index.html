@@ -537,7 +537,7 @@
 
                 if (data.knockoutMatches && data.knockoutMatches.length > 0) {
                     var sorted = data.knockoutMatches.slice()
-                        .filter(function(m) { return m.homeTeam.shortName && m.awayTeam.shortName; })
+                        .filter(function(m) { return m.status === 'FINISHED'; })
                         .sort(function(a, b) {
                         var aToday = a.dateFull && a.dateFull.indexOf(today) >= 0 ? 0 : 2;
                         var bToday = b.dateFull && b.dateFull.indexOf(today) >= 0 ? 0 : 2;
