@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-05T13:37:33.930Z",
-  "lastUpdatedBeijing": "2026-07-06 05:37",
+  "lastUpdated": "2026-07-05T13:41:59.712Z",
+  "lastUpdatedBeijing": "2026-07-06 05:41",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 90,
@@ -48,14 +48,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "Canada",
-        "shortName": "Canada",
+        "name": "加拿大",
+        "shortName": "加拿大",
         "tla": "CAN",
         "crest": "https://crests.football-data.org/canada.svg"
       },
       "awayTeam": {
-        "name": "Morocco",
-        "shortName": "Morocco",
+        "name": "摩洛哥",
+        "shortName": "摩洛哥",
         "tla": "MAR",
         "crest": "https://crests.football-data.org/morocco.svg"
       },
@@ -80,14 +80,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "Paraguay",
-        "shortName": "Paraguay",
+        "name": "巴拉圭",
+        "shortName": "巴拉圭",
         "tla": "PAR",
         "crest": "https://crests.football-data.org/761.svg"
       },
       "awayTeam": {
-        "name": "France",
-        "shortName": "France",
+        "name": "法国",
+        "shortName": "法国",
         "tla": "FRA",
         "crest": "https://crests.football-data.org/773.svg"
       },
@@ -114,14 +114,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "Brazil",
-        "shortName": "Brazil",
+        "name": "巴西",
+        "shortName": "巴西",
         "tla": "BRA",
         "crest": "https://crests.football-data.org/764.svg"
       },
       "awayTeam": {
-        "name": "Norway",
-        "shortName": "Norway",
+        "name": "挪威",
+        "shortName": "挪威",
         "tla": "NOR",
         "crest": "https://crests.football-data.org/813.svg"
       },
@@ -146,14 +146,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "Mexico",
-        "shortName": "Mexico",
+        "name": "墨西哥",
+        "shortName": "墨西哥",
         "tla": "MEX",
         "crest": "https://crests.football-data.org/769.svg"
       },
       "awayTeam": {
-        "name": "England",
-        "shortName": "England",
+        "name": "英格兰",
+        "shortName": "英格兰",
         "tla": "ENG",
         "crest": "https://crests.football-data.org/770.svg"
       },
@@ -180,14 +180,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "Brazil",
-        "shortName": "Brazil",
+        "name": "巴西",
+        "shortName": "巴西",
         "tla": "BRA",
         "crest": "https://crests.football-data.org/764.svg"
       },
       "awayTeam": {
-        "name": "Norway",
-        "shortName": "Norway",
+        "name": "挪威",
+        "shortName": "挪威",
         "tla": "NOR",
         "crest": "https://crests.football-data.org/813.svg"
       },
@@ -212,14 +212,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "Mexico",
-        "shortName": "Mexico",
+        "name": "墨西哥",
+        "shortName": "墨西哥",
         "tla": "MEX",
         "crest": "https://crests.football-data.org/769.svg"
       },
       "awayTeam": {
-        "name": "England",
-        "shortName": "England",
+        "name": "英格兰",
+        "shortName": "英格兰",
         "tla": "ENG",
         "crest": "https://crests.football-data.org/770.svg"
       },
@@ -244,14 +244,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "Portugal",
-        "shortName": "Portugal",
+        "name": "葡萄牙",
+        "shortName": "葡萄牙",
         "tla": "POR",
         "crest": "https://crests.football-data.org/765.svg"
       },
       "awayTeam": {
-        "name": "Spain",
-        "shortName": "Spain",
+        "name": "西班牙",
+        "shortName": "西班牙",
         "tla": "ESP",
         "crest": "https://crests.football-data.org/760.svg"
       },
@@ -276,14 +276,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "United States",
-        "shortName": "USA",
+        "name": "美国",
+        "shortName": "美国",
         "tla": "USA",
         "crest": "https://crests.football-data.org/usa.svg"
       },
       "awayTeam": {
-        "name": "Belgium",
-        "shortName": "Belgium",
+        "name": "比利时",
+        "shortName": "比利时",
         "tla": "BEL",
         "crest": "https://crests.football-data.org/805.svg"
       },
@@ -308,14 +308,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "Argentina",
-        "shortName": "Argentina",
+        "name": "阿根廷",
+        "shortName": "阿根廷",
         "tla": "ARG",
         "crest": "https://crests.football-data.org/762.png"
       },
       "awayTeam": {
-        "name": "Egypt",
-        "shortName": "Egypt",
+        "name": "埃及",
+        "shortName": "埃及",
         "tla": "EGY",
         "crest": "https://crests.football-data.org/825.svg"
       },
@@ -340,14 +340,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "Switzerland",
-        "shortName": "Switzerland",
+        "name": "瑞士",
+        "shortName": "瑞士",
         "tla": "SUI",
         "crest": "https://crests.football-data.org/788.svg"
       },
       "awayTeam": {
-        "name": "Colombia",
-        "shortName": "Colombia",
+        "name": "哥伦比亚",
+        "shortName": "哥伦比亚",
         "tla": "COL",
         "crest": "https://crests.football-data.org/818.svg"
       },
@@ -372,14 +372,14 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": "France",
-        "shortName": "France",
+        "name": "法国",
+        "shortName": "法国",
         "tla": "FRA",
         "crest": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
-        "name": "Morocco",
-        "shortName": "Morocco",
+        "name": "摩洛哥",
+        "shortName": "摩洛哥",
         "tla": "MAR",
         "crest": "https://crests.football-data.org/morocco.svg"
       },
@@ -433,8 +433,8 @@
       {
         "position": 1,
         "team": {
-          "name": "Mexico",
-          "shortName": "Mexico",
+          "name": "墨西哥",
+          "shortName": "墨西哥",
           "tla": "MEX",
           "crest": "https://crests.football-data.org/769.svg"
         },
@@ -450,8 +450,8 @@
       {
         "position": 2,
         "team": {
-          "name": "South Africa",
-          "shortName": "South Africa",
+          "name": "南非",
+          "shortName": "南非",
           "tla": "RSA",
           "crest": "https://crests.football-data.org/9396.svg"
         },
@@ -467,8 +467,8 @@
       {
         "position": 3,
         "team": {
-          "name": "South Korea",
-          "shortName": "Korea Republic",
+          "name": "韩国",
+          "shortName": "韩国",
           "tla": "KOR",
           "crest": "https://crests.football-data.org/772.png"
         },
@@ -484,8 +484,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Czechia",
-          "shortName": "Czechia",
+          "name": "捷克",
+          "shortName": "捷克",
           "tla": "CZE",
           "crest": "https://crests.football-data.org/798.svg"
         },
@@ -503,8 +503,8 @@
       {
         "position": 1,
         "team": {
-          "name": "Switzerland",
-          "shortName": "Switzerland",
+          "name": "瑞士",
+          "shortName": "瑞士",
           "tla": "SUI",
           "crest": "https://crests.football-data.org/788.svg"
         },
@@ -520,8 +520,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Canada",
-          "shortName": "Canada",
+          "name": "加拿大",
+          "shortName": "加拿大",
           "tla": "CAN",
           "crest": "https://crests.football-data.org/canada.svg"
         },
@@ -537,8 +537,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Bosnia-Herzegovina",
-          "shortName": "Bosnia-H.",
+          "name": "波黑",
+          "shortName": "波黑",
           "tla": "BIH",
           "crest": "https://crests.football-data.org/bosnia.svg"
         },
@@ -554,8 +554,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Qatar",
-          "shortName": "Qatar",
+          "name": "卡塔尔",
+          "shortName": "卡塔尔",
           "tla": "QAT",
           "crest": "https://crests.football-data.org/8030.svg"
         },
@@ -573,8 +573,8 @@
       {
         "position": 1,
         "team": {
-          "name": "Brazil",
-          "shortName": "Brazil",
+          "name": "巴西",
+          "shortName": "巴西",
           "tla": "BRA",
           "crest": "https://crests.football-data.org/764.svg"
         },
@@ -590,8 +590,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Morocco",
-          "shortName": "Morocco",
+          "name": "摩洛哥",
+          "shortName": "摩洛哥",
           "tla": "MAR",
           "crest": "https://crests.football-data.org/morocco.svg"
         },
@@ -607,8 +607,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Scotland",
-          "shortName": "Scotland",
+          "name": "苏格兰",
+          "shortName": "苏格兰",
           "tla": "SCO",
           "crest": "https://crests.football-data.org/814.svg"
         },
@@ -624,8 +624,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Haiti",
-          "shortName": "Haiti",
+          "name": "海地",
+          "shortName": "海地",
           "tla": "HAI",
           "crest": "https://crests.football-data.org/haiti.svg"
         },
@@ -643,8 +643,8 @@
       {
         "position": 1,
         "team": {
-          "name": "United States",
-          "shortName": "USA",
+          "name": "美国",
+          "shortName": "美国",
           "tla": "USA",
           "crest": "https://crests.football-data.org/usa.svg"
         },
@@ -660,8 +660,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Australia",
-          "shortName": "Australia",
+          "name": "澳大利亚",
+          "shortName": "澳大利亚",
           "tla": "AUS",
           "crest": "https://crests.football-data.org/779.svg"
         },
@@ -677,8 +677,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Paraguay",
-          "shortName": "Paraguay",
+          "name": "巴拉圭",
+          "shortName": "巴拉圭",
           "tla": "PAR",
           "crest": "https://crests.football-data.org/761.svg"
         },
@@ -694,8 +694,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Turkey",
-          "shortName": "Turkey",
+          "name": "土耳其",
+          "shortName": "土耳其",
           "tla": "TUR",
           "crest": "https://crests.football-data.org/803.svg"
         },
@@ -713,8 +713,8 @@
       {
         "position": 1,
         "team": {
-          "name": "Germany",
-          "shortName": "Germany",
+          "name": "德国",
+          "shortName": "德国",
           "tla": "GER",
           "crest": "https://crests.football-data.org/759.svg"
         },
@@ -730,8 +730,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Ivory Coast",
-          "shortName": "Ivory Coast",
+          "name": "科特迪瓦",
+          "shortName": "科特迪瓦",
           "tla": "CIV",
           "crest": "https://crests.football-data.org/787.svg"
         },
@@ -747,8 +747,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Ecuador",
-          "shortName": "Ecuador",
+          "name": "厄瓜多尔",
+          "shortName": "厄瓜多尔",
           "tla": "ECU",
           "crest": "https://crests.football-data.org/791.svg"
         },
@@ -764,8 +764,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Curaçao",
-          "shortName": "Curaçao",
+          "name": "库拉索",
+          "shortName": "库拉索",
           "tla": "CUW",
           "crest": "https://crests.football-data.org/curacao.svg"
         },
@@ -783,8 +783,8 @@
       {
         "position": 1,
         "team": {
-          "name": "Netherlands",
-          "shortName": "Netherlands",
+          "name": "荷兰",
+          "shortName": "荷兰",
           "tla": "NED",
           "crest": "https://crests.football-data.org/8601.svg"
         },
@@ -800,8 +800,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Japan",
-          "shortName": "Japan",
+          "name": "日本",
+          "shortName": "日本",
           "tla": "JPN",
           "crest": "https://crests.football-data.org/766.svg"
         },
@@ -817,8 +817,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Sweden",
-          "shortName": "Sweden",
+          "name": "瑞典",
+          "shortName": "瑞典",
           "tla": "SWE",
           "crest": "https://crests.football-data.org/792.svg"
         },
@@ -834,8 +834,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Tunisia",
-          "shortName": "Tunisia",
+          "name": "突尼斯",
+          "shortName": "突尼斯",
           "tla": "TUN",
           "crest": "https://crests.football-data.org/tunisia.svg"
         },
@@ -853,8 +853,8 @@
       {
         "position": 1,
         "team": {
-          "name": "Belgium",
-          "shortName": "Belgium",
+          "name": "比利时",
+          "shortName": "比利时",
           "tla": "BEL",
           "crest": "https://crests.football-data.org/805.svg"
         },
@@ -870,8 +870,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Egypt",
-          "shortName": "Egypt",
+          "name": "埃及",
+          "shortName": "埃及",
           "tla": "EGY",
           "crest": "https://crests.football-data.org/825.svg"
         },
@@ -887,8 +887,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Iran",
-          "shortName": "Iran",
+          "name": "伊朗",
+          "shortName": "伊朗",
           "tla": "IRN",
           "crest": "https://crests.football-data.org/iran.svg"
         },
@@ -904,8 +904,8 @@
       {
         "position": 4,
         "team": {
-          "name": "New Zealand",
-          "shortName": "New Zealand",
+          "name": "新西兰",
+          "shortName": "新西兰",
           "tla": "NZL",
           "crest": "https://crests.football-data.org/783.svg"
         },
@@ -923,8 +923,8 @@
       {
         "position": 1,
         "team": {
-          "name": "Spain",
-          "shortName": "Spain",
+          "name": "西班牙",
+          "shortName": "西班牙",
           "tla": "ESP",
           "crest": "https://crests.football-data.org/760.svg"
         },
@@ -940,8 +940,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Cape Verde Islands",
-          "shortName": "Cape Verde",
+          "name": "佛得角",
+          "shortName": "佛得角",
           "tla": "CPV",
           "crest": "https://crests.football-data.org/cape_verde.svg"
         },
@@ -957,8 +957,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Uruguay",
-          "shortName": "Uruguay",
+          "name": "乌拉圭",
+          "shortName": "乌拉圭",
           "tla": "URU",
           "crest": "https://crests.football-data.org/758.svg"
         },
@@ -974,8 +974,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Saudi Arabia",
-          "shortName": "Saudi Arabia",
+          "name": "沙特阿拉伯",
+          "shortName": "沙特阿拉伯",
           "tla": "KSA",
           "crest": "https://crests.football-data.org/saudi_arabia.svg"
         },
@@ -993,8 +993,8 @@
       {
         "position": 1,
         "team": {
-          "name": "France",
-          "shortName": "France",
+          "name": "法国",
+          "shortName": "法国",
           "tla": "FRA",
           "crest": "https://crests.football-data.org/773.svg"
         },
@@ -1010,8 +1010,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Norway",
-          "shortName": "Norway",
+          "name": "挪威",
+          "shortName": "挪威",
           "tla": "NOR",
           "crest": "https://crests.football-data.org/813.svg"
         },
@@ -1027,8 +1027,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Senegal",
-          "shortName": "Senegal",
+          "name": "塞内加尔",
+          "shortName": "塞内加尔",
           "tla": "SEN",
           "crest": "https://crests.football-data.org/senegal.svg"
         },
@@ -1044,8 +1044,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Iraq",
-          "shortName": "Iraq",
+          "name": "伊拉克",
+          "shortName": "伊拉克",
           "tla": "IRQ",
           "crest": "https://crests.football-data.org/iraq.svg"
         },
@@ -1063,8 +1063,8 @@
       {
         "position": 1,
         "team": {
-          "name": "Argentina",
-          "shortName": "Argentina",
+          "name": "阿根廷",
+          "shortName": "阿根廷",
           "tla": "ARG",
           "crest": "https://crests.football-data.org/762.png"
         },
@@ -1080,8 +1080,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Austria",
-          "shortName": "Austria",
+          "name": "奥地利",
+          "shortName": "奥地利",
           "tla": "AUT",
           "crest": "https://crests.football-data.org/816.svg"
         },
@@ -1097,8 +1097,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Algeria",
-          "shortName": "Algeria",
+          "name": "阿尔及利亚",
+          "shortName": "阿尔及利亚",
           "tla": "ALG",
           "crest": "https://crests.football-data.org/algeria.svg"
         },
@@ -1114,8 +1114,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Jordan",
-          "shortName": "Jordan",
+          "name": "约旦",
+          "shortName": "约旦",
           "tla": "JOR",
           "crest": "https://crests.football-data.org/8049.png"
         },
@@ -1133,8 +1133,8 @@
       {
         "position": 1,
         "team": {
-          "name": "Colombia",
-          "shortName": "Colombia",
+          "name": "哥伦比亚",
+          "shortName": "哥伦比亚",
           "tla": "COL",
           "crest": "https://crests.football-data.org/818.svg"
         },
@@ -1150,8 +1150,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Portugal",
-          "shortName": "Portugal",
+          "name": "葡萄牙",
+          "shortName": "葡萄牙",
           "tla": "POR",
           "crest": "https://crests.football-data.org/765.svg"
         },
@@ -1167,8 +1167,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Congo DR",
-          "shortName": "Congo DR",
+          "name": "刚果民主共和国",
+          "shortName": "刚果民主共和国",
           "tla": "COD",
           "crest": "https://crests.football-data.org/congo_dr.svg"
         },
@@ -1184,8 +1184,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Uzbekistan",
-          "shortName": "Uzbekistan",
+          "name": "乌兹别克斯坦",
+          "shortName": "乌兹别克斯坦",
           "tla": "UZB",
           "crest": "https://crests.football-data.org/8070.png"
         },
@@ -1203,8 +1203,8 @@
       {
         "position": 1,
         "team": {
-          "name": "England",
-          "shortName": "England",
+          "name": "英格兰",
+          "shortName": "英格兰",
           "tla": "ENG",
           "crest": "https://crests.football-data.org/770.svg"
         },
@@ -1220,8 +1220,8 @@
       {
         "position": 2,
         "team": {
-          "name": "Croatia",
-          "shortName": "Croatia",
+          "name": "克罗地亚",
+          "shortName": "克罗地亚",
           "tla": "CRO",
           "crest": "https://crests.football-data.org/799.svg"
         },
@@ -1237,8 +1237,8 @@
       {
         "position": 3,
         "team": {
-          "name": "Ghana",
-          "shortName": "Ghana",
+          "name": "加纳",
+          "shortName": "加纳",
           "tla": "GHA",
           "crest": "https://crests.football-data.org/ghana.svg"
         },
@@ -1254,8 +1254,8 @@
       {
         "position": 4,
         "team": {
-          "name": "Panama",
-          "shortName": "Panama",
+          "name": "巴拿马",
+          "shortName": "巴拿马",
           "tla": "PAN",
           "crest": "https://crests.football-data.org/panama.svg"
         },
@@ -1272,8 +1272,8 @@
   },
   "topScorers": [
     {
-      "name": "Kylian Mbappé",
-      "team": "France",
+      "name": "姆巴佩",
+      "team": "法国",
       "teamTla": "FRA",
       "crest": "https://crests.football-data.org/773.svg",
       "goals": 7,
@@ -1282,8 +1282,8 @@
       "playedMatches": 5
     },
     {
-      "name": "Lionel Messi",
-      "team": "Argentina",
+      "name": "梅西",
+      "team": "阿根廷",
       "teamTla": "ARG",
       "crest": "https://crests.football-data.org/762.png",
       "goals": 7,
@@ -1292,8 +1292,8 @@
       "playedMatches": 4
     },
     {
-      "name": "Erling Haaland",
-      "team": "Norway",
+      "name": "哈兰德",
+      "team": "挪威",
       "teamTla": "NOR",
       "crest": "https://crests.football-data.org/813.svg",
       "goals": 5,
@@ -1302,8 +1302,8 @@
       "playedMatches": 4
     },
     {
-      "name": "Harry Kane",
-      "team": "England",
+      "name": "哈里·凯恩",
+      "team": "英格兰",
       "teamTla": "ENG",
       "crest": "https://crests.football-data.org/770.svg",
       "goals": 5,
@@ -1312,8 +1312,8 @@
       "playedMatches": 4
     },
     {
-      "name": "Vinicius Junior",
-      "team": "Brazil",
+      "name": "维尼修斯",
+      "team": "巴西",
       "teamTla": "BRA",
       "crest": "https://crests.football-data.org/764.svg",
       "goals": 4,
@@ -1322,8 +1322,8 @@
       "playedMatches": 4
     },
     {
-      "name": "Mikel Oyarzabal",
-      "team": "Spain",
+      "name": "奥亚萨巴尔",
+      "team": "西班牙",
       "teamTla": "ESP",
       "crest": "https://crests.football-data.org/760.svg",
       "goals": 4,
@@ -1332,8 +1332,8 @@
       "playedMatches": 4
     },
     {
-      "name": "Ousmane Dembélé",
-      "team": "France",
+      "name": "登贝莱",
+      "team": "法国",
       "teamTla": "FRA",
       "crest": "https://crests.football-data.org/773.svg",
       "goals": 4,
@@ -1342,8 +1342,8 @@
       "playedMatches": 5
     },
     {
-      "name": "Ismaïla Sarr",
-      "team": "Senegal",
+      "name": "萨尔",
+      "team": "塞内加尔",
       "teamTla": "SEN",
       "crest": "https://crests.football-data.org/senegal.svg",
       "goals": 4,
@@ -1352,8 +1352,8 @@
       "playedMatches": 4
     },
     {
-      "name": "Julián Quiñones",
-      "team": "Mexico",
+      "name": "基尼奥内斯",
+      "team": "墨西哥",
       "teamTla": "MEX",
       "crest": "https://crests.football-data.org/769.svg",
       "goals": 3,
@@ -1362,8 +1362,8 @@
       "playedMatches": 4
     },
     {
-      "name": "Folarin Balogun",
-      "team": "United States",
+      "name": "巴洛贡",
+      "team": "美国",
       "teamTla": "USA",
       "crest": "https://crests.football-data.org/usa.svg",
       "goals": 3,
