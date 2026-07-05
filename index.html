@@ -493,27 +493,20 @@
 
             var scorersHtml = '';
             if (data.topScorers && data.topScorers.length > 0) {
-                var hasAssists = data.topScorers.some(function(p) { return p.assists > 0; });
+                var playersWithAssists = data.topScorers.filter(function(p) { return p.assists > 0; })
+                    .sort(function(a, b) { return b.assists - a.assists; });
                 scorersHtml = '<section id="players" class="fade-in"><div class="grid-2">' +
                     '<div class="card"><div class="card-header"><h2 class="card-title">射手榜</h2></div>' +
                     data.topScorers.slice(0, 5).map(function(p, i) {
                         return renderPlayerItem(p, i + 1, p.goals, '球');
                     }).join('') +
                     '</div>' +
-                    '<div class="card"><div class="card-header"><h2 class="card-title">' +
-                    (hasAssists ? '助攻榜' : '综合贡献榜') + '</h2></div>' +
-                    (hasAssists ?
-                        data.topScorers.filter(function(p) { return p.assists > 0; })
-                            .sort(function(a, b) { return b.assists - a.assists; })
-                            .slice(0, 5).map(function(p, i) {
-                                return renderPlayerItem(p, i + 1, p.assists, '次');
-                            }).join('') :
-                        data.topScorers.slice().sort(function(a, b) {
-                            return (b.goals + (b.assists||0)*0.5) - (a.goals + (a.assists||0)*0.5);
-                        }).slice(0, 5).map(function(p, i) {
-                            var total = p.goals + (p.assists||0);
-                            return renderPlayerItem(p, i + 1, p.goals + '+' + (p.assists||0), '');
-                        }).join('')
+                    '<div class="card"><div class="card-header"><h2 class="card-title">助攻榜</h2></div>' +
+                    (playersWithAssists.length > 0 ?
+                        playersWithAssists.slice(0, 5).map(function(p, i) {
+                            return renderPlayerItem(p, i + 1, p.assists, '次');
+                        }).join('') :
+                        '<div class="empty-state">暂无助攻数据</div>'
                     ) +
                     '</div></div></section>';
             }

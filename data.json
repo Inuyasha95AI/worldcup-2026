@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-05T14:00:55.430Z",
-  "lastUpdatedBeijing": "2026-07-06 06:00",
+  "lastUpdated": "2026-07-05T14:11:06.022Z",
+  "lastUpdatedBeijing": "2026-07-06 06:11",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 90,
@@ -2804,6 +2804,406 @@
       "assists": 0,
       "penalties": 0,
       "playedMatches": 4
+    },
+    {
+      "name": "Ismael Saibari",
+      "team": "摩洛哥",
+      "teamTla": "MAR",
+      "crest": "https://crests.football-data.org/morocco.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "哈弗茨",
+      "team": "德国",
+      "teamTla": "GER",
+      "crest": "https://crests.football-data.org/759.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 4
+    },
+    {
+      "name": "翁达夫",
+      "team": "德国",
+      "teamTla": "GER",
+      "crest": "https://crests.football-data.org/759.svg",
+      "goals": 3,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Elijah Just",
+      "team": "新西兰",
+      "teamTla": "NZL",
+      "crest": "https://crests.football-data.org/783.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "Yoane Wissa",
+      "team": "刚果民主共和国",
+      "teamTla": "COD",
+      "crest": "https://crests.football-data.org/congo_dr.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 3
+    },
+    {
+      "name": "曼赞比",
+      "team": "瑞士",
+      "teamTla": "SUI",
+      "crest": "https://crests.football-data.org/788.svg",
+      "goals": 3,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Jonathan David",
+      "team": "加拿大",
+      "teamTla": "CAN",
+      "crest": "https://crests.football-data.org/canada.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "Matheus Cunha",
+      "team": "巴西",
+      "teamTla": "BRA",
+      "crest": "https://crests.football-data.org/764.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Brian Brobbey",
+      "team": "荷兰",
+      "teamTla": "NED",
+      "crest": "https://crests.football-data.org/8601.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "加克波",
+      "team": "荷兰",
+      "teamTla": "NED",
+      "crest": "https://crests.football-data.org/8601.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "C罗",
+      "team": "葡萄牙",
+      "teamTla": "POR",
+      "crest": "https://crests.football-data.org/765.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 4
+    },
+    {
+      "name": "Raúl Jiménez",
+      "team": "墨西哥",
+      "teamTla": "MEX",
+      "crest": "https://crests.football-data.org/769.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Cyle Larin",
+      "team": "加拿大",
+      "teamTla": "CAN",
+      "crest": "https://crests.football-data.org/canada.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "恩博洛",
+      "team": "瑞士",
+      "teamTla": "SUI",
+      "crest": "https://crests.football-data.org/788.svg",
+      "goals": 2,
+      "assists": 2,
+      "penalties": 1,
+      "playedMatches": 4
+    },
+    {
+      "name": "萨默维尔",
+      "team": "荷兰",
+      "teamTla": "NED",
+      "crest": "https://crests.football-data.org/8601.svg",
+      "goals": 2,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Daichi Kamada",
+      "team": "日本",
+      "teamTla": "JPN",
+      "crest": "https://crests.football-data.org/766.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Amad Diallo",
+      "team": "科特迪瓦",
+      "teamTla": "CIV",
+      "crest": "https://crests.football-data.org/787.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "Yasin Ayari",
+      "team": "瑞典",
+      "teamTla": "SWE",
+      "crest": "https://crests.football-data.org/792.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Emam Ashour",
+      "team": "埃及",
+      "teamTla": "EGY",
+      "crest": "https://crests.football-data.org/825.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "阿劳霍",
+      "team": "乌拉圭",
+      "teamTla": "URU",
+      "crest": "https://crests.football-data.org/758.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "雷扎伊安",
+      "team": "伊朗",
+      "teamTla": "IRN",
+      "crest": "https://crests.football-data.org/iran.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "巴尔科拉",
+      "team": "法国",
+      "teamTla": "FRA",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "Marko Arnautovic",
+      "team": "奥地利",
+      "teamTla": "AUT",
+      "crest": "https://crests.football-data.org/816.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 4
+    },
+    {
+      "name": "贝林厄姆",
+      "team": "英格兰",
+      "teamTla": "ENG",
+      "crest": "https://crests.football-data.org/770.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Daniel Muñoz",
+      "team": "哥伦比亚",
+      "teamTla": "COL",
+      "crest": "https://crests.football-data.org/818.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "巴尔加斯",
+      "team": "瑞士",
+      "teamTla": "SUI",
+      "crest": "https://crests.football-data.org/788.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Ermin Mahmic",
+      "team": "波黑",
+      "teamTla": "BIH",
+      "crest": "https://crests.football-data.org/bosnia.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Anthony Elanga",
+      "team": "瑞典",
+      "teamTla": "SWE",
+      "crest": "https://crests.football-data.org/792.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "上田绮世",
+      "team": "日本",
+      "teamTla": "JPN",
+      "crest": "https://crests.football-data.org/766.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "拉希米",
+      "team": "摩洛哥",
+      "teamTla": "MAR",
+      "crest": "https://crests.football-data.org/morocco.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "佩佩",
+      "team": "科特迪瓦",
+      "teamTla": "CIV",
+      "crest": "https://crests.football-data.org/787.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "Habib Diarra",
+      "team": "塞内加尔",
+      "teamTla": "SEN",
+      "crest": "https://crests.football-data.org/senegal.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "盖耶",
+      "team": "塞内加尔",
+      "teamTla": "SEN",
+      "crest": "https://crests.football-data.org/senegal.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "特罗萨德",
+      "team": "比利时",
+      "teamTla": "BEL",
+      "crest": "https://crests.football-data.org/805.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "卢卡库",
+      "team": "比利时",
+      "teamTla": "BEL",
+      "crest": "https://crests.football-data.org/805.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "马赫雷斯",
+      "team": "阿尔及利亚",
+      "teamTla": "ALG",
+      "crest": "https://crests.football-data.org/algeria.svg",
+      "goals": 2,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Youri Tielemans",
+      "team": "比利时",
+      "teamTla": "BEL",
+      "crest": "https://crests.football-data.org/805.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 4
+    },
+    {
+      "name": "Azzedine Ounahi",
+      "team": "摩洛哥",
+      "teamTla": "MAR",
+      "crest": "https://crests.football-data.org/morocco.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "Ladislav Krejčí",
+      "team": "捷克",
+      "teamTla": "CZE",
+      "crest": "https://crests.football-data.org/798.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "黄仁范",
+      "team": "韩国",
+      "teamTla": "KOR",
+      "crest": "https://crests.football-data.org/772.png",
+      "goals": 1,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 3
     }
   ]
 }

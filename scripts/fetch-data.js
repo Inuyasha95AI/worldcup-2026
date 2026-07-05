@@ -70,7 +70,7 @@ const PLAYER_CN = {
   'Enzo Fernandez':'恩佐','Enzo Fernández':'恩佐',
   'Alexis Mac Allister':'麦卡利斯特','Rodrigo De Paul':'德保罗',
   'Nicolas Otamendi':'奥塔门迪','Nicolás Otamendi':'奥塔门迪',
-  'Cristian Romero':'罗梅罗','Lautaro Martínez':'劳塔罗',
+  'Cristian Romero':'罗梅罗',
   'Nicolas Tagliafico':'塔利亚菲科','Nicolás Tagliafico':'塔利亚菲科',
   'Gonzalo Montiel':'蒙铁尔','Nahuel Molina':'莫利纳',
   'Leandro Paredes':'帕雷德斯','Paulo Dybala':'迪巴拉',
@@ -79,10 +79,17 @@ const PLAYER_CN = {
   'Raphael Guerreiro':'格雷罗','Raphaël Guerreiro':'格雷罗',
   'Goncalo Ramos':'贡萨洛·拉莫斯','Gonçalo Ramos':'贡萨洛·拉莫斯',
   'Vitinha':'维蒂尼亚','Manuel Ugarte':'乌加尔特',
-  'Diogo Costa':'迪奥戈·科斯塔','Bernardo Silva':'贝尔纳多·席尔瓦',
+  'Diogo Costa':'迪奥戈·科斯塔',
   'Marcos Acuna':'阿库尼亚','Marcos Acuña':'阿库尼亚',
   'Lisandro Martinez':'利桑德罗','Lisandro Martínez':'利桑德罗',
-  'Nahuel Molina':'莫利纳',
+  'Deniz Undav':'翁达夫','Johan Manzambi':'曼赞比',
+  'Cody Gakpo':'加克波','Breel Embolo':'恩博洛',
+  'Crysencio Summerville':'萨默维尔','Maximiliano Araújo':'阿劳霍',
+  'Ramin Rezaeian':'雷扎伊安','Bradley Barcola':'巴尔科拉',
+  'Ruben Vargas':'巴尔加斯','Ayase Ueda':'上田绮世',
+  'Soufiane Rahimi':'拉希米','Nicolas Pépé':'佩佩',
+  'Pape Gueye':'盖耶','Leandro Trossard':'特罗萨德',
+  'Riyad Mahrez':'马赫雷斯','In-beom Hwang':'黄仁范',
   'Mbappe':'姆巴佩','Messi':'梅西','Haaland':'哈兰德',
   'Kane':'凯恩','Vinicius':'维尼修斯','Griezmann':'格列兹曼',
   'Ronaldo':'C罗','Salah':'萨拉赫','Lukaku':'卢卡库',
@@ -153,7 +160,7 @@ async function main() {
   const [matchesData, standingsData, scorersData] = await Promise.all([
     fetch(BASE_URL+'/competitions/WC/matches'),
     fetch(BASE_URL+'/competitions/WC/standings'),
-    fetch(BASE_URL+'/competitions/WC/scorers?limit=20')
+    fetch(BASE_URL+'/competitions/WC/scorers?limit=50')
   ]);
 
   const now = new Date();
@@ -206,7 +213,7 @@ async function main() {
     }
   });
 
-  const topScorers = (scorersData.scorers||[]).slice(0,10).map(s => ({
+  const topScorers = (scorersData.scorers||[]).map(s => ({
     name: cnPlayer(s.player.name) || s.player.name,
     team: cnTeam(s.team.name) || cnTla(s.team.tla) || s.team.name,
     teamTla: s.team.tla, crest: s.team.crest,
