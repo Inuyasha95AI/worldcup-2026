@@ -79,3 +79,15 @@
 **置信度**：高
 
 ---
+
+## 2026-07-06 错误：GitHub Pages 部署失败
+
+**原因**：GitHub Pages 默认使用 Jekyll 构建站点，但项目是纯 HTML 静态站点，没有 Jekyll 配置文件，导致构建失败。
+
+**解决方案**：在仓库根目录添加空的 `.nojekyll` 文件，告诉 GitHub Pages 跳过 Jekyll 处理。
+
+**预防措施**：所有纯静态 HTML 项目部署到 GitHub Pages 时，都添加 `.nojekyll` 文件。
+
+**置信度**：高
+
+---

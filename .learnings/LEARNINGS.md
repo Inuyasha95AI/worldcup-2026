@@ -121,3 +121,27 @@ function toBeijing(utcDate) {
 **验证次数**：2
 
 ---
+
+## 2026-07-06 任务：GitHub Pages 部署失败
+
+**经验**：GitHub Pages 默认使用 Jekyll 处理静态站点。如果仓库没有 `_config.yml` 或 `Gemfile`，纯 HTML 项目需要添加空的 `.nojekyll` 文件跳过 Jekyll 构建，否则部署会失败。
+
+**场景**：静态 HTML 站点部署到 GitHub Pages 时
+
+**置信度**：高
+
+**验证次数**：1
+
+---
+
+## 2026-07-06 任务：GitHub Pages 缓存
+
+**经验**：推送代码后 GitHub Pages 不会立即更新，有 CDN 缓存延迟（通常几分钟）。可以通过 URL 添加 `?t=时间戳` 参数强制刷新，或等待自动过期。
+
+**场景**：GitHub Pages 更新后页面未生效时
+
+**置信度**：高
+
+**验证次数**：1
+
+---
