@@ -139,12 +139,19 @@ function getStageName(stage) {
 
 function getGroupName(group) { return group ? group.replace('GROUP_','') + '组' : ''; }
 
-function formatDate(utcDate) {
+function toBeijing(utcDate) {
   const d = new Date(utcDate);
   const b = new Date(d.getTime() + 8*60*60*1000);
-  const m = b.getMonth()+1, day = b.getDate();
-  const hh = String(b.getHours()).padStart(2,'0'), mm = String(b.getMinutes()).padStart(2,'0');
-  return { date: m+'月'+day+'日', time: hh+':'+mm, full: m+'-'+String(day).padStart(2,'0')+' '+hh+':'+mm };
+  return {
+    year: b.getUTCFullYear(), month: b.getUTCMonth()+1, day: b.getUTCDate(),
+    hours: b.getUTCHours(), minutes: b.getUTCMinutes()
+  };
+}
+
+function formatDate(utcDate) {
+  const bj = toBeijing(utcDate);
+  const mm = String(bj.minutes).padStart(2,'0');
+  return { date: bj.month+'月'+bj.day+'日', time: bj.hours+':'+mm, full: bj.month+'-'+String(bj.day).padStart(2,'0')+' '+bj.hours+':'+mm };
 }
 
 function toCnTeam(teamObj) {
@@ -164,8 +171,8 @@ async function main() {
   ]);
 
   const now = new Date();
-  const beijingNow = new Date(now.getTime() + 8*60*60*1000);
-  const todayStr = beijingNow.getFullYear()+'-'+String(beijingNow.getMonth()+1).padStart(2,'0')+'-'+String(beijingNow.getDate()).padStart(2,'0');
+  const bjNow = toBeijing(now);
+  const todayStr = bjNow.year+'-'+String(bjNow.month).padStart(2,'0')+'-'+String(bjNow.day).padStart(2,'0');
 
   const allMatches = matchesData.matches || [];
   const finished = allMatches.filter(m => m.status==='FINISHED');
@@ -185,17 +192,18 @@ async function main() {
     };
   }
 
-  const yesterday = new Date(beijingNow.getTime()-24*60*60*1000);
-  const yesterdayStr = yesterday.getFullYear()+'-'+String(yesterday.getMonth()+1).padStart(2,'0')+'-'+String(yesterday.getDate()).padStart(2,'0');
+  const yesterdayMs = new Date(now.getTime() + 8*60*60*1000).getTime() - 24*60*60*1000;
+  const yesterdayBj = new Date(yesterdayMs);
+  const yesterdayStr = yesterdayBj.getUTCFullYear()+'-'+String(yesterdayBj.getUTCMonth()+1).padStart(2,'0')+'-'+String(yesterdayBj.getUTCDate()).padStart(2,'0');
 
   const yesterdayMatches = finished.filter(m => {
-    const d = new Date(m.utcDate); const bd = new Date(d.getTime()+8*60*60*1000);
-    return bd.getFullYear()+'-'+String(bd.getMonth()+1).padStart(2,'0')+'-'+String(bd.getDate()).padStart(2,'0') === yesterdayStr;
+    const bj = toBeijing(m.utcDate);
+    return bj.year+'-'+String(bj.month).padStart(2,'0')+'-'+String(bj.day).padStart(2,'0') === yesterdayStr;
   }).map(processMatch);
 
   const todayMatches = allMatches.filter(m => {
-    const d = new Date(m.utcDate); const bd = new Date(d.getTime()+8*60*60*1000);
-    return bd.getFullYear()+'-'+String(bd.getMonth()+1).padStart(2,'0')+'-'+String(bd.getDate()).padStart(2,'0') === todayStr;
+    const bj = toBeijing(m.utcDate);
+    return bj.year+'-'+String(bj.month).padStart(2,'0')+'-'+String(bj.day).padStart(2,'0') === todayStr;
   }).map(processMatch);
 
   const upcomingMatches = scheduled.slice(0,8).map(processMatch);
@@ -288,7 +296,7 @@ async function main() {
 
   const result = {
     lastUpdated: new Date().toISOString(),
-    lastUpdatedBeijing: beijingNow.getFullYear()+'-'+String(beijingNow.getMonth()+1).padStart(2,'0')+'-'+String(beijingNow.getDate()).padStart(2,'0')+' '+String(beijingNow.getHours()).padStart(2,'0')+':'+String(beijingNow.getMinutes()).padStart(2,'0'),
+    lastUpdatedBeijing: bjNow.year+'-'+String(bjNow.month).padStart(2,'0')+'-'+String(bjNow.day).padStart(2,'0')+' '+String(bjNow.hours).padStart(2,'0')+':'+String(bjNow.minutes).padStart(2,'0'),
     stats: { totalMatches:allMatches.length, finishedMatches:finished.length, totalGoals, avgGoals:finished.length>0?(totalGoals/finished.length).toFixed(2):'0', liveMatches:live.length },
     stages, knockoutMatches, matchEvents, yesterdayMatches, todayMatches, upcomingMatches, groups, topScorers, teamGoalsRank
   };

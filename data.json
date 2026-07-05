@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-05T14:20:48.112Z",
-  "lastUpdatedBeijing": "2026-07-06 06:20",
+  "lastUpdated": "2026-07-05T22:48:34.756Z",
+  "lastUpdatedBeijing": "2026-07-06 06:48",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 90,
-    "totalGoals": 279,
+    "finishedMatches": 91,
+    "totalGoals": 282,
     "avgGoals": "3.10",
     "liveMatches": 0
   },
@@ -19,7 +19,7 @@
     },
     "1/8决赛": {
       "total": 8,
-      "finished": 2
+      "finished": 3
     },
     "1/4决赛": {
       "total": 4,
@@ -42,8 +42,8 @@
     {
       "id": 537390,
       "date": "7月20日",
-      "time": "11:00",
-      "dateFull": "7-20 11:00",
+      "time": "3:00",
+      "dateFull": "7-20 3:00",
       "stage": "决赛",
       "group": "",
       "matchday": null,
@@ -74,8 +74,8 @@
     {
       "id": 537389,
       "date": "7月19日",
-      "time": "13:00",
-      "dateFull": "7-19 13:00",
+      "time": "5:00",
+      "dateFull": "7-19 5:00",
       "stage": "季军赛",
       "group": "",
       "matchday": null,
@@ -106,8 +106,8 @@
     {
       "id": 537388,
       "date": "7月16日",
-      "time": "11:00",
-      "dateFull": "7-16 11:00",
+      "time": "3:00",
+      "dateFull": "7-16 3:00",
       "stage": "半决赛",
       "group": "",
       "matchday": null,
@@ -138,8 +138,8 @@
     {
       "id": 537387,
       "date": "7月15日",
-      "time": "11:00",
-      "dateFull": "7-15 11:00",
+      "time": "3:00",
+      "dateFull": "7-15 3:00",
       "stage": "半决赛",
       "group": "",
       "matchday": null,
@@ -170,8 +170,8 @@
     {
       "id": 537386,
       "date": "7月12日",
-      "time": "17:00",
-      "dateFull": "7-12 17:00",
+      "time": "9:00",
+      "dateFull": "7-12 9:00",
       "stage": "1/4决赛",
       "group": "",
       "matchday": null,
@@ -202,8 +202,8 @@
     {
       "id": 537385,
       "date": "7月12日",
-      "time": "13:00",
-      "dateFull": "7-12 13:00",
+      "time": "5:00",
+      "dateFull": "7-12 5:00",
       "stage": "1/4决赛",
       "group": "",
       "matchday": null,
@@ -234,8 +234,8 @@
     {
       "id": 537384,
       "date": "7月11日",
-      "time": "11:00",
-      "dateFull": "7-11 11:00",
+      "time": "3:00",
+      "dateFull": "7-11 3:00",
       "stage": "1/4决赛",
       "group": "",
       "matchday": null,
@@ -266,8 +266,8 @@
     {
       "id": 537383,
       "date": "7月10日",
-      "time": "12:00",
-      "dateFull": "7-10 12:00",
+      "time": "4:00",
+      "dateFull": "7-10 4:00",
       "stage": "1/4决赛",
       "group": "",
       "matchday": null,
@@ -298,8 +298,8 @@
     {
       "id": 537382,
       "date": "7月8日",
-      "time": "12:00",
-      "dateFull": "7-08 12:00",
+      "time": "4:00",
+      "dateFull": "7-08 4:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -330,8 +330,8 @@
     {
       "id": 537381,
       "date": "7月8日",
-      "time": "08:00",
-      "dateFull": "7-08 08:00",
+      "time": "0:00",
+      "dateFull": "7-08 0:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -362,8 +362,8 @@
     {
       "id": 537380,
       "date": "7月7日",
-      "time": "16:00",
-      "dateFull": "7-07 16:00",
+      "time": "8:00",
+      "dateFull": "7-07 8:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -394,8 +394,8 @@
     {
       "id": 537379,
       "date": "7月7日",
-      "time": "11:00",
-      "dateFull": "7-07 11:00",
+      "time": "3:00",
+      "dateFull": "7-07 3:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -426,8 +426,8 @@
     {
       "id": 537378,
       "date": "7月6日",
-      "time": "16:00",
-      "dateFull": "7-06 16:00",
+      "time": "8:00",
+      "dateFull": "7-06 8:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -458,8 +458,8 @@
     {
       "id": 537377,
       "date": "7月6日",
-      "time": "12:00",
-      "dateFull": "7-06 12:00",
+      "time": "4:00",
+      "dateFull": "7-06 4:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -476,22 +476,22 @@
         "crest": "https://crests.football-data.org/813.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
       "id": 537375,
       "date": "7月5日",
-      "time": "13:00",
-      "dateFull": "7-05 13:00",
+      "time": "5:00",
+      "dateFull": "7-05 5:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -522,8 +522,8 @@
     {
       "id": 537376,
       "date": "7月5日",
-      "time": "09:00",
-      "dateFull": "7-05 09:00",
+      "time": "1:00",
+      "dateFull": "7-05 1:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1027,6 +1027,16 @@
         "text": "全场共 3 粒进球"
       }
     ],
+    "537377": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1476,8 +1486,8 @@
     {
       "id": 537376,
       "date": "7月5日",
-      "time": "09:00",
-      "dateFull": "7-05 09:00",
+      "time": "1:00",
+      "dateFull": "7-05 1:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1508,8 +1518,8 @@
     {
       "id": 537375,
       "date": "7月5日",
-      "time": "13:00",
-      "dateFull": "7-05 13:00",
+      "time": "5:00",
+      "dateFull": "7-05 5:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1542,8 +1552,8 @@
     {
       "id": 537377,
       "date": "7月6日",
-      "time": "12:00",
-      "dateFull": "7-06 12:00",
+      "time": "4:00",
+      "dateFull": "7-06 4:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1560,22 +1570,22 @@
         "crest": "https://crests.football-data.org/813.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
       "id": 537378,
       "date": "7月6日",
-      "time": "16:00",
-      "dateFull": "7-06 16:00",
+      "time": "8:00",
+      "dateFull": "7-06 8:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1606,42 +1616,10 @@
   ],
   "upcomingMatches": [
     {
-      "id": 537377,
-      "date": "7月6日",
-      "time": "12:00",
-      "dateFull": "7-06 12:00",
-      "stage": "1/8决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "巴西",
-        "shortName": "巴西",
-        "tla": "BRA",
-        "crest": "https://crests.football-data.org/764.svg"
-      },
-      "awayTeam": {
-        "name": "挪威",
-        "shortName": "挪威",
-        "tla": "NOR",
-        "crest": "https://crests.football-data.org/813.svg"
-      },
-      "score": {
-        "home": null,
-        "away": null
-      },
-      "halfTime": {
-        "home": null,
-        "away": null
-      },
-      "winner": null,
-      "status": "TIMED",
-      "venue": null
-    },
-    {
       "id": 537378,
       "date": "7月6日",
-      "time": "16:00",
-      "dateFull": "7-06 16:00",
+      "time": "8:00",
+      "dateFull": "7-06 8:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1672,8 +1650,8 @@
     {
       "id": 537379,
       "date": "7月7日",
-      "time": "11:00",
-      "dateFull": "7-07 11:00",
+      "time": "3:00",
+      "dateFull": "7-07 3:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1704,8 +1682,8 @@
     {
       "id": 537380,
       "date": "7月7日",
-      "time": "16:00",
-      "dateFull": "7-07 16:00",
+      "time": "8:00",
+      "dateFull": "7-07 8:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1736,8 +1714,8 @@
     {
       "id": 537381,
       "date": "7月8日",
-      "time": "08:00",
-      "dateFull": "7-08 08:00",
+      "time": "0:00",
+      "dateFull": "7-08 0:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1768,8 +1746,8 @@
     {
       "id": 537382,
       "date": "7月8日",
-      "time": "12:00",
-      "dateFull": "7-08 12:00",
+      "time": "4:00",
+      "dateFull": "7-08 4:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1800,8 +1778,8 @@
     {
       "id": 537383,
       "date": "7月10日",
-      "time": "12:00",
-      "dateFull": "7-10 12:00",
+      "time": "4:00",
+      "dateFull": "7-10 4:00",
       "stage": "1/4决赛",
       "group": "",
       "matchday": null,
@@ -1832,8 +1810,40 @@
     {
       "id": 537384,
       "date": "7月11日",
-      "time": "11:00",
-      "dateFull": "7-11 11:00",
+      "time": "3:00",
+      "dateFull": "7-11 3:00",
+      "stage": "1/4决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "crest": null
+      },
+      "awayTeam": {
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "crest": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "halfTime": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "status": "TIMED",
+      "venue": null
+    },
+    {
+      "id": 537385,
+      "date": "7月12日",
+      "time": "5:00",
+      "dateFull": "7-12 5:00",
       "stage": "1/4决赛",
       "group": "",
       "matchday": null,
@@ -2716,21 +2726,21 @@
       "playedMatches": 5
     },
     {
+      "name": "哈兰德",
+      "team": "挪威",
+      "teamTla": "NOR",
+      "crest": "https://crests.football-data.org/813.svg",
+      "goals": 7,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
       "name": "梅西",
       "team": "阿根廷",
       "teamTla": "ARG",
       "crest": "https://crests.football-data.org/762.png",
       "goals": 7,
-      "assists": 0,
-      "penalties": 0,
-      "playedMatches": 4
-    },
-    {
-      "name": "哈兰德",
-      "team": "挪威",
-      "teamTla": "NOR",
-      "crest": "https://crests.football-data.org/813.svg",
-      "goals": 5,
       "assists": 0,
       "penalties": 0,
       "playedMatches": 4
@@ -2753,7 +2763,7 @@
       "goals": 4,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 4
+      "playedMatches": 5
     },
     {
       "name": "奥亚萨巴尔",
@@ -2883,7 +2893,7 @@
       "goals": 3,
       "assists": 0,
       "penalties": 0,
-      "playedMatches": 4
+      "playedMatches": 5
     },
     {
       "name": "Brian Brobbey",
@@ -3249,6 +3259,16 @@
     },
     {
       "team": {
+        "name": "挪威",
+        "shortName": "挪威",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg"
+      },
+      "goals": 12,
+      "played": 5
+    },
+    {
+      "team": {
         "name": "阿根廷",
         "shortName": "阿根廷",
         "tla": "ARG",
@@ -3269,6 +3289,16 @@
     },
     {
       "team": {
+        "name": "巴西",
+        "shortName": "巴西",
+        "tla": "BRA",
+        "crest": "https://crests.football-data.org/764.svg"
+      },
+      "goals": 10,
+      "played": 5
+    },
+    {
+      "team": {
         "name": "埃及",
         "shortName": "埃及",
         "tla": "EGY",
@@ -3286,26 +3316,6 @@
       },
       "goals": 10,
       "played": 4
-    },
-    {
-      "team": {
-        "name": "挪威",
-        "shortName": "挪威",
-        "tla": "NOR",
-        "crest": "https://crests.football-data.org/813.svg"
-      },
-      "goals": 10,
-      "played": 4
-    },
-    {
-      "team": {
-        "name": "加拿大",
-        "shortName": "加拿大",
-        "tla": "CAN",
-        "crest": "https://crests.football-data.org/canada.svg"
-      },
-      "goals": 9,
-      "played": 5
     }
   ]
 }

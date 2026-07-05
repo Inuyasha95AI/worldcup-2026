@@ -428,8 +428,9 @@
             });
 
             var now = new Date();
-            var bjNow = new Date(now.getTime() + 8*3600*1000);
-            var today = bjNow.getFullYear() + '-' + String(bjNow.getMonth()+1).padStart(2,'0') + '-' + String(bjNow.getDate()).padStart(2,'0');
+            var bjMs = now.getTime() + 8*3600*1000;
+            var bjDate = new Date(bjMs);
+            var today = bjDate.getUTCFullYear() + '-' + String(bjDate.getUTCMonth()+1).padStart(2,'0') + '-' + String(bjDate.getUTCDate()).padStart(2,'0');
 
             var statusBadge = '';
             if (data.stats.liveMatches > 0) {
