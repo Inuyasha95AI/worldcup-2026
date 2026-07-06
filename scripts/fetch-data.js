@@ -118,15 +118,34 @@ function cnTeam(name) { return (name && TEAM_CN[name]) ? TEAM_CN[name] : name; }
 function cnPlayer(name) { return (name && PLAYER_CN[name]) ? PLAYER_CN[name] : name; }
 function cnTla(tla) { return (tla && TLA_CN[tla]) ? TLA_CN[tla] : tla; }
 
-function fetch(url) {
+function fetch(url, retries = 3) {
   return new Promise((resolve, reject) => {
-    const req = https.get(url, { headers: { 'X-Auth-Token': API_TOKEN } }, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => { try { resolve(JSON.parse(data)); } catch(e) { reject(e); } });
-    });
-    req.on('error', reject);
-    req.setTimeout(15000, () => { req.destroy(); reject(new Error('Timeout')); });
+    const attempt = (n) => {
+      const req = https.get(url, { headers: { 'X-Auth-Token': API_TOKEN } }, (res) => {
+        let data = '';
+        res.on('data', chunk => data += chunk);
+        res.on('end', () => {
+          if (res.statusCode === 429 && n > 0) {
+            console.log('Rate limited, retrying in 2s...');
+            setTimeout(() => attempt(n - 1), 2000);
+            return;
+          }
+          if (res.statusCode !== 200) {
+            const err = new Error('HTTP ' + res.statusCode + ' for ' + url);
+            if (n > 0) { console.log('Retrying after error...'); setTimeout(() => attempt(n - 1), 1000); return; }
+            reject(err);
+            return;
+          }
+          try { resolve(JSON.parse(data)); } catch(e) { reject(e); }
+        });
+      });
+      req.on('error', (e) => {
+        if (n > 0) { console.log('Retrying after', e.message); setTimeout(() => attempt(n - 1), 1000); return; }
+        reject(e);
+      });
+      req.setTimeout(20000, () => { req.destroy(); if (n > 0) { setTimeout(() => attempt(n - 1), 1000); return; } reject(new Error('Timeout')); });
+    };
+    attempt(retries);
   });
 }
 
@@ -164,11 +183,11 @@ function toCnTeam(teamObj) {
 async function main() {
   console.log('Fetching World Cup data...');
 
-  const [matchesData, standingsData, scorersData] = await Promise.all([
-    fetch(BASE_URL+'/competitions/WC/matches'),
-    fetch(BASE_URL+'/competitions/WC/standings'),
-    fetch(BASE_URL+'/competitions/WC/scorers?limit=50')
-  ]);
+  const matchesData = await fetch(BASE_URL+'/competitions/WC/matches');
+  await new Promise(r => setTimeout(r, 600));
+  const standingsData = await fetch(BASE_URL+'/competitions/WC/standings');
+  await new Promise(r => setTimeout(r, 600));
+  const scorersData = await fetch(BASE_URL+'/competitions/WC/scorers?limit=50');
 
   const now = new Date();
   const bjNow = toBeijing(now);
