@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-06T12:16:36.750Z",
-  "lastUpdatedBeijing": "2026-07-06 20:16",
+  "lastUpdated": "2026-07-06T22:46:56.840Z",
+  "lastUpdatedBeijing": "2026-07-07 06:46",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 92,
-    "totalGoals": 287,
-    "avgGoals": "3.12",
+    "finishedMatches": 93,
+    "totalGoals": 288,
+    "avgGoals": "3.10",
     "liveMatches": 0
   },
   "stages": {
@@ -19,7 +19,7 @@
     },
     "1/8决赛": {
       "total": 8,
-      "finished": 4
+      "finished": 5
     },
     "1/4决赛": {
       "total": 4,
@@ -412,15 +412,15 @@
         "crest": "https://crests.football-data.org/760.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1051,6 +1051,12 @@
         "text": "全场共 5 粒进球"
       }
     ],
+    "537379": [
+      {
+        "type": "fulltime",
+        "text": "全场 0-1"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1498,72 +1504,6 @@
   },
   "yesterdayMatches": [
     {
-      "id": 537376,
-      "date": "7月5日",
-      "time": "1:00",
-      "dateFull": "7-05 1:00",
-      "stage": "1/8决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "加拿大",
-        "shortName": "加拿大",
-        "tla": "CAN",
-        "crest": "https://crests.football-data.org/canada.svg"
-      },
-      "awayTeam": {
-        "name": "摩洛哥",
-        "shortName": "摩洛哥",
-        "tla": "MAR",
-        "crest": "https://crests.football-data.org/morocco.svg"
-      },
-      "score": {
-        "home": 0,
-        "away": 3
-      },
-      "halfTime": {
-        "home": 0,
-        "away": 0
-      },
-      "winner": "AWAY_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    },
-    {
-      "id": 537375,
-      "date": "7月5日",
-      "time": "5:00",
-      "dateFull": "7-05 5:00",
-      "stage": "1/8决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "巴拉圭",
-        "shortName": "巴拉圭",
-        "tla": "PAR",
-        "crest": "https://crests.football-data.org/761.svg"
-      },
-      "awayTeam": {
-        "name": "法国",
-        "shortName": "法国",
-        "tla": "FRA",
-        "crest": "https://crests.football-data.org/773.svg"
-      },
-      "score": {
-        "home": 0,
-        "away": 1
-      },
-      "halfTime": {
-        "home": 0,
-        "away": 0
-      },
-      "winner": "AWAY_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    }
-  ],
-  "todayMatches": [
-    {
       "id": 537377,
       "date": "7月6日",
       "time": "4:00",
@@ -1628,7 +1568,7 @@
       "venue": null
     }
   ],
-  "upcomingMatches": [
+  "todayMatches": [
     {
       "id": 537379,
       "date": "7月7日",
@@ -1650,6 +1590,38 @@
         "crest": "https://crests.football-data.org/760.svg"
       },
       "score": {
+        "home": 0,
+        "away": 1
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 0
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537380,
+      "date": "7月7日",
+      "time": "8:00",
+      "dateFull": "7-07 8:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "美国",
+        "shortName": "美国",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg"
+      },
+      "awayTeam": {
+        "name": "比利时",
+        "shortName": "比利时",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg"
+      },
+      "score": {
         "home": null,
         "away": null
       },
@@ -1660,7 +1632,9 @@
       "winner": null,
       "status": "TIMED",
       "venue": null
-    },
+    }
+  ],
+  "upcomingMatches": [
     {
       "id": 537380,
       "date": "7月7日",
@@ -1859,6 +1833,38 @@
       "time": "9:00",
       "dateFull": "7-12 9:00",
       "stage": "1/4决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "crest": null
+      },
+      "awayTeam": {
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "crest": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "halfTime": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "status": "TIMED",
+      "venue": null
+    },
+    {
+      "id": 537387,
+      "date": "7月15日",
+      "time": "3:00",
+      "dateFull": "7-15 3:00",
+      "stage": "半决赛",
       "group": "",
       "matchday": null,
       "homeTeam": {
@@ -2807,7 +2813,7 @@
       "goals": 4,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 4
+      "playedMatches": 5
     },
     {
       "name": "登贝莱",
@@ -2957,7 +2963,7 @@
       "goals": 3,
       "assists": 0,
       "penalties": 1,
-      "playedMatches": 4
+      "playedMatches": 5
     },
     {
       "name": "Cyle Larin",
