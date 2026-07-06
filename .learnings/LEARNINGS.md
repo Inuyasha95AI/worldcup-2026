@@ -4,45 +4,11 @@
 
 ---
 
-## 2026-07-05 任务：世界杯网站自动更新系统
+## 2026-07-06 任务：修复世界杯网页 GitHub Pages 部署
 
-**经验**：football-data.org 免费版 API 不提供比赛事件数据（进球时间线、黄牌、换人），只提供基础比分和射手榜。如果需要详细事件，必须用付费 API 或其他数据源。
+**经验**：GitHub Actions 的 `actions/deploy-pages@v4` 部署 API 不稳定，artifact 上传成功但 deploy 步骤会随机失败。`peaceiris/actions-gh-pages@v4`（推送到 gh-pages 分支）更可靠。
 
-**场景**：需要实时比赛事件数据时
-
-**置信度**：高
-
-**验证次数**：1
-
----
-
-## 2026-07-06 任务：跨时区时间计算
-
-**经验**：在 JavaScript 中将 UTC 时间转为其他时区（如北京时间 UTC+8）时，必须使用 `getUTCHours()`、`getUTCDate()` 等 UTC 方法提取时间组件，不能用 `getHours()`、`getDate()` 等本地时间方法。因为 `new Date(utcTimestamp + offset)` 创建的 Date 对象，其 `getHours()` 会在本地时区基础上再次偏移，导致双重叠加。
-
-**正确模式**：
-```javascript
-function toBeijing(utcDate) {
-  const d = new Date(utcDate);
-  const b = new Date(d.getTime() + 8*60*60*1000);
-  return { year: b.getUTCFullYear(), month: b.getUTCMonth()+1, day: b.getUTCDate(),
-           hours: b.getUTCHours(), minutes: b.getUTCMinutes() };
-}
-```
-
-**场景**：需要在不同运行环境中正确处理时区转换时
-
-**置信度**：高
-
-**验证次数**：2
-
----
-
-## 2026-07-05 任务：GitHub Actions 定时任务配置
-
-**经验**：GitHub Actions cron 用 UTC 时区，北京时间需要 -8 小时。07:00 BJT = 23:00 UTC，12:00 BJT = 04:00 UTC。
-
-**场景**：配置中国时区的定时任务时
+**场景**：需要将 GitHub Actions 工作流部署到 GitHub Pages 时。
 
 **置信度**：高
 
@@ -50,23 +16,11 @@ function toBeijing(utcDate) {
 
 ---
 
-## 2026-07-05 任务：GitHub Actions 自动 push 权限
+## 2026-07-07 任务：修复数据自动更新不生效
 
-**经验**：GitHub Actions 默认没有 push 权限。需要在 workflow 文件中添加 `permissions: contents: write` 和 checkout 时设置 `fetch-depth: 0` 才能自动 push。
+**经验**：GitHub Actions 安全机制——用 `GITHUB_TOKEN` 推送代码触发的 push 事件，**不会**再触发其他 workflow。如果 `update-data.yml` 推送到 master，`deploy-pages.yml` 永远不会被触发。必须把数据抓取和部署合并在同一个 workflow 中。
 
-**场景**：GitHub Actions 需要自动提交代码时
-
-**置信度**：高
-
-**验证次数**：2
-
----
-
-## 2026-07-05 任务：足球数据 API 数据获取
-
-**经验**：football-data.org 的 `/competitions/WC/scorers` 端点默认只返回少量数据，需要设置 `limit` 参数获取更多。免费版最多可获取 50 名射手数据。
-
-**场景**：需要获取完整射手榜数据时
+**场景**：多个 workflow 之间有依赖关系（A 推送后 B 需要运行）时。
 
 **置信度**：高
 
@@ -74,23 +28,11 @@ function toBeijing(utcDate) {
 
 ---
 
-## 2026-07-05 任务：球队总进球数统计
+## 2026-07-07 任务：免费版 API 速率限制处理
 
-**经验**：积分榜只包含小组赛数据。要统计球队总进球数（含淘汰赛），需要从所有已结束的比赛中按队伍累加。点球大战的进球不算在 `score.fullTime` 里，但需要显式过滤 `score.winner === 'PENS'` 的比赛以确保准确。
+**经验**：football-data.org 免费版有速率限制（约10次/分钟）。同时发多个请求容易触发 429 错误。改为顺序请求（间隔600ms）+ 自动重试（最多3次）可以稳定获取数据。
 
-**场景**：需要统计跨阶段的球队数据时
-
-**置信度**：高
-
-**验证次数**：1
-
----
-
-## 2026-07-05 任务：前端数据排序逻辑
-
-**经验**：「近期淘汰赛」应优先显示今天 → 进行中 → 未开始 → 已结束，而不是简单按日期排序。同时需要过滤掉未确定对阵（team 为 null）和未结束（status !== 'FINISHED'）的比赛。
-
-**场景**：展示赛事进度时
+**场景**：调用有速率限制的免费 API 时。
 
 **置信度**：高
 
@@ -98,35 +40,11 @@ function toBeijing(utcDate) {
 
 ---
 
-## 2026-07-05 任务：Git push 代理配置
+## 2026-07-06 任务：配置 git 代理
 
-**经验**：Windows PowerShell 中设置代理需要用 `http` 协议（`http://127.0.0.1:7897`），`socks5` 会导致 SSL 握手失败。需要同时设置 `HTTP_PROXY` 和 `HTTPS_PROXY`。
+**经验**：很多 VPN 只代理浏览器流量，终端的 git 命令需要单独配置代理。代理端口在 VPN 软件的"本地代理"设置里找。
 
-**场景**：需要通过代理 push 到 GitHub 时
-
-**置信度**：高
-
-**验证次数**：3
-
----
-
-## 2026-07-05 任务：GitHub Actions 数据文件类型
-
-**经验**：GitHub Actions 自动生成的 `data.json` 与本地合并时容易冲突。使用 `git pull --no-edit --strategy=ours` 可以快速解决，保留本地版本。
-
-**场景**：本地修改与 Actions 自动提交冲突时
-
-**置信度**：高
-
-**验证次数**：2
-
----
-
-## 2026-07-06 任务：GitHub Pages 部署失败
-
-**经验**：GitHub Pages 默认使用 Jekyll 处理静态站点。如果仓库没有 `_config.yml` 或 `Gemfile`，纯 HTML 项目需要添加空的 `.nojekyll` 文件跳过 Jekyll 构建，否则部署会失败。
-
-**场景**：静态 HTML 站点部署到 GitHub Pages 时
+**场景**：git push/pull 报连接超时错误时。
 
 **置信度**：高
 
@@ -134,13 +52,25 @@ function toBeijing(utcDate) {
 
 ---
 
-## 2026-07-06 任务：GitHub Pages 缓存
+## 2026-07-06 任务：GitHub Pages Source 设置
 
-**经验**：推送代码后 GitHub Pages 不会立即更新，有 CDN 缓存延迟（通常几分钟）。可以通过 URL 添加 `?t=时间戳` 参数强制刷新，或等待自动过期。
+**经验**：使用 `peaceiris/actions-gh-pages@v4` 部署时，Pages Source 必须设为 "Deploy from a branch" → gh-pages。选 "GitHub Actions" 会导致部署失败。
 
-**场景**：GitHub Pages 更新后页面未生效时
+**场景**：配置 GitHub Pages 部署方式时。
 
 **置信度**：高
+
+**验证次数**：1
+
+---
+
+## 2026-07-06 任务：GitHub Actions cron 定时延迟
+
+**经验**：GitHub Actions 免费账户的 cron 定时任务不精确，可能延迟几十分钟到几小时。无法修复，只能通过增加定时次数缓解。
+
+**场景**：需要精确定时执行 GitHub Actions 工作流时。
+
+**置信度**：中
 
 **验证次数**：1
 

@@ -4,89 +4,71 @@
 
 ---
 
-## 2026-07-05 错误：football-data.org 免费 API 不返回比赛事件
+## 2026-07-07 错误：workflow 推送不触发其他 workflow
 
-**原因**：免费版 API 的 `/matches` 和 `/matches/{id}` 端点不包含 `goals`、`bookings`、`substitutions` 字段。这些是付费功能。
+**错误信息**：数据更新后网站不刷新，gh-pages 分支永远是旧数据
 
-**解决方案**：改用「简化版事件」方案——从半场/全场比分差推断进球，从射手榜匹配进球球员。
+**原因**：`update-data.yml` 用 `GITHUB_TOKEN` 推送到 master，但 GitHub Actions 安全机制规定 workflow 触发的 push 不会再触发其他 workflow。所以 `deploy-pages.yml` 永远不会被数据更新推送触发。
 
-**预防措施**：使用新 API 前先测试单个请求确认数据完整性。
+**解决方案**：将数据抓取和 gh-pages 部署合并在同一个 workflow 中，一步完成。
 
-**置信度**：高
-
----
-
-## 2026-07-05 错误：GitHub Actions push 失败 - 权限不足
-
-**原因**：GitHub Actions 默认 GITHUB_TOKEN 没有 push 权限。
-
-**解决方案**：在 workflow 文件中添加 `permissions: contents: write`。
-
-**预防措施**：所有需要自动 push 的 workflow 都要加这个权限。
+**预防措施**：多个 workflow 有依赖关系时，优先考虑合并为一个 workflow，或使用 `workflow_run` 事件触发。
 
 **置信度**：高
 
 ---
 
-## 2026-07-05 错误：GitHub Actions push 失败 - 找不到文件
+## 2026-07-07 错误：免费 API 并发请求触发 429
 
-**原因**：checkout 默认 `fetch-depth: 1`（浅克隆），导致 git 历史不完整，push 失败。
+**错误信息**：`Error: HTTP 429 for https://api.football-data.org/v4/...`
 
-**解决方案**：在 checkout 步骤添加 `fetch-depth: 0`。
+**原因**：football-data.org 免费版限制约10次/分钟，`Promise.all` 同时发3个请求容易超限。
 
-**预防措施**：需要 push 的 workflow 都要设置完整克隆。
+**解决方案**：改为顺序请求（间隔600ms）+ 自动重试（最多3次，429时等2秒）。
 
-**置信度**：高
-
----
-
-## 2026-07-05 错误：赛事阶段显示 null 队名
-
-**原因**：未开始的淘汰赛还没有确定对阵双方，API 返回 null。
-
-**解决方案**：前端过滤掉 `status !== 'FINISHED'` 的比赛。
-
-**预防措施**：展示数据前先检查必要字段是否为空。
+**预防措施**：调用免费 API 时默认用顺序请求，避免并发。
 
 **置信度**：高
 
 ---
 
-## 2026-07-05 错误：socks5 代理导致 SSL 握手失败
+## 2026-07-06 错误：GitHub Pages 部署持续失败
 
-**原因**：Windows PowerShell 的 git 对 socks5 代理支持不好。
+**错误信息**：`Deployment failed, try again later.`
 
-**解决方案**：改用 `http://127.0.0.1:7897` 代理。
+**原因**：使用 `actions/deploy-pages@v4`（GitHub Actions 部署 API）部署不稳定，artifact 上传成功但 deploy 步骤总是报错。这是 GitHub 基础设施问题，不是配置问题。
 
-**预防措施**：Windows 环境下优先用 http 代理。
+**解决方案**：改用 `peaceiris/actions-gh-pages@v4`，将文件推送到 gh-pages 分支部署。
 
-**置信度**：高
-
----
-
-## 2026-07-06 错误：所有比赛时间偏移8小时（北京时间双重叠加）
-
-**原因**：`formatDate()` 和日期判断代码使用 `getHours()`、`getMonth()`、`getDate()` 等**本地时间方法**，而非 `getUTCHours()` 等UTC方法。当脚本在非UTC时区的机器上运行时（如本地 UTC+8），`new Date(utcTimestamp + 8h)` 的本地时间方法会再次应用时区偏移，导致双重叠加。
-
-**示例**：巴西vs挪威 API 返回 `2026-07-05T20:00:00Z`
-- 修复前（本地UTC+8运行）：`getHours()`=4（已是北京时间）→ +8 → 12:00 ❌
-- 修复后：`getUTCHours()`=4（正确）→ 不再偏移 → 4:00 ✓
-
-**解决方案**：所有时间计算统一使用 `toBeijing()` 辅助函数，内部用 `getUTC*()` 方法提取北京时间组件。
-
-**预防措施**：涉及跨时区时间计算时，始终用 UTC 方法提取时间组件，避免依赖本地时区。
+**预防措施**：新项目优先用 gh-pages 分支部署，不用 GitHub Actions 部署 API。
 
 **置信度**：高
 
 ---
 
-## 2026-07-06 错误：GitHub Pages 部署失败
+## 2026-07-06 错误：git push 连接 github.com:443 超时
 
-**原因**：GitHub Pages 默认使用 Jekyll 构建站点，但项目是纯 HTML 静态站点，没有 Jekyll 配置文件，导致构建失败。
+**错误信息**：`Failed to connect to github.com:443 after 21000 ms: Could not connect to server`
 
-**解决方案**：在仓库根目录添加空的 `.nojekyll` 文件，告诉 GitHub Pages 跳过 Jekyll 处理。
+**原因**：VPN 默认只代理浏览器流量，终端（PowerShell）的 git 命令不经过 VPN 代理。
 
-**预防措施**：所有纯静态 HTML 项目部署到 GitHub Pages 时，都添加 `.nojekyll` 文件。
+**解决方案**：配置 git 全局代理 `git config --global http.proxy http://127.0.0.1:7897`
+
+**预防措施**：使用 GitHub CLI 或操作 git 时，先确认代理配置是否生效。
+
+**置信度**：高
+
+---
+
+## 2026-07-06 错误：deploy-pages.yml 放错位置
+
+**错误信息**：workflow 未被 GitHub 识别
+
+**原因**：用户手动上传文件时放到了仓库根目录，而不是 `.github/workflows/` 目录下。
+
+**解决方案**：确保 workflow 文件在 `.github/workflows/` 路径下。
+
+**预防措施**：指导用户上传文件时明确说明路径。
 
 **置信度**：高
 

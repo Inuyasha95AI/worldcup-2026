@@ -6,29 +6,27 @@
 
 ## 规则
 
-- GitHub Actions 自动 push 必须加 `permissions: contents: write` + `checkout fetch-depth: 0`
-- 展示数据前必须检查必要字段是否为空，过滤掉 null/未确定的内容
-- 只展示已结束的比赛，未开始的对用户没有参考价值
-- Windows 下 git push 用 http 代理，不用 socks5
-- 使用新 API 前先测试单个请求确认数据完整性
-- 跨时区时间计算必须用 `getUTC*()` 方法，不能用 `getHours()` 等本地时间方法
-- 静态 HTML 项目部署 GitHub Pages 必须添加 `.nojekyll` 文件
+- GitHub Actions 用 `GITHUB_TOKEN` 推送不会触发其他 workflow，有依赖关系的 workflow 必须合并或用 `workflow_run`
+- GitHub Pages 部署优先用 `peaceiris/actions-gh-pages@v4`（gh-pages 分支），不用 `actions/deploy-pages@v4`（Actions API）
+- 使用 gh-pages 分支部署时，Pages Source 必须设为 "Deploy from a branch" → gh-pages
+- 调用免费 API 时默认顺序请求（间隔600ms），必须有自动重试机制
+- 操作 GitHub 前先确认 git 代理配置是否正确
+- 指导用户上传文件时明确说明目标路径
 
 ## 模式
 
-- **数据排序模式**：按用户关注度排序（今天 > 进行中 > 待开始 > 已完成），而不是简单按时间
-- **API 数据获取模式**：尽量多取数据（limit 设大），前端再筛选展示，避免遗漏
-- **事件推断模式**：当 API 不提供详细事件时，从半场/全场比分差推断进球分布
-- **球队统计模式**：跨阶段统计需要从所有比赛中按队伍累加，不能只看积分榜
-- **Git 冲突解决模式**：Actions 自动提交与本地冲突时用 `git pull --no-edit --strategy=ours`
+- **Workflow 链式依赖失败**：A推送→B不触发 → 合并A和B为一个workflow
+- **VPN + 终端问题**：VPN 只代理浏览器 → 配置 git 全局代理
+- **GitHub Pages 部署失败**：Actions API 不稳定 → 改用 gh-pages 分支部署
+- **定时任务延迟**：GitHub 免费账户 cron 不精确 → 增加定时次数缓解
+- **API 速率限制**：并发请求触发429 → 顺序请求 + 自动重试
 
 ## 最佳实践
 
-- 免费 API 的数据限制要提前测试，不要假设它包含所有字段
-- 用户纠正 > 我的判断，用户说的「没用」就是没用
-- 定时任务要考虑时区转换，UTC 和北京时间差 8 小时
-- 展示「近期」数据时，优先展示今天的内容，而不是最早的内容
-- GitHub Pages 有 CDN 缓存，推送后需等待几分钟或添加 URL 参数刷新
-- 创建 `toBeijing()` 等时区转换辅助函数，统一处理时间格式化
+- 多个 workflow 有依赖关系时，优先合并为一个
+- 调用外部 API 始终加 retry 逻辑（至少3次）
+- 遇到 git push 连接超时，先检查代理配置
+- 新项目部署 GitHub Pages，直接用 gh-pages 分支方案
+- cron 定时任务多设几个时间点，避免完全错过更新
 
 ---
