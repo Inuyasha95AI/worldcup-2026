@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-06T00:03:48.253Z",
-  "lastUpdatedBeijing": "2026-07-06 08:03",
+  "lastUpdated": "2026-07-06T08:16:18.945Z",
+  "lastUpdatedBeijing": "2026-07-06 16:16",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 91,
-    "totalGoals": 282,
-    "avgGoals": "3.10",
+    "finishedMatches": 92,
+    "totalGoals": 287,
+    "avgGoals": "3.12",
     "liveMatches": 0
   },
   "stages": {
@@ -19,7 +19,7 @@
     },
     "1/8决赛": {
       "total": 8,
-      "finished": 3
+      "finished": 4
     },
     "1/4决赛": {
       "total": 4,
@@ -208,16 +208,16 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "挪威",
+        "shortName": "挪威",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
         "home": null,
@@ -444,15 +444,15 @@
         "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 3
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
-      "winner": null,
-      "status": "2026-07-06 01:00:00Z",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1037,6 +1037,20 @@
         "text": "全场共 3 粒进球"
       }
     ],
+    "537378": [
+      {
+        "type": "halftime",
+        "text": "半场 1-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1602,15 +1616,15 @@
         "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 3
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
-      "winner": null,
-      "status": "2026-07-06 01:00:00Z",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
     }
   ],
@@ -1816,16 +1830,16 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "挪威",
+        "shortName": "挪威",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
         "home": null,
@@ -2750,9 +2764,19 @@
       "team": "英格兰",
       "teamTla": "ENG",
       "crest": "https://crests.football-data.org/770.svg",
-      "goals": 5,
-      "assists": 0,
-      "penalties": 1,
+      "goals": 6,
+      "assists": 1,
+      "penalties": 2,
+      "playedMatches": 5
+    },
+    {
+      "name": "基尼奥内斯",
+      "team": "墨西哥",
+      "teamTla": "MEX",
+      "crest": "https://crests.football-data.org/769.svg",
+      "goals": 4,
+      "assists": 1,
+      "penalties": 0,
       "playedMatches": 5
     },
     {
@@ -2760,6 +2784,16 @@
       "team": "巴西",
       "teamTla": "BRA",
       "crest": "https://crests.football-data.org/764.svg",
+      "goals": 4,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "贝林厄姆",
+      "team": "英格兰",
+      "teamTla": "ENG",
+      "crest": "https://crests.football-data.org/770.svg",
       "goals": 4,
       "assists": 1,
       "penalties": 0,
@@ -2796,13 +2830,13 @@
       "playedMatches": 4
     },
     {
-      "name": "基尼奥内斯",
+      "name": "Raúl Jiménez",
       "team": "墨西哥",
       "teamTla": "MEX",
       "crest": "https://crests.football-data.org/769.svg",
       "goals": 3,
-      "assists": 1,
-      "penalties": 0,
+      "assists": 0,
+      "penalties": 1,
       "playedMatches": 5
     },
     {
@@ -2926,16 +2960,6 @@
       "playedMatches": 4
     },
     {
-      "name": "Raúl Jiménez",
-      "team": "墨西哥",
-      "teamTla": "MEX",
-      "crest": "https://crests.football-data.org/769.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0,
-      "playedMatches": 5
-    },
-    {
       "name": "Cyle Larin",
       "team": "加拿大",
       "teamTla": "CAN",
@@ -3044,16 +3068,6 @@
       "assists": 0,
       "penalties": 1,
       "playedMatches": 4
-    },
-    {
-      "name": "贝林厄姆",
-      "team": "英格兰",
-      "teamTla": "ENG",
-      "crest": "https://crests.football-data.org/770.svg",
-      "goals": 2,
-      "assists": 1,
-      "penalties": 0,
-      "playedMatches": 5
     },
     {
       "name": "Daniel Muñoz",
@@ -3279,6 +3293,26 @@
     },
     {
       "team": {
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
+      },
+      "goals": 11,
+      "played": 5
+    },
+    {
+      "team": {
+        "name": "墨西哥",
+        "shortName": "墨西哥",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/769.svg"
+      },
+      "goals": 10,
+      "played": 5
+    },
+    {
+      "team": {
         "name": "美国",
         "shortName": "美国",
         "tla": "USA",
@@ -3296,26 +3330,6 @@
       },
       "goals": 10,
       "played": 5
-    },
-    {
-      "team": {
-        "name": "埃及",
-        "shortName": "埃及",
-        "tla": "EGY",
-        "crest": "https://crests.football-data.org/825.svg"
-      },
-      "goals": 10,
-      "played": 4
-    },
-    {
-      "team": {
-        "name": "塞内加尔",
-        "shortName": "塞内加尔",
-        "tla": "SEN",
-        "crest": "https://crests.football-data.org/senegal.svg"
-      },
-      "goals": 10,
-      "played": 4
     }
   ]
 }
