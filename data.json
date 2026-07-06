@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-05T23:15:11.960Z",
-  "lastUpdatedBeijing": "2026-07-06 07:15",
+  "lastUpdated": "2026-07-06T00:03:48.253Z",
+  "lastUpdatedBeijing": "2026-07-06 08:03",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 91,
@@ -426,8 +426,8 @@
     {
       "id": 537378,
       "date": "7月6日",
-      "time": "8:00",
-      "dateFull": "7-06 8:00",
+      "time": "9:00",
+      "dateFull": "7-06 9:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -452,7 +452,7 @@
         "away": null
       },
       "winner": null,
-      "status": "TIMED",
+      "status": "2026-07-06 01:00:00Z",
       "venue": null
     },
     {
@@ -1584,8 +1584,8 @@
     {
       "id": 537378,
       "date": "7月6日",
-      "time": "8:00",
-      "dateFull": "7-06 8:00",
+      "time": "9:00",
+      "dateFull": "7-06 9:00",
       "stage": "1/8决赛",
       "group": "",
       "matchday": null,
@@ -1610,43 +1610,11 @@
         "away": null
       },
       "winner": null,
-      "status": "TIMED",
+      "status": "2026-07-06 01:00:00Z",
       "venue": null
     }
   ],
   "upcomingMatches": [
-    {
-      "id": 537378,
-      "date": "7月6日",
-      "time": "8:00",
-      "dateFull": "7-06 8:00",
-      "stage": "1/8决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "墨西哥",
-        "shortName": "墨西哥",
-        "tla": "MEX",
-        "crest": "https://crests.football-data.org/769.svg"
-      },
-      "awayTeam": {
-        "name": "英格兰",
-        "shortName": "英格兰",
-        "tla": "ENG",
-        "crest": "https://crests.football-data.org/770.svg"
-      },
-      "score": {
-        "home": null,
-        "away": null
-      },
-      "halfTime": {
-        "home": null,
-        "away": null
-      },
-      "winner": null,
-      "status": "TIMED",
-      "venue": null
-    },
     {
       "id": 537379,
       "date": "7月7日",
@@ -1844,6 +1812,38 @@
       "date": "7月12日",
       "time": "5:00",
       "dateFull": "7-12 5:00",
+      "stage": "1/4决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "crest": null
+      },
+      "awayTeam": {
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "crest": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "halfTime": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "status": "TIMED",
+      "venue": null
+    },
+    {
+      "id": 537386,
+      "date": "7月12日",
+      "time": "9:00",
+      "dateFull": "7-12 9:00",
       "stage": "1/4决赛",
       "group": "",
       "matchday": null,
