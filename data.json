@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-06T22:58:05.197Z",
-  "lastUpdatedBeijing": "2026-07-07 06:58",
+  "lastUpdated": "2026-07-07T02:11:52.092Z",
+  "lastUpdatedBeijing": "2026-07-07 10:11",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 93,
-    "totalGoals": 288,
-    "avgGoals": "3.10",
+    "finishedMatches": 94,
+    "totalGoals": 293,
+    "avgGoals": "3.12",
     "liveMatches": 0
   },
   "stages": {
@@ -19,7 +19,7 @@
     },
     "1/8决赛": {
       "total": 8,
-      "finished": 5
+      "finished": 6
     },
     "1/4决赛": {
       "total": 4,
@@ -380,15 +380,15 @@
         "crest": "https://crests.football-data.org/805.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 4
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1057,6 +1057,20 @@
         "text": "全场 0-1"
       }
     ],
+    "537380": [
+      {
+        "type": "halftime",
+        "text": "半场 1-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-4"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1622,51 +1636,19 @@
         "crest": "https://crests.football-data.org/805.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 4
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
     }
   ],
   "upcomingMatches": [
-    {
-      "id": 537380,
-      "date": "7月7日",
-      "time": "8:00",
-      "dateFull": "7-07 8:00",
-      "stage": "1/8决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "美国",
-        "shortName": "美国",
-        "tla": "USA",
-        "crest": "https://crests.football-data.org/usa.svg"
-      },
-      "awayTeam": {
-        "name": "比利时",
-        "shortName": "比利时",
-        "tla": "BEL",
-        "crest": "https://crests.football-data.org/805.svg"
-      },
-      "score": {
-        "home": null,
-        "away": null
-      },
-      "halfTime": {
-        "home": null,
-        "away": null
-      },
-      "winner": null,
-      "status": "TIMED",
-      "venue": null
-    },
     {
       "id": 537381,
       "date": "7月8日",
@@ -1864,6 +1846,38 @@
       "date": "7月15日",
       "time": "3:00",
       "dateFull": "7-15 3:00",
+      "stage": "半决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "crest": null
+      },
+      "awayTeam": {
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "crest": null
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "halfTime": {
+        "home": null,
+        "away": null
+      },
+      "winner": null,
+      "status": "TIMED",
+      "venue": null
+    },
+    {
+      "id": 537388,
+      "date": "7月16日",
+      "time": "3:00",
+      "dateFull": "7-16 3:00",
       "stage": "半决赛",
       "group": "",
       "matchday": null,
@@ -2966,6 +2980,16 @@
       "playedMatches": 5
     },
     {
+      "name": "卢卡库",
+      "team": "比利时",
+      "teamTla": "BEL",
+      "crest": "https://crests.football-data.org/805.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
       "name": "Cyle Larin",
       "team": "加拿大",
       "teamTla": "CAN",
@@ -3171,17 +3195,7 @@
       "teamTla": "BEL",
       "crest": "https://crests.football-data.org/805.svg",
       "goals": 2,
-      "assists": 1,
-      "penalties": 0,
-      "playedMatches": 5
-    },
-    {
-      "name": "卢卡库",
-      "team": "比利时",
-      "teamTla": "BEL",
-      "crest": "https://crests.football-data.org/805.svg",
-      "goals": 2,
-      "assists": 1,
+      "assists": 2,
       "penalties": 0,
       "playedMatches": 5
     },
@@ -3206,6 +3220,16 @@
       "playedMatches": 5
     },
     {
+      "name": "Malik Tillman",
+      "team": "美国",
+      "teamTla": "USA",
+      "crest": "https://crests.football-data.org/usa.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
       "name": "Azzedine Ounahi",
       "team": "摩洛哥",
       "teamTla": "MAR",
@@ -3216,24 +3240,14 @@
       "playedMatches": 5
     },
     {
-      "name": "Ladislav Krejčí",
-      "team": "捷克",
-      "teamTla": "CZE",
-      "crest": "https://crests.football-data.org/798.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0,
-      "playedMatches": 3
-    },
-    {
-      "name": "黄仁范",
-      "team": "韩国",
-      "teamTla": "KOR",
-      "crest": "https://crests.football-data.org/772.png",
-      "goals": 1,
+      "name": "Charles De Ketelaere",
+      "team": "比利时",
+      "teamTla": "BEL",
+      "crest": "https://crests.football-data.org/805.svg",
+      "goals": 2,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 3
+      "playedMatches": 5
     }
   ],
   "teamGoalsRank": [
@@ -3279,12 +3293,32 @@
     },
     {
       "team": {
+        "name": "比利时",
+        "shortName": "比利时",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg"
+      },
+      "goals": 13,
+      "played": 5
+    },
+    {
+      "team": {
         "name": "挪威",
         "shortName": "挪威",
         "tla": "NOR",
         "crest": "https://crests.football-data.org/813.svg"
       },
       "goals": 12,
+      "played": 5
+    },
+    {
+      "team": {
+        "name": "美国",
+        "shortName": "美国",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg"
+      },
+      "goals": 11,
       "played": 5
     },
     {
@@ -3313,26 +3347,6 @@
         "shortName": "墨西哥",
         "tla": "MEX",
         "crest": "https://crests.football-data.org/769.svg"
-      },
-      "goals": 10,
-      "played": 5
-    },
-    {
-      "team": {
-        "name": "美国",
-        "shortName": "美国",
-        "tla": "USA",
-        "crest": "https://crests.football-data.org/usa.svg"
-      },
-      "goals": 10,
-      "played": 4
-    },
-    {
-      "team": {
-        "name": "巴西",
-        "shortName": "巴西",
-        "tla": "BRA",
-        "crest": "https://crests.football-data.org/764.svg"
       },
       "goals": 10,
       "played": 5
