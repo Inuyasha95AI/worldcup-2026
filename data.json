@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-07T22:51:22.724Z",
-  "lastUpdatedBeijing": "2026-07-08 06:51",
+  "lastUpdated": "2026-07-08T01:52:11.737Z",
+  "lastUpdatedBeijing": "2026-07-08 09:52",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 96,
-    "totalGoals": 301,
-    "avgGoals": "3.14",
+    "totalGoals": 305,
+    "avgGoals": "3.18",
     "liveMatches": 0
   },
   "stages": {
@@ -316,8 +316,8 @@
         "crest": "https://crests.football-data.org/818.svg"
       },
       "score": {
-        "home": 2,
-        "away": 1
+        "home": 4,
+        "away": 3
       },
       "halfTime": {
         "home": 0,
@@ -1088,11 +1088,11 @@
     "537382": [
       {
         "type": "fulltime",
-        "text": "全场 2-1"
+        "text": "全场 4-3"
       },
       {
         "type": "highlight",
-        "text": "全场共 3 粒进球"
+        "text": "全场共 7 粒进球"
       }
     ],
     "537391": [
@@ -1660,8 +1660,8 @@
         "crest": "https://crests.football-data.org/818.svg"
       },
       "score": {
-        "home": 2,
-        "away": 1
+        "home": 4,
+        "away": 3
       },
       "halfTime": {
         "home": 0,
@@ -3307,6 +3307,16 @@
     },
     {
       "team": {
+        "name": "瑞士",
+        "shortName": "瑞士",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg"
+      },
+      "goals": 13,
+      "played": 5
+    },
+    {
+      "team": {
         "name": "摩洛哥",
         "shortName": "摩洛哥",
         "tla": "MAR",
@@ -3361,16 +3371,6 @@
         "shortName": "美国",
         "tla": "USA",
         "crest": "https://crests.football-data.org/usa.svg"
-      },
-      "goals": 11,
-      "played": 5
-    },
-    {
-      "team": {
-        "name": "瑞士",
-        "shortName": "瑞士",
-        "tla": "SUI",
-        "crest": "https://crests.football-data.org/788.svg"
       },
       "goals": 11,
       "played": 5
