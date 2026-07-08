@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-08T04:56:45.262Z",
-  "lastUpdatedBeijing": "2026-07-08 12:56",
+  "lastUpdated": "2026-07-08T06:24:32.415Z",
+  "lastUpdatedBeijing": "2026-07-08 14:24",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 96,
@@ -176,16 +176,16 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "瑞士",
+        "shortName": "瑞士",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg"
       },
       "score": {
         "home": null,
@@ -323,7 +323,7 @@
         "home": 0,
         "away": 0
       },
-      "winner": null,
+      "winner": "HOME_TEAM",
       "status": "FINISHED",
       "venue": null
     },
@@ -1667,7 +1667,7 @@
         "home": 0,
         "away": 0
       },
-      "winner": null,
+      "winner": "HOME_TEAM",
       "status": "FINISHED",
       "venue": null
     }
@@ -1778,16 +1778,16 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "瑞士",
+        "shortName": "瑞士",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg"
       },
       "score": {
         "home": null,
