@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-08T06:24:32.415Z",
-  "lastUpdatedBeijing": "2026-07-08 14:24",
+  "lastUpdated": "2026-07-08T22:55:35.674Z",
+  "lastUpdatedBeijing": "2026-07-09 06:55",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 96,
@@ -1542,72 +1542,6 @@
   },
   "yesterdayMatches": [
     {
-      "id": 537379,
-      "date": "7月7日",
-      "time": "3:00",
-      "dateFull": "7-07 3:00",
-      "stage": "1/8决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "葡萄牙",
-        "shortName": "葡萄牙",
-        "tla": "POR",
-        "crest": "https://crests.football-data.org/765.svg"
-      },
-      "awayTeam": {
-        "name": "西班牙",
-        "shortName": "西班牙",
-        "tla": "ESP",
-        "crest": "https://crests.football-data.org/760.svg"
-      },
-      "score": {
-        "home": 0,
-        "away": 1
-      },
-      "halfTime": {
-        "home": 0,
-        "away": 0
-      },
-      "winner": "AWAY_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    },
-    {
-      "id": 537380,
-      "date": "7月7日",
-      "time": "8:00",
-      "dateFull": "7-07 8:00",
-      "stage": "1/8决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "美国",
-        "shortName": "美国",
-        "tla": "USA",
-        "crest": "https://crests.football-data.org/usa.svg"
-      },
-      "awayTeam": {
-        "name": "比利时",
-        "shortName": "比利时",
-        "tla": "BEL",
-        "crest": "https://crests.football-data.org/805.svg"
-      },
-      "score": {
-        "home": 1,
-        "away": 4
-      },
-      "halfTime": {
-        "home": 1,
-        "away": 2
-      },
-      "winner": "AWAY_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    }
-  ],
-  "todayMatches": [
-    {
       "id": 537381,
       "date": "7月8日",
       "time": "0:00",
@@ -1672,6 +1606,7 @@
       "venue": null
     }
   ],
+  "todayMatches": [],
   "upcomingMatches": [
     {
       "id": 537383,
