@@ -198,9 +198,30 @@ async function main() {
   const scheduled = allMatches.filter(m => m.status==='TIMED'||m.status==='SCHEDULED');
   const live = allMatches.filter(m => m.status==='IN_PLAY'||m.status==='PAUSED');
 
+  async function enrichMatchDetails(matchList) {
+    for (let i = 0; i < matchList.length; i++) {
+      const m = matchList[i];
+      if (m.status !== 'FINISHED') continue;
+      try {
+        const detail = await fetch(BASE_URL+'/matches/'+m.id);
+        if (detail.goals) m.goals = detail.goals;
+        if (detail.bookings) m.bookings = detail.bookings;
+        if (detail.substitutions) m.substitutions = detail.substitutions;
+        if (detail.score?.penalties && detail.score.winner === 'PENS') {
+          m.score = m.score || {};
+          m.score.penalties = detail.score.penalties;
+          m.score.winner = detail.score.winner;
+        }
+        await new Promise(r => setTimeout(r, 200));
+      } catch(e) {
+        console.log('Failed to enrich match '+m.id+': '+e.message);
+      }
+    }
+  }
+
   function processMatch(m) {
     const di = formatDate(m.utcDate);
-    return {
+    const result = {
       id: m.id, date: di.date, time: di.time, dateFull: di.full,
       stage: getStageName(m.stage), group: getGroupName(m.group), matchday: m.matchday,
       homeTeam: toCnTeam(m.homeTeam),
@@ -209,6 +230,28 @@ async function main() {
       halfTime: { home: m.score?.halfTime?.home, away: m.score?.halfTime?.away },
       winner: m.score?.winner, status: m.status, venue: m.venue||null
     };
+    if (m.score?.penalties && m.score.winner === 'PENS') {
+      result.penalties = { home: m.score.penalties.home, away: m.score.penalties.away };
+    }
+    if (m.goals && m.goals.length > 0) {
+      result.goals = m.goals.map(g => ({
+        minute: g.minute,
+        team: cnTeam(g.team?.name) || g.team?.name,
+        scorer: cnPlayer(g.scorer?.name) || g.scorer?.name,
+        assist: g.assist ? (cnPlayer(g.assist?.name) || g.assist?.name) : null,
+        type: g.type
+      }));
+    }
+    if (m.bookings && m.bookings.length > 0) {
+      result.bookings = m.bookings.map(b => ({
+        minute: b.minute,
+        team: cnTeam(b.team?.name) || b.team?.name,
+        player: cnPlayer(b.player?.name) || b.player?.name,
+        reason: b.reason,
+        card: b.card
+      }));
+    }
+    return result;
   }
 
   const yesterdayMs = new Date(now.getTime() + 8*60*60*1000).getTime() - 24*60*60*1000;
@@ -275,8 +318,12 @@ async function main() {
   const knockoutMatches = allMatches
     .filter(m => m.stage !== 'GROUP_STAGE')
     .sort((a,b) => new Date(b.utcDate) - new Date(a.utcDate))
-    .slice(0, 16)
-    .map(processMatch);
+    .slice(0, 16);
+
+  console.log('Enriching match details for knockout matches...');
+  await enrichMatchDetails(knockoutMatches);
+
+  const knockoutProcessed = knockoutMatches.map(processMatch);
 
   function generateMatchEvents(m) {
     const events = [];
@@ -286,24 +333,77 @@ async function main() {
     const homeHT = ht.home || 0, awayHT = ht.away || 0;
     const homeFT = ft.home || 0, awayFT = ft.away || 0;
     const homeSecond = homeFT - homeHT, awaySecond = awayFT - awayHT;
+    const isPenalty = m.score?.winner === 'PENS';
 
     if (homeHT > 0 || awayHT > 0) {
       events.push({ type: 'halftime', text: '半场 ' + homeHT + '-' + awayHT });
     }
-    if (homeSecond > 0 || awaySecond > 0) {
-      events.push({ type: 'fulltime', text: '全场 ' + homeFT + '-' + awayFT });
+    if (isPenalty && m.score?.penalties) {
+      const ph = m.score.penalties.home || 0, pa = m.score.penalties.away || 0;
+      events.push({ type: 'fulltime', text: '全场 ' + homeFT + '-' + awayFT + ' (点球 ' + ph + '-' + pa + ')' });
+      if (m.winner === 'HOME_TEAM') {
+        events.push({ type: 'result', text: m.homeTeam.shortName + ' 点球晋级' });
+      } else if (m.winner === 'AWAY_TEAM') {
+        events.push({ type: 'result', text: m.awayTeam.shortName + ' 点球晋级' });
+      }
+    } else {
+      if (homeSecond > 0 || awaySecond > 0) {
+        events.push({ type: 'fulltime', text: '全场 ' + homeFT + '-' + awayFT });
+      }
+      if (m.winner === 'HOME_TEAM') {
+        events.push({ type: 'result', text: m.homeTeam.shortName + ' 晋级' });
+      } else if (m.winner === 'AWAY_TEAM') {
+        events.push({ type: 'result', text: m.awayTeam.shortName + ' 晋级' });
+      }
     }
-    if (m.winner === 'HOME_TEAM') {
-      events.push({ type: 'result', text: m.homeTeam.shortName + ' 晋级' });
-    } else if (m.winner === 'AWAY_TEAM') {
-      events.push({ type: 'result', text: m.awayTeam.shortName + ' 晋级' });
-    } else if (m.winner === 'PENALTIES') {
-      events.push({ type: 'result', text: '点球大战决胜' });
-    }
+
     const totalGoals = homeFT + awayFT;
     if (totalGoals >= 3) {
       events.push({ type: 'highlight', text: '全场共 ' + totalGoals + ' 粒进球' });
     }
+
+    if (m.goals && m.goals.length > 0) {
+      const goalsByTeam = {};
+      m.goals.forEach(g => {
+        const team = cnTeam(g.team?.name) || g.team?.name || '未知';
+        if (!goalsByTeam[team]) goalsByTeam[team] = [];
+        goalsByTeam[team].push(g);
+      });
+      Object.keys(goalsByTeam).forEach(team => {
+        const teamGoals = goalsByTeam[team];
+        if (teamGoals.length >= 1) {
+          const goalTexts = teamGoals.map(g => {
+            const scorer = cnPlayer(g.scorer?.name) || g.scorer?.name || '未知';
+            return (g.minute ? g.minute + "'" : '') + ' ' + scorer;
+          });
+          events.push({ type: 'goals', text: team + ': ' + goalTexts.join(', ') });
+        }
+      });
+    }
+
+    if (m.bookings && m.bookings.length > 0) {
+      const yellowCards = {};
+      const redCards = {};
+      m.bookings.forEach(b => {
+        const team = cnTeam(b.team?.name) || b.team?.name || '未知';
+        if (!yellowCards[team]) yellowCards[team] = 0;
+        if (!redCards[team]) redCards[team] = 0;
+        if (b.card === 'YELLOW_CARD') yellowCards[team]++;
+        else if (b.card === 'RED_CARD' || b.card === 'YELLOW_RED') redCards[team]++;
+      });
+      const cardTexts = [];
+      Object.keys(yellowCards).forEach(team => {
+        const y = yellowCards[team];
+        const r = redCards[team] || 0;
+        if (y > 0 || r > 0) {
+          cardTexts.push(team + ' ' + y + '黄' + (r > 0 ? r + '红' : ''));
+        }
+      });
+      if (cardTexts.length > 0) {
+        events.push({ type: 'cards', text: '红黄牌: ' + cardTexts.join(' | ') });
+      }
+    }
+
     return events;
   }
 
@@ -317,7 +417,7 @@ async function main() {
     lastUpdated: new Date().toISOString(),
     lastUpdatedBeijing: bjNow.year+'-'+String(bjNow.month).padStart(2,'0')+'-'+String(bjNow.day).padStart(2,'0')+' '+String(bjNow.hours).padStart(2,'0')+':'+String(bjNow.minutes).padStart(2,'0'),
     stats: { totalMatches:allMatches.length, finishedMatches:finished.length, totalGoals, avgGoals:finished.length>0?(totalGoals/finished.length).toFixed(2):'0', liveMatches:live.length },
-    stages, knockoutMatches, matchEvents, yesterdayMatches, todayMatches, upcomingMatches, groups, topScorers, teamGoalsRank
+    stages, knockoutMatches: knockoutProcessed, matchEvents, yesterdayMatches, todayMatches, upcomingMatches, groups, topScorers, teamGoalsRank
   };
 
   fs.writeFileSync(path.join(__dirname,'..','data.json'), JSON.stringify(result,null,2), 'utf8');

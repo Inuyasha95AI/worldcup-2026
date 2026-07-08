@@ -339,6 +339,7 @@
     <script>
     (function() {
         var app = document.getElementById('app');
+        var lastUpdated = '';
 
         function renderMatchCard(m) {
             var statusClass = m.status === 'FINISHED' ? 'status-finished' :
@@ -347,6 +348,11 @@
                            (m.status === 'IN_PLAY' ? '进行中' : m.status === 'PAUSED' ? '中场' : '未开始');
             var scoreText = (m.score.home !== null && m.score.home !== undefined) ?
                            m.score.home + ' - ' + m.score.away : 'VS';
+
+            var penaltiesHtml = '';
+            if (m.penalties && m.status === 'FINISHED') {
+                penaltiesHtml = '<div style="font-size:0.7rem;color:var(--text-muted);margin-top:0.2rem;">点球 ' + m.penalties.home + ' - ' + m.penalties.away + '</div>';
+            }
 
             var stageHtml = '';
             if (m.stage && m.stage !== '小组赛') {
@@ -373,7 +379,7 @@
                         '<img class="team-flag" src="' + m.homeTeam.crest + '" alt="' + m.homeTeam.name + '" onerror="this.src=\'data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 48 32&quot;><rect fill=&quot;%23333&quot; width=&quot;48&quot; height=&quot;32&quot;/></svg>\'">' +
                         '<span class="team-name">' + m.homeTeam.shortName + '</span>' +
                     '</div>' +
-                    '<div class="match-score">' + scoreText + '</div>' +
+                    '<div class="match-score">' + scoreText + penaltiesHtml + '</div>' +
                     '<div class="team">' +
                         '<img class="team-flag" src="' + m.awayTeam.crest + '" alt="' + m.awayTeam.name + '" onerror="this.src=\'data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 48 32&quot;><rect fill=&quot;%23333&quot; width=&quot;48&quot; height=&quot;32&quot;/></svg>\'">' +
                         '<span class="team-name">' + m.awayTeam.shortName + '</span>' +
@@ -569,7 +575,11 @@
                         if (evts.length > 0) {
                             evtHtml = '<div style="margin-top:0.5rem;padding-left:1.5rem;">' +
                                 evts.map(function(e) {
-                                    var icon = e.type === 'halftime' ? '⏱' : e.type === 'fulltime' ? '🏁' : e.type === 'result' ? '🏆' : '🔥';
+                                    var icon = e.type === 'halftime' ? '⏱' :
+                                              e.type === 'fulltime' ? '🏁' :
+                                              e.type === 'result' ? '🏆' :
+                                              e.type === 'goals' ? '⚽' :
+                                              e.type === 'cards' ? '🟨🟥' : '🔥';
                                     return '<div style="font-size:0.75rem;color:var(--text-secondary);margin-top:0.25rem;">' + icon + ' ' + e.text + '</div>';
                                 }).join('') + '</div>';
                         }
@@ -658,14 +668,26 @@
 
         setInterval(updateCountdown, 1000);
 
-        fetch('data.json?t=' + Date.now())
-            .then(function(res) { return res.json(); })
-            .then(function(data) { render(data); })
-            .catch(function(err) {
-                app.innerHTML = '<div class="loading"><div style="font-size:2rem;margin-bottom:1rem;">⚽</div>' +
-                    '<div style="color:var(--accent-cyan);margin-bottom:0.5rem;">数据加载失败</div>' +
-                    '<div style="font-size:0.85rem;">请检查网络连接或稍后刷新重试</div></div>';
-            });
+        function loadData() {
+            fetch('data.json?t=' + Date.now())
+                .then(function(res) { return res.json(); })
+                .then(function(data) {
+                    if (data.lastUpdated !== lastUpdated) {
+                        lastUpdated = data.lastUpdated;
+                        render(data);
+                    }
+                })
+                .catch(function(err) {
+                    if (!lastUpdated) {
+                        app.innerHTML = '<div class="loading"><div style="font-size:2rem;margin-bottom:1rem;">⚽</div>' +
+                            '<div style="color:var(--accent-cyan);margin-bottom:0.5rem;">数据加载失败</div>' +
+                            '<div style="font-size:0.85rem;">请检查网络连接或稍后刷新重试</div></div>';
+                    }
+                });
+        }
+
+        loadData();
+        setInterval(loadData, 5 * 60 * 1000);
 
         document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
             anchor.addEventListener('click', function(e) {
