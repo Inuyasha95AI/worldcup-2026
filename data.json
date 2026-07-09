@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-09T07:38:44.764Z",
-  "lastUpdatedBeijing": "2026-07-09 15:38",
+  "lastUpdated": "2026-07-09T23:02:44.818Z",
+  "lastUpdatedBeijing": "2026-07-10 07:02",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 96,
-    "totalGoals": 305,
-    "avgGoals": "3.18",
+    "finishedMatches": 97,
+    "totalGoals": 307,
+    "avgGoals": "3.16",
     "liveMatches": 0
   },
   "stages": {
@@ -23,7 +23,7 @@
     },
     "1/4决赛": {
       "total": 4,
-      "finished": 0
+      "finished": 1
     },
     "半决赛": {
       "total": 2,
@@ -284,15 +284,15 @@
         "crest": "https://crests.football-data.org/morocco.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1095,6 +1095,12 @@
         "text": "全场共 7 粒进球"
       }
     ],
+    "537383": [
+      {
+        "type": "fulltime",
+        "text": "全场 2-0"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1540,74 +1546,8 @@
       }
     ]
   },
-  "yesterdayMatches": [
-    {
-      "id": 537381,
-      "date": "7月8日",
-      "time": "0:00",
-      "dateFull": "7-08 0:00",
-      "stage": "1/8决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "阿根廷",
-        "shortName": "阿根廷",
-        "tla": "ARG",
-        "crest": "https://crests.football-data.org/762.png"
-      },
-      "awayTeam": {
-        "name": "埃及",
-        "shortName": "埃及",
-        "tla": "EGY",
-        "crest": "https://crests.football-data.org/825.svg"
-      },
-      "score": {
-        "home": 3,
-        "away": 2
-      },
-      "halfTime": {
-        "home": 0,
-        "away": 1
-      },
-      "winner": "HOME_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    },
-    {
-      "id": 537382,
-      "date": "7月8日",
-      "time": "4:00",
-      "dateFull": "7-08 4:00",
-      "stage": "1/8决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "瑞士",
-        "shortName": "瑞士",
-        "tla": "SUI",
-        "crest": "https://crests.football-data.org/788.svg"
-      },
-      "awayTeam": {
-        "name": "哥伦比亚",
-        "shortName": "哥伦比亚",
-        "tla": "COL",
-        "crest": "https://crests.football-data.org/818.svg"
-      },
-      "score": {
-        "home": 4,
-        "away": 3
-      },
-      "halfTime": {
-        "home": 0,
-        "away": 0
-      },
-      "winner": "HOME_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    }
-  ],
-  "todayMatches": [],
-  "upcomingMatches": [
+  "yesterdayMatches": [],
+  "todayMatches": [
     {
       "id": 537383,
       "date": "7月10日",
@@ -1629,17 +1569,19 @@
         "crest": "https://crests.football-data.org/morocco.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
       "venue": null
-    },
+    }
+  ],
+  "upcomingMatches": [
     {
       "id": 537384,
       "date": "7月11日",
@@ -2709,6 +2651,16 @@
   },
   "topScorers": [
     {
+      "name": "姆巴佩",
+      "team": "法国",
+      "teamTla": "FRA",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 8,
+      "assists": 2,
+      "penalties": 1,
+      "playedMatches": 6
+    },
+    {
       "name": "梅西",
       "team": "阿根廷",
       "teamTla": "ARG",
@@ -2716,16 +2668,6 @@
       "goals": 8,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 5
-    },
-    {
-      "name": "姆巴佩",
-      "team": "法国",
-      "teamTla": "FRA",
-      "crest": "https://crests.football-data.org/773.svg",
-      "goals": 7,
-      "assists": 2,
-      "penalties": 1,
       "playedMatches": 5
     },
     {
@@ -2747,6 +2689,16 @@
       "assists": 1,
       "penalties": 2,
       "playedMatches": 5
+    },
+    {
+      "name": "登贝莱",
+      "team": "法国",
+      "teamTla": "FRA",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 5,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 6
     },
     {
       "name": "基尼奥内斯",
@@ -2789,16 +2741,6 @@
       "playedMatches": 5
     },
     {
-      "name": "登贝莱",
-      "team": "法国",
-      "teamTla": "FRA",
-      "crest": "https://crests.football-data.org/773.svg",
-      "goals": 4,
-      "assists": 2,
-      "penalties": 0,
-      "playedMatches": 5
-    },
-    {
       "name": "萨尔",
       "team": "塞内加尔",
       "teamTla": "SEN",
@@ -2836,7 +2778,7 @@
       "goals": 3,
       "assists": 0,
       "penalties": 0,
-      "playedMatches": 5
+      "playedMatches": 6
     },
     {
       "name": "哈弗茨",
@@ -3046,7 +2988,7 @@
       "goals": 2,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 5
+      "playedMatches": 6
     },
     {
       "name": "Marko Arnautovic",
@@ -3126,7 +3068,7 @@
       "goals": 2,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 5
+      "playedMatches": 6
     },
     {
       "name": "佩佩",
@@ -3206,10 +3148,20 @@
       "goals": 2,
       "assists": 0,
       "penalties": 0,
-      "playedMatches": 5
+      "playedMatches": 6
     }
   ],
   "teamGoalsRank": [
+    {
+      "team": {
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
+      },
+      "goals": 16,
+      "played": 6
+    },
     {
       "team": {
         "name": "德国",
@@ -3219,16 +3171,6 @@
       },
       "goals": 14,
       "played": 4
-    },
-    {
-      "team": {
-        "name": "法国",
-        "shortName": "法国",
-        "tla": "FRA",
-        "crest": "https://crests.football-data.org/773.svg"
-      },
-      "goals": 14,
-      "played": 5
     },
     {
       "team": {
@@ -3258,7 +3200,7 @@
         "crest": "https://crests.football-data.org/morocco.svg"
       },
       "goals": 13,
-      "played": 5
+      "played": 6
     },
     {
       "team": {
