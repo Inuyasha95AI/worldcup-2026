@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-10T05:51:35.250Z",
-  "lastUpdatedBeijing": "2026-07-10 13:51",
+  "lastUpdated": "2026-07-10T07:31:28.760Z",
+  "lastUpdatedBeijing": "2026-07-10 15:31",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 97,
@@ -144,10 +144,10 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
         "name": null,
@@ -1687,10 +1687,10 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
         "name": null,
