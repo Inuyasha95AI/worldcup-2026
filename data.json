@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-10T07:31:28.760Z",
-  "lastUpdatedBeijing": "2026-07-10 15:31",
+  "lastUpdated": "2026-07-10T22:51:02.064Z",
+  "lastUpdatedBeijing": "2026-07-11 06:50",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 97,
-    "totalGoals": 307,
+    "finishedMatches": 98,
+    "totalGoals": 310,
     "avgGoals": "3.16",
     "liveMatches": 0
   },
@@ -23,7 +23,7 @@
     },
     "1/4决赛": {
       "total": 4,
-      "finished": 1
+      "finished": 2
     },
     "半决赛": {
       "total": 2,
@@ -252,15 +252,15 @@
         "crest": "https://crests.football-data.org/805.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1101,6 +1101,20 @@
         "text": "全场 2-0"
       }
     ],
+    "537384": [
+      {
+        "type": "halftime",
+        "text": "半场 1-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1546,8 +1560,7 @@
       }
     ]
   },
-  "yesterdayMatches": [],
-  "todayMatches": [
+  "yesterdayMatches": [
     {
       "id": 537383,
       "date": "7月10日",
@@ -1581,7 +1594,7 @@
       "venue": null
     }
   ],
-  "upcomingMatches": [
+  "todayMatches": [
     {
       "id": 537384,
       "date": "7月11日",
@@ -1603,17 +1616,19 @@
         "crest": "https://crests.football-data.org/805.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
       "venue": null
-    },
+    }
+  ],
+  "upcomingMatches": [
     {
       "id": 537385,
       "date": "7月12日",
@@ -2738,7 +2753,7 @@
       "goals": 4,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 5
+      "playedMatches": 6
     },
     {
       "name": "萨尔",
@@ -2888,7 +2903,17 @@
       "goals": 3,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 5
+      "playedMatches": 6
+    },
+    {
+      "name": "Charles De Ketelaere",
+      "team": "比利时",
+      "teamTla": "BEL",
+      "crest": "https://crests.football-data.org/805.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 6
     },
     {
       "name": "Cyle Larin",
@@ -3108,7 +3133,7 @@
       "goals": 2,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 5
+      "playedMatches": 6
     },
     {
       "name": "马赫雷斯",
@@ -3139,16 +3164,6 @@
       "assists": 0,
       "penalties": 0,
       "playedMatches": 5
-    },
-    {
-      "name": "Azzedine Ounahi",
-      "team": "摩洛哥",
-      "teamTla": "MAR",
-      "crest": "https://crests.football-data.org/morocco.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0,
-      "playedMatches": 6
     }
   ],
   "teamGoalsRank": [
@@ -3171,6 +3186,16 @@
       },
       "goals": 14,
       "played": 4
+    },
+    {
+      "team": {
+        "name": "比利时",
+        "shortName": "比利时",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg"
+      },
+      "goals": 14,
+      "played": 6
     },
     {
       "team": {
@@ -3211,16 +3236,6 @@
       },
       "goals": 13,
       "played": 4
-    },
-    {
-      "team": {
-        "name": "比利时",
-        "shortName": "比利时",
-        "tla": "BEL",
-        "crest": "https://crests.football-data.org/805.svg"
-      },
-      "goals": 13,
-      "played": 5
     },
     {
       "team": {
