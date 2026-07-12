@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-11T22:37:24.960Z",
-  "lastUpdatedBeijing": "2026-07-12 06:37",
+  "lastUpdated": "2026-07-12T01:53:45.778Z",
+  "lastUpdatedBeijing": "2026-07-12 09:53",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 97,
-    "totalGoals": 305,
+    "finishedMatches": 98,
+    "totalGoals": 308,
     "avgGoals": "3.14",
     "liveMatches": 1
   },
@@ -23,7 +23,7 @@
     },
     "1/4决赛": {
       "total": 4,
-      "finished": 2
+      "finished": 3
     },
     "半决赛": {
       "total": 2,
@@ -188,15 +188,15 @@
         "crest": "https://crests.football-data.org/788.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTime": {
         "home": null,
         "away": null
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "HOME_TEAM",
+      "status": "IN_PLAY",
       "venue": null
     },
     {
@@ -220,15 +220,15 @@
         "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
-        "home": 2,
-        "away": 1
+        "home": 1,
+        "away": 2
       },
       "halfTime": {
         "home": 1,
         "away": 1
       },
-      "winner": "HOME_TEAM",
-      "status": "IN_PLAY",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1101,6 +1101,20 @@
         "text": "全场共 3 粒进球"
       }
     ],
+    "537385": [
+      {
+        "type": "halftime",
+        "text": "半场 1-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1602,15 +1616,15 @@
         "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
-        "home": 2,
-        "away": 1
+        "home": 1,
+        "away": 2
       },
       "halfTime": {
         "home": 1,
         "away": 1
       },
-      "winner": "HOME_TEAM",
-      "status": "IN_PLAY",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1634,51 +1648,19 @@
         "crest": "https://crests.football-data.org/788.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTime": {
         "home": null,
         "away": null
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "HOME_TEAM",
+      "status": "IN_PLAY",
       "venue": null
     }
   ],
   "upcomingMatches": [
-    {
-      "id": 537386,
-      "date": "7月12日",
-      "time": "9:00",
-      "dateFull": "7-12 9:00",
-      "stage": "1/4决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "阿根廷",
-        "shortName": "阿根廷",
-        "tla": "ARG",
-        "crest": "https://crests.football-data.org/762.png"
-      },
-      "awayTeam": {
-        "name": "瑞士",
-        "shortName": "瑞士",
-        "tla": "SUI",
-        "crest": "https://crests.football-data.org/788.svg"
-      },
-      "score": {
-        "home": null,
-        "away": null
-      },
-      "halfTime": {
-        "home": null,
-        "away": null
-      },
-      "winner": null,
-      "status": "TIMED",
-      "venue": null
-    },
     {
       "id": 537387,
       "date": "7月15日",
@@ -2667,9 +2649,9 @@
       "teamTla": "ARG",
       "crest": "https://crests.football-data.org/762.png",
       "goals": 8,
-      "assists": 1,
+      "assists": 2,
       "penalties": 0,
-      "playedMatches": 5
+      "playedMatches": 6
     },
     {
       "name": "哈兰德",
@@ -2696,7 +2678,7 @@
       "team": "英格兰",
       "teamTla": "ENG",
       "crest": "https://crests.football-data.org/770.svg",
-      "goals": 5,
+      "goals": 6,
       "assists": 1,
       "penalties": 0,
       "playedMatches": 6
@@ -2919,7 +2901,7 @@
       "goals": 2,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 5
+      "playedMatches": 6
     },
     {
       "name": "萨默维尔",
@@ -3029,7 +3011,7 @@
       "goals": 2,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 5
+      "playedMatches": 6
     },
     {
       "name": "Ermin Mahmic",
@@ -3225,20 +3207,20 @@
     },
     {
       "team": {
-        "name": "埃及",
-        "shortName": "埃及",
-        "tla": "EGY",
-        "crest": "https://crests.football-data.org/825.svg"
-      },
-      "goals": 12,
-      "played": 5
-    },
-    {
-      "team": {
         "name": "挪威",
         "shortName": "挪威",
         "tla": "NOR",
         "crest": "https://crests.football-data.org/813.svg"
+      },
+      "goals": 13,
+      "played": 6
+    },
+    {
+      "team": {
+        "name": "埃及",
+        "shortName": "埃及",
+        "tla": "EGY",
+        "crest": "https://crests.football-data.org/825.svg"
       },
       "goals": 12,
       "played": 5
