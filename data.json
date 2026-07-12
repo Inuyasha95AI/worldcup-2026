@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-12T05:14:30.918Z",
-  "lastUpdatedBeijing": "2026-07-12 13:14",
+  "lastUpdated": "2026-07-12T06:30:00.835Z",
+  "lastUpdatedBeijing": "2026-07-12 14:29",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 99,
-    "totalGoals": 312,
-    "avgGoals": "3.15",
+    "finishedMatches": 100,
+    "totalGoals": 317,
+    "avgGoals": "3.17",
     "liveMatches": 0
   },
   "stages": {
@@ -19,7 +19,7 @@
     },
     "1/8决赛": {
       "total": 8,
-      "finished": 7
+      "finished": 8
     },
     "1/4决赛": {
       "total": 4,
@@ -112,16 +112,16 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
       },
       "score": {
         "home": null,
@@ -452,7 +452,7 @@
         "away": 2
       },
       "winner": "AWAY_TEAM",
-      "status": "2026-07-06 01:00:00Z",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1035,6 +1035,20 @@
       {
         "type": "highlight",
         "text": "全场共 3 粒进球"
+      }
+    ],
+    "537378": [
+      {
+        "type": "halftime",
+        "text": "半场 1-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
       }
     ],
     "537379": [
@@ -1716,16 +1730,16 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
       },
       "score": {
         "home": null,
@@ -3231,22 +3245,22 @@
     },
     {
       "team": {
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
+      },
+      "goals": 13,
+      "played": 6
+    },
+    {
+      "team": {
         "name": "埃及",
         "shortName": "埃及",
         "tla": "EGY",
         "crest": "https://crests.football-data.org/825.svg"
       },
       "goals": 12,
-      "played": 5
-    },
-    {
-      "team": {
-        "name": "美国",
-        "shortName": "美国",
-        "tla": "USA",
-        "crest": "https://crests.football-data.org/usa.svg"
-      },
-      "goals": 11,
       "played": 5
     }
   ]
