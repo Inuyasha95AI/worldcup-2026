@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-12T01:53:45.778Z",
-  "lastUpdatedBeijing": "2026-07-12 09:53",
+  "lastUpdated": "2026-07-12T05:14:30.918Z",
+  "lastUpdatedBeijing": "2026-07-12 13:14",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 98,
-    "totalGoals": 308,
-    "avgGoals": "3.14",
-    "liveMatches": 1
+    "finishedMatches": 99,
+    "totalGoals": 312,
+    "avgGoals": "3.15",
+    "liveMatches": 0
   },
   "stages": {
     "小组赛": {
@@ -23,7 +23,7 @@
     },
     "1/4决赛": {
       "total": 4,
-      "finished": 3
+      "finished": 4
     },
     "半决赛": {
       "total": 2,
@@ -188,15 +188,15 @@
         "crest": "https://crests.football-data.org/788.svg"
       },
       "score": {
+        "home": 3,
+        "away": 1
+      },
+      "halfTime": {
         "home": 1,
         "away": 0
       },
-      "halfTime": {
-        "home": null,
-        "away": null
-      },
       "winner": "HOME_TEAM",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1115,6 +1115,20 @@
         "text": "全场共 3 粒进球"
       }
     ],
+    "537386": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1648,15 +1662,15 @@
         "crest": "https://crests.football-data.org/788.svg"
       },
       "score": {
+        "home": 3,
+        "away": 1
+      },
+      "halfTime": {
         "home": 1,
         "away": 0
       },
-      "halfTime": {
-        "home": null,
-        "away": null
-      },
       "winner": "HOME_TEAM",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "venue": null
     }
   ],
@@ -3104,6 +3118,16 @@
       "playedMatches": 6
     },
     {
+      "name": "劳塔罗",
+      "team": "阿根廷",
+      "teamTla": "ARG",
+      "crest": "https://crests.football-data.org/762.png",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 1,
+      "playedMatches": 6
+    },
+    {
       "name": "马赫雷斯",
       "team": "阿尔及利亚",
       "teamTla": "ALG",
@@ -3122,19 +3146,19 @@
       "assists": 0,
       "penalties": 1,
       "playedMatches": 5
-    },
-    {
-      "name": "Malik Tillman",
-      "team": "美国",
-      "teamTla": "USA",
-      "crest": "https://crests.football-data.org/usa.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0,
-      "playedMatches": 5
     }
   ],
   "teamGoalsRank": [
+    {
+      "team": {
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
+      },
+      "goals": 17,
+      "played": 6
+    },
     {
       "team": {
         "name": "法国",
@@ -3143,6 +3167,16 @@
         "crest": "https://crests.football-data.org/773.svg"
       },
       "goals": 16,
+      "played": 6
+    },
+    {
+      "team": {
+        "name": "瑞士",
+        "shortName": "瑞士",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg"
+      },
+      "goals": 14,
       "played": 6
     },
     {
@@ -3164,26 +3198,6 @@
       },
       "goals": 14,
       "played": 6
-    },
-    {
-      "team": {
-        "name": "阿根廷",
-        "shortName": "阿根廷",
-        "tla": "ARG",
-        "crest": "https://crests.football-data.org/762.png"
-      },
-      "goals": 14,
-      "played": 5
-    },
-    {
-      "team": {
-        "name": "瑞士",
-        "shortName": "瑞士",
-        "tla": "SUI",
-        "crest": "https://crests.football-data.org/788.svg"
-      },
-      "goals": 13,
-      "played": 5
     },
     {
       "team": {
