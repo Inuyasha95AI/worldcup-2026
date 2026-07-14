@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-14T06:07:46.785Z",
-  "lastUpdatedBeijing": "2026-07-14 14:07",
+  "lastUpdated": "2026-07-14T22:46:54.594Z",
+  "lastUpdatedBeijing": "2026-07-15 06:46",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 100,
-    "totalGoals": 317,
-    "avgGoals": "3.17",
+    "finishedMatches": 101,
+    "totalGoals": 319,
+    "avgGoals": "3.16",
     "liveMatches": 0
   },
   "stages": {
@@ -27,7 +27,7 @@
     },
     "半决赛": {
       "total": 2,
-      "finished": 0
+      "finished": 1
     },
     "季军赛": {
       "total": 1,
@@ -156,15 +156,15 @@
         "crest": "https://crests.football-data.org/760.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 2
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1143,6 +1143,16 @@
         "text": "全场共 4 粒进球"
       }
     ],
+    "537387": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 0-2"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1589,8 +1599,7 @@
     ]
   },
   "yesterdayMatches": [],
-  "todayMatches": [],
-  "upcomingMatches": [
+  "todayMatches": [
     {
       "id": 537387,
       "date": "7月15日",
@@ -1612,17 +1621,19 @@
         "crest": "https://crests.football-data.org/760.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 2
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
       "venue": null
-    },
+    }
+  ],
+  "upcomingMatches": [
     {
       "id": 537388,
       "date": "7月16日",
@@ -2571,7 +2582,7 @@
       "goals": 8,
       "assists": 2,
       "penalties": 1,
-      "playedMatches": 6
+      "playedMatches": 7
     },
     {
       "name": "梅西",
@@ -2614,6 +2625,16 @@
       "playedMatches": 6
     },
     {
+      "name": "奥亚萨巴尔",
+      "team": "西班牙",
+      "teamTla": "ESP",
+      "crest": "https://crests.football-data.org/760.svg",
+      "goals": 5,
+      "assists": 1,
+      "penalties": 1,
+      "playedMatches": 7
+    },
+    {
       "name": "登贝莱",
       "team": "法国",
       "teamTla": "FRA",
@@ -2621,7 +2642,7 @@
       "goals": 5,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 6
+      "playedMatches": 7
     },
     {
       "name": "基尼奥内斯",
@@ -2642,16 +2663,6 @@
       "assists": 1,
       "penalties": 0,
       "playedMatches": 5
-    },
-    {
-      "name": "奥亚萨巴尔",
-      "team": "西班牙",
-      "teamTla": "ESP",
-      "crest": "https://crests.football-data.org/760.svg",
-      "goals": 4,
-      "assists": 1,
-      "penalties": 0,
-      "playedMatches": 6
     },
     {
       "name": "萨尔",
@@ -2911,7 +2922,7 @@
       "goals": 2,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 6
+      "playedMatches": 7
     },
     {
       "name": "Marko Arnautovic",
@@ -3083,7 +3094,7 @@
         "crest": "https://crests.football-data.org/773.svg"
       },
       "goals": 16,
-      "played": 6
+      "played": 7
     },
     {
       "team": {
@@ -3137,6 +3148,16 @@
     },
     {
       "team": {
+        "name": "西班牙",
+        "shortName": "西班牙",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
+      },
+      "goals": 13,
+      "played": 7
+    },
+    {
+      "team": {
         "name": "挪威",
         "shortName": "挪威",
         "tla": "NOR",
@@ -3154,16 +3175,6 @@
       },
       "goals": 13,
       "played": 6
-    },
-    {
-      "team": {
-        "name": "埃及",
-        "shortName": "埃及",
-        "tla": "EGY",
-        "crest": "https://crests.football-data.org/825.svg"
-      },
-      "goals": 12,
-      "played": 5
     }
   ]
 }
