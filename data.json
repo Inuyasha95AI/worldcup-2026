@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-15T04:38:53.752Z",
-  "lastUpdatedBeijing": "2026-07-15 12:38",
+  "lastUpdated": "2026-07-15T06:11:37.927Z",
+  "lastUpdatedBeijing": "2026-07-15 14:11",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 101,
@@ -48,10 +48,10 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "西班牙",
+        "shortName": "西班牙",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
       },
       "awayTeam": {
         "name": null,
@@ -80,10 +80,10 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
         "name": null,
@@ -1675,10 +1675,10 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
         "name": null,
@@ -1707,10 +1707,10 @@
       "group": "",
       "matchday": null,
       "homeTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "西班牙",
+        "shortName": "西班牙",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
       },
       "awayTeam": {
         "name": null,
