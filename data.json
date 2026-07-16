@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-16T06:14:11.804Z",
-  "lastUpdatedBeijing": "2026-07-16 14:13",
+  "lastUpdated": "2026-07-16T22:49:26.548Z",
+  "lastUpdatedBeijing": "2026-07-17 06:48",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 102,
@@ -1610,40 +1610,6 @@
   },
   "yesterdayMatches": [
     {
-      "id": 537387,
-      "date": "7月15日",
-      "time": "3:00",
-      "dateFull": "7-15 3:00",
-      "stage": "半决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "法国",
-        "shortName": "法国",
-        "tla": "FRA",
-        "crest": "https://crests.football-data.org/773.svg"
-      },
-      "awayTeam": {
-        "name": "西班牙",
-        "shortName": "西班牙",
-        "tla": "ESP",
-        "crest": "https://crests.football-data.org/760.svg"
-      },
-      "score": {
-        "home": 0,
-        "away": 2
-      },
-      "halfTime": {
-        "home": 0,
-        "away": 1
-      },
-      "winner": "AWAY_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    }
-  ],
-  "todayMatches": [
-    {
       "id": 537388,
       "date": "7月16日",
       "time": "3:00",
@@ -1676,6 +1642,7 @@
       "venue": null
     }
   ],
+  "todayMatches": [],
   "upcomingMatches": [
     {
       "id": 537389,
