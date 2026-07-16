@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-16T04:49:21.592Z",
-  "lastUpdatedBeijing": "2026-07-16 12:48",
+  "lastUpdated": "2026-07-16T06:14:11.804Z",
+  "lastUpdatedBeijing": "2026-07-16 14:13",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 102,
@@ -54,10 +54,10 @@
         "crest": "https://crests.football-data.org/760.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
       },
       "score": {
         "home": null,
@@ -86,10 +86,10 @@
         "crest": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
         "home": null,
@@ -1692,10 +1692,10 @@
         "crest": "https://crests.football-data.org/773.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
         "home": null,
@@ -1724,10 +1724,10 @@
         "crest": "https://crests.football-data.org/760.svg"
       },
       "awayTeam": {
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
       },
       "score": {
         "home": null,
