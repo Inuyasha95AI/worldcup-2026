@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-17T06:12:31.388Z",
-  "lastUpdatedBeijing": "2026-07-17 14:11",
+  "lastUpdated": "2026-07-17T22:39:25.868Z",
+  "lastUpdatedBeijing": "2026-07-18 06:38",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 102,
@@ -1608,40 +1608,7 @@
       }
     ]
   },
-  "yesterdayMatches": [
-    {
-      "id": 537388,
-      "date": "7月16日",
-      "time": "3:00",
-      "dateFull": "7-16 3:00",
-      "stage": "半决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "英格兰",
-        "shortName": "英格兰",
-        "tla": "ENG",
-        "crest": "https://crests.football-data.org/770.svg"
-      },
-      "awayTeam": {
-        "name": "阿根廷",
-        "shortName": "阿根廷",
-        "tla": "ARG",
-        "crest": "https://crests.football-data.org/762.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 2
-      },
-      "halfTime": {
-        "home": 0,
-        "away": 0
-      },
-      "winner": "AWAY_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    }
-  ],
+  "yesterdayMatches": [],
   "todayMatches": [],
   "upcomingMatches": [
     {
@@ -2558,7 +2525,7 @@
       "teamTla": "FRA",
       "crest": "https://crests.football-data.org/773.svg",
       "goals": 8,
-      "assists": 2,
+      "assists": 3,
       "penalties": 1,
       "playedMatches": 7
     },
