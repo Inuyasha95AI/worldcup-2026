@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-18T06:01:48.928Z",
-  "lastUpdatedBeijing": "2026-07-18 14:01",
+  "lastUpdated": "2026-07-18T22:39:26.542Z",
+  "lastUpdatedBeijing": "2026-07-19 06:38",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 102,
     "totalGoals": 322,
     "avgGoals": "3.16",
-    "liveMatches": 0
+    "liveMatches": 1
   },
   "stages": {
     "小组赛": {
@@ -92,15 +92,15 @@
         "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 4
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 4
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "AWAY_TEAM",
+      "status": "IN_PLAY",
       "venue": null
     },
     {
@@ -1609,8 +1609,7 @@
     ]
   },
   "yesterdayMatches": [],
-  "todayMatches": [],
-  "upcomingMatches": [
+  "todayMatches": [
     {
       "id": 537389,
       "date": "7月19日",
@@ -1632,17 +1631,19 @@
         "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 4
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 4
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "AWAY_TEAM",
+      "status": "IN_PLAY",
       "venue": null
-    },
+    }
+  ],
+  "upcomingMatches": [
     {
       "id": 537390,
       "date": "7月20日",
@@ -2524,10 +2525,10 @@
       "team": "法国",
       "teamTla": "FRA",
       "crest": "https://crests.football-data.org/773.svg",
-      "goals": 8,
-      "assists": 3,
+      "goals": 10,
+      "assists": 4,
       "penalties": 1,
-      "playedMatches": 7
+      "playedMatches": 8
     },
     {
       "name": "梅西",
@@ -2557,7 +2558,7 @@
       "goals": 6,
       "assists": 1,
       "penalties": 2,
-      "playedMatches": 7
+      "playedMatches": 8
     },
     {
       "name": "贝林厄姆",
@@ -2567,7 +2568,7 @@
       "goals": 6,
       "assists": 1,
       "penalties": 0,
-      "playedMatches": 7
+      "playedMatches": 8
     },
     {
       "name": "奥亚萨巴尔",
@@ -2587,7 +2588,7 @@
       "goals": 5,
       "assists": 2,
       "penalties": 0,
-      "playedMatches": 7
+      "playedMatches": 8
     },
     {
       "name": "基尼奥内斯",
@@ -2678,6 +2679,16 @@
       "assists": 0,
       "penalties": 0,
       "playedMatches": 3
+    },
+    {
+      "name": "巴尔科拉",
+      "team": "法国",
+      "teamTla": "FRA",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 8
     },
     {
       "name": "Yoane Wissa",
@@ -2868,16 +2879,6 @@
       "assists": 1,
       "penalties": 0,
       "playedMatches": 3
-    },
-    {
-      "name": "巴尔科拉",
-      "team": "法国",
-      "teamTla": "FRA",
-      "crest": "https://crests.football-data.org/773.svg",
-      "goals": 2,
-      "assists": 1,
-      "penalties": 0,
-      "playedMatches": 7
     },
     {
       "name": "Marko Arnautovic",
