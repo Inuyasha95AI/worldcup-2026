@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-19T06:27:18.582Z",
-  "lastUpdatedBeijing": "2026-07-19 14:26",
+  "lastUpdated": "2026-07-19T22:41:59.280Z",
+  "lastUpdatedBeijing": "2026-07-20 06:41",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 103,
-    "totalGoals": 332,
-    "avgGoals": "3.22",
+    "finishedMatches": 104,
+    "totalGoals": 333,
+    "avgGoals": "3.20",
     "liveMatches": 0
   },
   "stages": {
@@ -35,7 +35,7 @@
     },
     "决赛": {
       "total": 1,
-      "finished": 0
+      "finished": 1
     }
   },
   "knockoutMatches": [
@@ -60,15 +60,15 @@
         "crest": "https://crests.football-data.org/762.png"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1177,6 +1177,12 @@
         "text": "全场共 10 粒进球"
       }
     ],
+    "537390": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-0"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1622,8 +1628,7 @@
       }
     ]
   },
-  "yesterdayMatches": [],
-  "todayMatches": [
+  "yesterdayMatches": [
     {
       "id": 537389,
       "date": "7月19日",
@@ -1657,7 +1662,7 @@
       "venue": null
     }
   ],
-  "upcomingMatches": [
+  "todayMatches": [
     {
       "id": 537390,
       "date": "7月20日",
@@ -1679,18 +1684,19 @@
         "crest": "https://crests.football-data.org/762.png"
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
-      "winner": null,
-      "status": "TIMED",
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
       "venue": null
     }
   ],
+  "upcomingMatches": [],
   "groups": {
     "Group A组": [
       {
@@ -2552,7 +2558,7 @@
       "goals": 8,
       "assists": 4,
       "penalties": 0,
-      "playedMatches": 7
+      "playedMatches": 8
     },
     {
       "name": "哈兰德",
@@ -2602,7 +2608,7 @@
       "goals": 5,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 7
+      "playedMatches": 8
     },
     {
       "name": "基尼奥内斯",
@@ -2792,7 +2798,7 @@
       "goals": 3,
       "assists": 1,
       "penalties": 1,
-      "playedMatches": 7
+      "playedMatches": 8
     },
     {
       "name": "Charles De Ketelaere",
@@ -3064,7 +3070,7 @@
         "crest": "https://crests.football-data.org/762.png"
       },
       "goals": 19,
-      "played": 7
+      "played": 8
     },
     {
       "team": {
@@ -3085,6 +3091,16 @@
       },
       "goals": 14,
       "played": 4
+    },
+    {
+      "team": {
+        "name": "西班牙",
+        "shortName": "西班牙",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
+      },
+      "goals": 14,
+      "played": 8
     },
     {
       "team": {
@@ -3115,16 +3131,6 @@
       },
       "goals": 13,
       "played": 4
-    },
-    {
-      "team": {
-        "name": "西班牙",
-        "shortName": "西班牙",
-        "tla": "ESP",
-        "crest": "https://crests.football-data.org/760.svg"
-      },
-      "goals": 13,
-      "played": 7
     },
     {
       "team": {
