@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-18T22:39:26.542Z",
-  "lastUpdatedBeijing": "2026-07-19 06:38",
+  "lastUpdated": "2026-07-19T01:52:04.907Z",
+  "lastUpdatedBeijing": "2026-07-19 09:51",
   "stats": {
     "totalMatches": 104,
-    "finishedMatches": 102,
-    "totalGoals": 322,
-    "avgGoals": "3.16",
-    "liveMatches": 1
+    "finishedMatches": 103,
+    "totalGoals": 332,
+    "avgGoals": "3.22",
+    "liveMatches": 0
   },
   "stages": {
     "小组赛": {
@@ -31,7 +31,7 @@
     },
     "季军赛": {
       "total": 1,
-      "finished": 0
+      "finished": 1
     },
     "决赛": {
       "total": 1,
@@ -92,15 +92,15 @@
         "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
-        "home": 3,
-        "away": 4
+        "home": 4,
+        "away": 6
       },
       "halfTime": {
         "home": 0,
         "away": 4
       },
       "winner": "AWAY_TEAM",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "venue": null
     },
     {
@@ -1163,6 +1163,20 @@
         "text": "全场共 3 粒进球"
       }
     ],
+    "537389": [
+      {
+        "type": "halftime",
+        "text": "半场 0-4"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 4-6"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 10 粒进球"
+      }
+    ],
     "537391": [
       {
         "type": "fulltime",
@@ -1631,15 +1645,15 @@
         "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
-        "home": 3,
-        "away": 4
+        "home": 4,
+        "away": 6
       },
       "halfTime": {
         "home": 0,
         "away": 4
       },
       "winner": "AWAY_TEAM",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "venue": null
     }
   ],
@@ -2551,6 +2565,16 @@
       "playedMatches": 6
     },
     {
+      "name": "贝林厄姆",
+      "team": "英格兰",
+      "teamTla": "ENG",
+      "crest": "https://crests.football-data.org/770.svg",
+      "goals": 7,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 8
+    },
+    {
       "name": "哈里·凯恩",
       "team": "英格兰",
       "teamTla": "ENG",
@@ -2561,12 +2585,12 @@
       "playedMatches": 8
     },
     {
-      "name": "贝林厄姆",
-      "team": "英格兰",
-      "teamTla": "ENG",
-      "crest": "https://crests.football-data.org/770.svg",
+      "name": "登贝莱",
+      "team": "法国",
+      "teamTla": "FRA",
+      "crest": "https://crests.football-data.org/773.svg",
       "goals": 6,
-      "assists": 1,
+      "assists": 2,
       "penalties": 0,
       "playedMatches": 8
     },
@@ -2579,16 +2603,6 @@
       "assists": 1,
       "penalties": 1,
       "playedMatches": 7
-    },
-    {
-      "name": "登贝莱",
-      "team": "法国",
-      "teamTla": "FRA",
-      "crest": "https://crests.football-data.org/773.svg",
-      "goals": 5,
-      "assists": 2,
-      "penalties": 0,
-      "playedMatches": 8
     },
     {
       "name": "基尼奥内斯",
@@ -2789,6 +2803,16 @@
       "assists": 1,
       "penalties": 0,
       "playedMatches": 6
+    },
+    {
+      "name": "萨卡",
+      "team": "英格兰",
+      "teamTla": "ENG",
+      "crest": "https://crests.football-data.org/770.svg",
+      "goals": 3,
+      "assists": 3,
+      "penalties": 1,
+      "playedMatches": 8
     },
     {
       "name": "Cyle Larin",
@@ -3009,19 +3033,29 @@
       "assists": 2,
       "penalties": 0,
       "playedMatches": 4
-    },
-    {
-      "name": "Youri Tielemans",
-      "team": "比利时",
-      "teamTla": "BEL",
-      "crest": "https://crests.football-data.org/805.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 1,
-      "playedMatches": 5
     }
   ],
   "teamGoalsRank": [
+    {
+      "team": {
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
+      },
+      "goals": 20,
+      "played": 8
+    },
+    {
+      "team": {
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
+      },
+      "goals": 20,
+      "played": 8
+    },
     {
       "team": {
         "name": "阿根廷",
@@ -3030,16 +3064,6 @@
         "crest": "https://crests.football-data.org/762.png"
       },
       "goals": 19,
-      "played": 7
-    },
-    {
-      "team": {
-        "name": "法国",
-        "shortName": "法国",
-        "tla": "FRA",
-        "crest": "https://crests.football-data.org/773.svg"
-      },
-      "goals": 16,
       "played": 7
     },
     {
@@ -3071,16 +3095,6 @@
       },
       "goals": 14,
       "played": 6
-    },
-    {
-      "team": {
-        "name": "英格兰",
-        "shortName": "英格兰",
-        "tla": "ENG",
-        "crest": "https://crests.football-data.org/770.svg"
-      },
-      "goals": 14,
-      "played": 7
     },
     {
       "team": {
