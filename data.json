@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-20T06:42:58.626Z",
-  "lastUpdatedBeijing": "2026-07-20 14:42",
+  "lastUpdated": "2026-07-20T22:46:53.425Z",
+  "lastUpdatedBeijing": "2026-07-21 06:45",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 104,
@@ -1630,40 +1630,6 @@
   },
   "yesterdayMatches": [
     {
-      "id": 537389,
-      "date": "7月19日",
-      "time": "5:00",
-      "dateFull": "7-19 5:00",
-      "stage": "季军赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "法国",
-        "shortName": "法国",
-        "tla": "FRA",
-        "crest": "https://crests.football-data.org/773.svg"
-      },
-      "awayTeam": {
-        "name": "英格兰",
-        "shortName": "英格兰",
-        "tla": "ENG",
-        "crest": "https://crests.football-data.org/770.svg"
-      },
-      "score": {
-        "home": 4,
-        "away": 6
-      },
-      "halfTime": {
-        "home": 0,
-        "away": 4
-      },
-      "winner": "AWAY_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    }
-  ],
-  "todayMatches": [
-    {
       "id": 537390,
       "date": "7月20日",
       "time": "3:00",
@@ -1696,6 +1662,7 @@
       "venue": null
     }
   ],
+  "todayMatches": [],
   "upcomingMatches": [],
   "groups": {
     "Group A组": [
