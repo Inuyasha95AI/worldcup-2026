@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-21T06:25:36.970Z",
-  "lastUpdatedBeijing": "2026-07-21 14:24",
+  "lastUpdated": "2026-07-21T22:45:26.072Z",
+  "lastUpdatedBeijing": "2026-07-22 06:44",
   "stats": {
     "totalMatches": 104,
     "finishedMatches": 104,
@@ -1628,40 +1628,7 @@
       }
     ]
   },
-  "yesterdayMatches": [
-    {
-      "id": 537390,
-      "date": "7月20日",
-      "time": "3:00",
-      "dateFull": "7-20 3:00",
-      "stage": "决赛",
-      "group": "",
-      "matchday": null,
-      "homeTeam": {
-        "name": "西班牙",
-        "shortName": "西班牙",
-        "tla": "ESP",
-        "crest": "https://crests.football-data.org/760.svg"
-      },
-      "awayTeam": {
-        "name": "阿根廷",
-        "shortName": "阿根廷",
-        "tla": "ARG",
-        "crest": "https://crests.football-data.org/762.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 0
-      },
-      "halfTime": {
-        "home": 0,
-        "away": 0
-      },
-      "winner": "HOME_TEAM",
-      "status": "FINISHED",
-      "venue": null
-    }
-  ],
+  "yesterdayMatches": [],
   "todayMatches": [],
   "upcomingMatches": [],
   "groups": {
