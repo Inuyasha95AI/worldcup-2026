@@ -1,0 +1,3080 @@
+{
+  "lastUpdated": "2026-07-23T06:27:50.821Z",
+  "lastUpdatedBeijing": "2026-07-23 14:26",
+  "stats": {
+    "totalMatches": 104,
+    "finishedMatches": 104,
+    "totalGoals": 333,
+    "avgGoals": "3.20",
+    "liveMatches": 0
+  },
+  "stages": {
+    "小组赛": {
+      "total": 72,
+      "finished": 72
+    },
+    "32强": {
+      "total": 16,
+      "finished": 16
+    },
+    "1/8决赛": {
+      "total": 8,
+      "finished": 8
+    },
+    "1/4决赛": {
+      "total": 4,
+      "finished": 4
+    },
+    "半决赛": {
+      "total": 2,
+      "finished": 2
+    },
+    "季军赛": {
+      "total": 1,
+      "finished": 1
+    },
+    "决赛": {
+      "total": 1,
+      "finished": 1
+    }
+  },
+  "knockoutMatches": [
+    {
+      "id": 537390,
+      "date": "7月20日",
+      "time": "3:00",
+      "dateFull": "7-20 3:00",
+      "stage": "决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "西班牙",
+        "shortName": "西班牙",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
+      },
+      "awayTeam": {
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 0
+      },
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537389,
+      "date": "7月19日",
+      "time": "5:00",
+      "dateFull": "7-19 5:00",
+      "stage": "季军赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
+      },
+      "awayTeam": {
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
+      },
+      "score": {
+        "home": 4,
+        "away": 6
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 4
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537388,
+      "date": "7月16日",
+      "time": "3:00",
+      "dateFull": "7-16 3:00",
+      "stage": "半决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
+      },
+      "awayTeam": {
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 0
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537387,
+      "date": "7月15日",
+      "time": "3:00",
+      "dateFull": "7-15 3:00",
+      "stage": "半决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
+      },
+      "awayTeam": {
+        "name": "西班牙",
+        "shortName": "西班牙",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
+      },
+      "score": {
+        "home": 0,
+        "away": 2
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 1
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537386,
+      "date": "7月12日",
+      "time": "9:00",
+      "dateFull": "7-12 9:00",
+      "stage": "1/4决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
+      },
+      "awayTeam": {
+        "name": "瑞士",
+        "shortName": "瑞士",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg"
+      },
+      "score": {
+        "home": 3,
+        "away": 1
+      },
+      "halfTime": {
+        "home": 1,
+        "away": 0
+      },
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537385,
+      "date": "7月12日",
+      "time": "5:00",
+      "dateFull": "7-12 5:00",
+      "stage": "1/4决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "挪威",
+        "shortName": "挪威",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg"
+      },
+      "awayTeam": {
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      },
+      "halfTime": {
+        "home": 1,
+        "away": 1
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537384,
+      "date": "7月11日",
+      "time": "3:00",
+      "dateFull": "7-11 3:00",
+      "stage": "1/4决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "西班牙",
+        "shortName": "西班牙",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
+      },
+      "awayTeam": {
+        "name": "比利时",
+        "shortName": "比利时",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "halfTime": {
+        "home": 1,
+        "away": 1
+      },
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537383,
+      "date": "7月10日",
+      "time": "4:00",
+      "dateFull": "7-10 4:00",
+      "stage": "1/4决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
+      },
+      "awayTeam": {
+        "name": "摩洛哥",
+        "shortName": "摩洛哥",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/morocco.svg"
+      },
+      "score": {
+        "home": 2,
+        "away": 0
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 0
+      },
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537382,
+      "date": "7月8日",
+      "time": "4:00",
+      "dateFull": "7-08 4:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "瑞士",
+        "shortName": "瑞士",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg"
+      },
+      "awayTeam": {
+        "name": "哥伦比亚",
+        "shortName": "哥伦比亚",
+        "tla": "COL",
+        "crest": "https://crests.football-data.org/818.svg"
+      },
+      "score": {
+        "home": 4,
+        "away": 3
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 0
+      },
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537381,
+      "date": "7月8日",
+      "time": "0:00",
+      "dateFull": "7-08 0:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
+      },
+      "awayTeam": {
+        "name": "埃及",
+        "shortName": "埃及",
+        "tla": "EGY",
+        "crest": "https://crests.football-data.org/825.svg"
+      },
+      "score": {
+        "home": 3,
+        "away": 2
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 1
+      },
+      "winner": "HOME_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537380,
+      "date": "7月7日",
+      "time": "8:00",
+      "dateFull": "7-07 8:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "美国",
+        "shortName": "美国",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg"
+      },
+      "awayTeam": {
+        "name": "比利时",
+        "shortName": "比利时",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg"
+      },
+      "score": {
+        "home": 1,
+        "away": 4
+      },
+      "halfTime": {
+        "home": 1,
+        "away": 2
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537379,
+      "date": "7月7日",
+      "time": "3:00",
+      "dateFull": "7-07 3:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "葡萄牙",
+        "shortName": "葡萄牙",
+        "tla": "POR",
+        "crest": "https://crests.football-data.org/765.svg"
+      },
+      "awayTeam": {
+        "name": "西班牙",
+        "shortName": "西班牙",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
+      },
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 0
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537378,
+      "date": "7月6日",
+      "time": "9:00",
+      "dateFull": "7-06 9:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "墨西哥",
+        "shortName": "墨西哥",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/769.svg"
+      },
+      "awayTeam": {
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
+      },
+      "score": {
+        "home": 2,
+        "away": 3
+      },
+      "halfTime": {
+        "home": 1,
+        "away": 2
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537377,
+      "date": "7月6日",
+      "time": "4:00",
+      "dateFull": "7-06 4:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "巴西",
+        "shortName": "巴西",
+        "tla": "BRA",
+        "crest": "https://crests.football-data.org/764.svg"
+      },
+      "awayTeam": {
+        "name": "挪威",
+        "shortName": "挪威",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg"
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 0
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537375,
+      "date": "7月5日",
+      "time": "5:00",
+      "dateFull": "7-05 5:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "巴拉圭",
+        "shortName": "巴拉圭",
+        "tla": "PAR",
+        "crest": "https://crests.football-data.org/761.svg"
+      },
+      "awayTeam": {
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
+      },
+      "score": {
+        "home": 0,
+        "away": 1
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 0
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    },
+    {
+      "id": 537376,
+      "date": "7月5日",
+      "time": "1:00",
+      "dateFull": "7-05 1:00",
+      "stage": "1/8决赛",
+      "group": "",
+      "matchday": null,
+      "homeTeam": {
+        "name": "加拿大",
+        "shortName": "加拿大",
+        "tla": "CAN",
+        "crest": "https://crests.football-data.org/canada.svg"
+      },
+      "awayTeam": {
+        "name": "摩洛哥",
+        "shortName": "摩洛哥",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/morocco.svg"
+      },
+      "score": {
+        "home": 0,
+        "away": 3
+      },
+      "halfTime": {
+        "home": 0,
+        "away": 0
+      },
+      "winner": "AWAY_TEAM",
+      "status": "FINISHED",
+      "venue": null
+    }
+  ],
+  "matchEvents": {
+    "537327": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-0"
+      }
+    ],
+    "537328": [
+      {
+        "type": "fulltime",
+        "text": "全场 2-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537329": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-1"
+      }
+    ],
+    "537330": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-0"
+      }
+    ],
+    "537331": [
+      {
+        "type": "fulltime",
+        "text": "全场 0-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537332": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-0"
+      }
+    ],
+    "537333": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-1"
+      }
+    ],
+    "537334": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-1"
+      }
+    ],
+    "537335": [
+      {
+        "type": "fulltime",
+        "text": "全场 4-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537336": [
+      {
+        "type": "halftime",
+        "text": "半场 3-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 6-0"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 6 粒进球"
+      }
+    ],
+    "537337": [
+      {
+        "type": "fulltime",
+        "text": "全场 2-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537338": [
+      {
+        "type": "halftime",
+        "text": "半场 2-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537339": [
+      {
+        "type": "halftime",
+        "text": "半场 1-1"
+      }
+    ],
+    "537340": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      }
+    ],
+    "537341": [
+      {
+        "type": "halftime",
+        "text": "半场 3-0"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537342": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      }
+    ],
+    "537343": [
+      {
+        "type": "halftime",
+        "text": "半场 0-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 0-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537344": [
+      {
+        "type": "halftime",
+        "text": "半场 2-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 4-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 6 粒进球"
+      }
+    ],
+    "537345": [
+      {
+        "type": "halftime",
+        "text": "半场 3-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 4-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537346": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-0"
+      }
+    ],
+    "537347": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      }
+    ],
+    "537348": [
+      {
+        "type": "halftime",
+        "text": "半场 2-0"
+      }
+    ],
+    "537349": [
+      {
+        "type": "halftime",
+        "text": "半场 2-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537351": [
+      {
+        "type": "halftime",
+        "text": "半场 3-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 7-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 8 粒进球"
+      }
+    ],
+    "537352": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-0"
+      }
+    ],
+    "537353": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537355": [
+      {
+        "type": "halftime",
+        "text": "半场 1-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537356": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 0-2"
+      }
+    ],
+    "537357": [
+      {
+        "type": "fulltime",
+        "text": "全场 2-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537358": [
+      {
+        "type": "halftime",
+        "text": "半场 2-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 5-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 6 粒进球"
+      }
+    ],
+    "537359": [
+      {
+        "type": "halftime",
+        "text": "半场 2-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 5-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 6 粒进球"
+      }
+    ],
+    "537360": [
+      {
+        "type": "halftime",
+        "text": "半场 0-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 0-4"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537361": [
+      {
+        "type": "halftime",
+        "text": "半场 0-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537362": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-1"
+      }
+    ],
+    "537363": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-1"
+      }
+    ],
+    "537364": [
+      {
+        "type": "halftime",
+        "text": "半场 1-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537366": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537367": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-5"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 6 粒进球"
+      }
+    ],
+    "537368": [
+      {
+        "type": "halftime",
+        "text": "半场 1-1"
+      }
+    ],
+    "537370": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-1"
+      }
+    ],
+    "537371": [
+      {
+        "type": "halftime",
+        "text": "半场 3-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 4-0"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537372": [
+      {
+        "type": "halftime",
+        "text": "半场 2-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537373": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      }
+    ],
+    "537375": [
+      {
+        "type": "fulltime",
+        "text": "全场 0-1"
+      }
+    ],
+    "537376": [
+      {
+        "type": "fulltime",
+        "text": "全场 0-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537377": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537378": [
+      {
+        "type": "halftime",
+        "text": "半场 1-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537379": [
+      {
+        "type": "fulltime",
+        "text": "全场 0-1"
+      }
+    ],
+    "537380": [
+      {
+        "type": "halftime",
+        "text": "半场 1-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-4"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537381": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537382": [
+      {
+        "type": "fulltime",
+        "text": "全场 4-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 7 粒进球"
+      }
+    ],
+    "537383": [
+      {
+        "type": "fulltime",
+        "text": "全场 2-0"
+      }
+    ],
+    "537384": [
+      {
+        "type": "halftime",
+        "text": "半场 1-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537385": [
+      {
+        "type": "halftime",
+        "text": "半场 1-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537386": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537387": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 0-2"
+      }
+    ],
+    "537388": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537389": [
+      {
+        "type": "halftime",
+        "text": "半场 0-4"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 4-6"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 10 粒进球"
+      }
+    ],
+    "537390": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-0"
+      }
+    ],
+    "537391": [
+      {
+        "type": "fulltime",
+        "text": "全场 3-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537392": [
+      {
+        "type": "halftime",
+        "text": "半场 1-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-4"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537393": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-0"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537394": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537395": [
+      {
+        "type": "halftime",
+        "text": "半场 1-3"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-4"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537396": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 5-0"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537397": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-0"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537398": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537399": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-0"
+      }
+    ],
+    "537400": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537401": [
+      {
+        "type": "halftime",
+        "text": "半场 0-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537402": [
+      {
+        "type": "halftime",
+        "text": "半场 1-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 6 粒进球"
+      }
+    ],
+    "537403": [
+      {
+        "type": "halftime",
+        "text": "半场 1-1"
+      }
+    ],
+    "537404": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-3"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537405": [
+      {
+        "type": "halftime",
+        "text": "半场 3-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 5-0"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537406": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-0"
+      }
+    ],
+    "537408": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 4 粒进球"
+      }
+    ],
+    "537409": [
+      {
+        "type": "halftime",
+        "text": "半场 2-2"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 4-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 6 粒进球"
+      }
+    ],
+    "537410": [
+      {
+        "type": "fulltime",
+        "text": "全场 1-0"
+      }
+    ],
+    "537412": [
+      {
+        "type": "fulltime",
+        "text": "全场 0-1"
+      }
+    ],
+    "537413": [
+      {
+        "type": "fulltime",
+        "text": "全场 0-2"
+      }
+    ],
+    "537414": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537415": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 4-5"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 9 粒进球"
+      }
+    ],
+    "537416": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-0"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537417": [
+      {
+        "type": "fulltime",
+        "text": "全场 0-1"
+      }
+    ],
+    "537418": [
+      {
+        "type": "fulltime",
+        "text": "全场 3-4"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 7 粒进球"
+      }
+    ],
+    "537419": [
+      {
+        "type": "fulltime",
+        "text": "全场 2-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537420": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-0"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537421": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-0"
+      }
+    ],
+    "537422": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537423": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537424": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 1-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537425": [
+      {
+        "type": "halftime",
+        "text": "半场 2-0"
+      }
+    ],
+    "537426": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-1"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 3 粒进球"
+      }
+    ],
+    "537427": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-2"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 5 粒进球"
+      }
+    ],
+    "537428": [
+      {
+        "type": "halftime",
+        "text": "半场 0-1"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 3-5"
+      },
+      {
+        "type": "highlight",
+        "text": "全场共 8 粒进球"
+      }
+    ],
+    "537429": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      },
+      {
+        "type": "fulltime",
+        "text": "全场 2-0"
+      }
+    ],
+    "537430": [
+      {
+        "type": "halftime",
+        "text": "半场 1-0"
+      }
+    ]
+  },
+  "yesterdayMatches": [],
+  "todayMatches": [],
+  "upcomingMatches": [],
+  "groups": {
+    "Group A组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "墨西哥",
+          "shortName": "墨西哥",
+          "tla": "MEX",
+          "crest": "https://crests.football-data.org/769.svg"
+        },
+        "played": 3,
+        "won": 3,
+        "draw": 0,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 0,
+        "goalDifference": 6,
+        "points": 9
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "南非",
+          "shortName": "南非",
+          "tla": "RSA",
+          "crest": "https://crests.football-data.org/9396.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 3,
+        "goalDifference": -1,
+        "points": 4
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "韩国",
+          "shortName": "韩国",
+          "tla": "KOR",
+          "crest": "https://crests.football-data.org/772.png"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 0,
+        "lost": 2,
+        "goalsFor": 2,
+        "goalsAgainst": 3,
+        "goalDifference": -1,
+        "points": 3
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "捷克",
+          "shortName": "捷克",
+          "tla": "CZE",
+          "crest": "https://crests.football-data.org/798.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 1,
+        "lost": 2,
+        "goalsFor": 2,
+        "goalsAgainst": 6,
+        "goalDifference": -4,
+        "points": 1
+      }
+    ],
+    "Group B组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "瑞士",
+          "shortName": "瑞士",
+          "tla": "SUI",
+          "crest": "https://crests.football-data.org/788.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 1,
+        "lost": 0,
+        "goalsFor": 7,
+        "goalsAgainst": 3,
+        "goalDifference": 4,
+        "points": 7
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "加拿大",
+          "shortName": "加拿大",
+          "tla": "CAN",
+          "crest": "https://crests.football-data.org/canada.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 8,
+        "goalsAgainst": 3,
+        "goalDifference": 5,
+        "points": 4
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "波黑",
+          "shortName": "波黑",
+          "tla": "BIH",
+          "crest": "https://crests.football-data.org/bosnia.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 5,
+        "goalsAgainst": 6,
+        "goalDifference": -1,
+        "points": 4
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "卡塔尔",
+          "shortName": "卡塔尔",
+          "tla": "QAT",
+          "crest": "https://crests.football-data.org/8030.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 1,
+        "lost": 2,
+        "goalsFor": 2,
+        "goalsAgainst": 10,
+        "goalDifference": -8,
+        "points": 1
+      }
+    ],
+    "Group C组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "巴西",
+          "shortName": "巴西",
+          "tla": "BRA",
+          "crest": "https://crests.football-data.org/764.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 1,
+        "lost": 0,
+        "goalsFor": 7,
+        "goalsAgainst": 1,
+        "goalDifference": 6,
+        "points": 7
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "摩洛哥",
+          "shortName": "摩洛哥",
+          "tla": "MAR",
+          "crest": "https://crests.football-data.org/morocco.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 1,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 3,
+        "goalDifference": 3,
+        "points": 7
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "苏格兰",
+          "shortName": "苏格兰",
+          "tla": "SCO",
+          "crest": "https://crests.football-data.org/814.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 0,
+        "lost": 2,
+        "goalsFor": 1,
+        "goalsAgainst": 4,
+        "goalDifference": -3,
+        "points": 3
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "海地",
+          "shortName": "海地",
+          "tla": "HAI",
+          "crest": "https://crests.football-data.org/haiti.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 0,
+        "lost": 3,
+        "goalsFor": 2,
+        "goalsAgainst": 8,
+        "goalDifference": -6,
+        "points": 0
+      }
+    ],
+    "Group D组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "美国",
+          "shortName": "美国",
+          "tla": "USA",
+          "crest": "https://crests.football-data.org/usa.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goalsFor": 8,
+        "goalsAgainst": 4,
+        "goalDifference": 4,
+        "points": 6
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "澳大利亚",
+          "shortName": "澳大利亚",
+          "tla": "AUS",
+          "crest": "https://crests.football-data.org/779.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDifference": 0,
+        "points": 4
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "巴拉圭",
+          "shortName": "巴拉圭",
+          "tla": "PAR",
+          "crest": "https://crests.football-data.org/761.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 4,
+        "goalDifference": -2,
+        "points": 4
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "土耳其",
+          "shortName": "土耳其",
+          "tla": "TUR",
+          "crest": "https://crests.football-data.org/803.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 0,
+        "lost": 2,
+        "goalsFor": 3,
+        "goalsAgainst": 5,
+        "goalDifference": -2,
+        "points": 3
+      }
+    ],
+    "Group E组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "德国",
+          "shortName": "德国",
+          "tla": "GER",
+          "crest": "https://crests.football-data.org/759.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goalsFor": 10,
+        "goalsAgainst": 4,
+        "goalDifference": 6,
+        "points": 6
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "科特迪瓦",
+          "shortName": "科特迪瓦",
+          "tla": "CIV",
+          "crest": "https://crests.football-data.org/787.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goalsFor": 4,
+        "goalsAgainst": 2,
+        "goalDifference": 2,
+        "points": 6
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "厄瓜多尔",
+          "shortName": "厄瓜多尔",
+          "tla": "ECU",
+          "crest": "https://crests.football-data.org/791.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDifference": 0,
+        "points": 4
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "库拉索",
+          "shortName": "库拉索",
+          "tla": "CUW",
+          "crest": "https://crests.football-data.org/curacao.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 1,
+        "lost": 2,
+        "goalsFor": 1,
+        "goalsAgainst": 9,
+        "goalDifference": -8,
+        "points": 1
+      }
+    ],
+    "Group F组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "荷兰",
+          "shortName": "荷兰",
+          "tla": "NED",
+          "crest": "https://crests.football-data.org/8601.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 1,
+        "lost": 0,
+        "goalsFor": 10,
+        "goalsAgainst": 4,
+        "goalDifference": 6,
+        "points": 7
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "日本",
+          "shortName": "日本",
+          "tla": "JPN",
+          "crest": "https://crests.football-data.org/766.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 2,
+        "lost": 0,
+        "goalsFor": 7,
+        "goalsAgainst": 3,
+        "goalDifference": 4,
+        "points": 5
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "瑞典",
+          "shortName": "瑞典",
+          "tla": "SWE",
+          "crest": "https://crests.football-data.org/792.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 7,
+        "goalsAgainst": 7,
+        "goalDifference": 0,
+        "points": 4
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "突尼斯",
+          "shortName": "突尼斯",
+          "tla": "TUN",
+          "crest": "https://crests.football-data.org/tunisia.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 0,
+        "lost": 3,
+        "goalsFor": 2,
+        "goalsAgainst": 12,
+        "goalDifference": -10,
+        "points": 0
+      }
+    ],
+    "Group G组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "比利时",
+          "shortName": "比利时",
+          "tla": "BEL",
+          "crest": "https://crests.football-data.org/805.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 2,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 2,
+        "goalDifference": 4,
+        "points": 5
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "埃及",
+          "shortName": "埃及",
+          "tla": "EGY",
+          "crest": "https://crests.football-data.org/825.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 2,
+        "lost": 0,
+        "goalsFor": 5,
+        "goalsAgainst": 3,
+        "goalDifference": 2,
+        "points": 5
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "伊朗",
+          "shortName": "伊朗",
+          "tla": "IRN",
+          "crest": "https://crests.football-data.org/iran.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 3,
+        "lost": 0,
+        "goalsFor": 3,
+        "goalsAgainst": 3,
+        "goalDifference": 0,
+        "points": 3
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "新西兰",
+          "shortName": "新西兰",
+          "tla": "NZL",
+          "crest": "https://crests.football-data.org/783.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 1,
+        "lost": 2,
+        "goalsFor": 4,
+        "goalsAgainst": 10,
+        "goalDifference": -6,
+        "points": 1
+      }
+    ],
+    "Group H组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "西班牙",
+          "shortName": "西班牙",
+          "tla": "ESP",
+          "crest": "https://crests.football-data.org/760.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 1,
+        "lost": 0,
+        "goalsFor": 5,
+        "goalsAgainst": 0,
+        "goalDifference": 5,
+        "points": 7
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "佛得角",
+          "shortName": "佛得角",
+          "tla": "CPV",
+          "crest": "https://crests.football-data.org/cape_verde.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 3,
+        "lost": 0,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDifference": 0,
+        "points": 3
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "乌拉圭",
+          "shortName": "乌拉圭",
+          "tla": "URU",
+          "crest": "https://crests.football-data.org/758.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 2,
+        "lost": 1,
+        "goalsFor": 3,
+        "goalsAgainst": 4,
+        "goalDifference": -1,
+        "points": 2
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "沙特阿拉伯",
+          "shortName": "沙特阿拉伯",
+          "tla": "KSA",
+          "crest": "https://crests.football-data.org/saudi_arabia.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 2,
+        "lost": 1,
+        "goalsFor": 1,
+        "goalsAgainst": 5,
+        "goalDifference": -4,
+        "points": 2
+      }
+    ],
+    "Group I组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "法国",
+          "shortName": "法国",
+          "tla": "FRA",
+          "crest": "https://crests.football-data.org/773.svg"
+        },
+        "played": 3,
+        "won": 3,
+        "draw": 0,
+        "lost": 0,
+        "goalsFor": 10,
+        "goalsAgainst": 2,
+        "goalDifference": 8,
+        "points": 9
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "挪威",
+          "shortName": "挪威",
+          "tla": "NOR",
+          "crest": "https://crests.football-data.org/813.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goalsFor": 8,
+        "goalsAgainst": 7,
+        "goalDifference": 1,
+        "points": 6
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "塞内加尔",
+          "shortName": "塞内加尔",
+          "tla": "SEN",
+          "crest": "https://crests.football-data.org/senegal.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 0,
+        "lost": 2,
+        "goalsFor": 8,
+        "goalsAgainst": 6,
+        "goalDifference": 2,
+        "points": 3
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "伊拉克",
+          "shortName": "伊拉克",
+          "tla": "IRQ",
+          "crest": "https://crests.football-data.org/iraq.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 0,
+        "lost": 3,
+        "goalsFor": 1,
+        "goalsAgainst": 12,
+        "goalDifference": -11,
+        "points": 0
+      }
+    ],
+    "Group J组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "阿根廷",
+          "shortName": "阿根廷",
+          "tla": "ARG",
+          "crest": "https://crests.football-data.org/762.png"
+        },
+        "played": 3,
+        "won": 3,
+        "draw": 0,
+        "lost": 0,
+        "goalsFor": 8,
+        "goalsAgainst": 1,
+        "goalDifference": 7,
+        "points": 9
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "奥地利",
+          "shortName": "奥地利",
+          "tla": "AUT",
+          "crest": "https://crests.football-data.org/816.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 6,
+        "goalsAgainst": 6,
+        "goalDifference": 0,
+        "points": 4
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "阿尔及利亚",
+          "shortName": "阿尔及利亚",
+          "tla": "ALG",
+          "crest": "https://crests.football-data.org/algeria.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 5,
+        "goalsAgainst": 7,
+        "goalDifference": -2,
+        "points": 4
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "约旦",
+          "shortName": "约旦",
+          "tla": "JOR",
+          "crest": "https://crests.football-data.org/8049.png"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 0,
+        "lost": 3,
+        "goalsFor": 3,
+        "goalsAgainst": 8,
+        "goalDifference": -5,
+        "points": 0
+      }
+    ],
+    "Group K组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "哥伦比亚",
+          "shortName": "哥伦比亚",
+          "tla": "COL",
+          "crest": "https://crests.football-data.org/818.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 1,
+        "lost": 0,
+        "goalsFor": 4,
+        "goalsAgainst": 1,
+        "goalDifference": 3,
+        "points": 7
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "葡萄牙",
+          "shortName": "葡萄牙",
+          "tla": "POR",
+          "crest": "https://crests.football-data.org/765.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 2,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 1,
+        "goalDifference": 5,
+        "points": 5
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "刚果民主共和国",
+          "shortName": "刚果民主共和国",
+          "tla": "COD",
+          "crest": "https://crests.football-data.org/congo_dr.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 4,
+        "goalsAgainst": 3,
+        "goalDifference": 1,
+        "points": 4
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "乌兹别克斯坦",
+          "shortName": "乌兹别克斯坦",
+          "tla": "UZB",
+          "crest": "https://crests.football-data.org/8070.png"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 0,
+        "lost": 3,
+        "goalsFor": 2,
+        "goalsAgainst": 11,
+        "goalDifference": -9,
+        "points": 0
+      }
+    ],
+    "Group L组": [
+      {
+        "position": 1,
+        "team": {
+          "name": "英格兰",
+          "shortName": "英格兰",
+          "tla": "ENG",
+          "crest": "https://crests.football-data.org/770.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 1,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 2,
+        "goalDifference": 4,
+        "points": 7
+      },
+      {
+        "position": 2,
+        "team": {
+          "name": "克罗地亚",
+          "shortName": "克罗地亚",
+          "tla": "CRO",
+          "crest": "https://crests.football-data.org/799.svg"
+        },
+        "played": 3,
+        "won": 2,
+        "draw": 0,
+        "lost": 1,
+        "goalsFor": 5,
+        "goalsAgainst": 5,
+        "goalDifference": 0,
+        "points": 6
+      },
+      {
+        "position": 3,
+        "team": {
+          "name": "加纳",
+          "shortName": "加纳",
+          "tla": "GHA",
+          "crest": "https://crests.football-data.org/ghana.svg"
+        },
+        "played": 3,
+        "won": 1,
+        "draw": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDifference": 0,
+        "points": 4
+      },
+      {
+        "position": 4,
+        "team": {
+          "name": "巴拿马",
+          "shortName": "巴拿马",
+          "tla": "PAN",
+          "crest": "https://crests.football-data.org/panama.svg"
+        },
+        "played": 3,
+        "won": 0,
+        "draw": 0,
+        "lost": 3,
+        "goalsFor": 0,
+        "goalsAgainst": 4,
+        "goalDifference": -4,
+        "points": 0
+      }
+    ]
+  },
+  "topScorers": [
+    {
+      "name": "姆巴佩",
+      "team": "法国",
+      "teamTla": "FRA",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 10,
+      "assists": 4,
+      "penalties": 1,
+      "playedMatches": 8
+    },
+    {
+      "name": "梅西",
+      "team": "阿根廷",
+      "teamTla": "ARG",
+      "crest": "https://crests.football-data.org/762.png",
+      "goals": 8,
+      "assists": 4,
+      "penalties": 0,
+      "playedMatches": 8
+    },
+    {
+      "name": "哈兰德",
+      "team": "挪威",
+      "teamTla": "NOR",
+      "crest": "https://crests.football-data.org/813.svg",
+      "goals": 7,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 6
+    },
+    {
+      "name": "贝林厄姆",
+      "team": "英格兰",
+      "teamTla": "ENG",
+      "crest": "https://crests.football-data.org/770.svg",
+      "goals": 7,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 8
+    },
+    {
+      "name": "哈里·凯恩",
+      "team": "英格兰",
+      "teamTla": "ENG",
+      "crest": "https://crests.football-data.org/770.svg",
+      "goals": 6,
+      "assists": 1,
+      "penalties": 2,
+      "playedMatches": 8
+    },
+    {
+      "name": "登贝莱",
+      "team": "法国",
+      "teamTla": "FRA",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 6,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 8
+    },
+    {
+      "name": "奥亚萨巴尔",
+      "team": "西班牙",
+      "teamTla": "ESP",
+      "crest": "https://crests.football-data.org/760.svg",
+      "goals": 5,
+      "assists": 1,
+      "penalties": 1,
+      "playedMatches": 8
+    },
+    {
+      "name": "基尼奥内斯",
+      "team": "墨西哥",
+      "teamTla": "MEX",
+      "crest": "https://crests.football-data.org/769.svg",
+      "goals": 4,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "维尼修斯",
+      "team": "巴西",
+      "teamTla": "BRA",
+      "crest": "https://crests.football-data.org/764.svg",
+      "goals": 4,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "萨尔",
+      "team": "塞内加尔",
+      "teamTla": "SEN",
+      "crest": "https://crests.football-data.org/senegal.svg",
+      "goals": 4,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Raúl Jiménez",
+      "team": "墨西哥",
+      "teamTla": "MEX",
+      "crest": "https://crests.football-data.org/769.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 5
+    },
+    {
+      "name": "巴洛贡",
+      "team": "美国",
+      "teamTla": "USA",
+      "crest": "https://crests.football-data.org/usa.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "Ismael Saibari",
+      "team": "摩洛哥",
+      "teamTla": "MAR",
+      "crest": "https://crests.football-data.org/morocco.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 6
+    },
+    {
+      "name": "哈弗茨",
+      "team": "德国",
+      "teamTla": "GER",
+      "crest": "https://crests.football-data.org/759.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 4
+    },
+    {
+      "name": "翁达夫",
+      "team": "德国",
+      "teamTla": "GER",
+      "crest": "https://crests.football-data.org/759.svg",
+      "goals": 3,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Elijah Just",
+      "team": "新西兰",
+      "teamTla": "NZL",
+      "crest": "https://crests.football-data.org/783.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "巴尔科拉",
+      "team": "法国",
+      "teamTla": "FRA",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 8
+    },
+    {
+      "name": "Yoane Wissa",
+      "team": "刚果民主共和国",
+      "teamTla": "COD",
+      "crest": "https://crests.football-data.org/congo_dr.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 3
+    },
+    {
+      "name": "曼赞比",
+      "team": "瑞士",
+      "teamTla": "SUI",
+      "crest": "https://crests.football-data.org/788.svg",
+      "goals": 3,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Jonathan David",
+      "team": "加拿大",
+      "teamTla": "CAN",
+      "crest": "https://crests.football-data.org/canada.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "Matheus Cunha",
+      "team": "巴西",
+      "teamTla": "BRA",
+      "crest": "https://crests.football-data.org/764.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "Brian Brobbey",
+      "team": "荷兰",
+      "teamTla": "NED",
+      "crest": "https://crests.football-data.org/8601.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "加克波",
+      "team": "荷兰",
+      "teamTla": "NED",
+      "crest": "https://crests.football-data.org/8601.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "C罗",
+      "team": "葡萄牙",
+      "teamTla": "POR",
+      "crest": "https://crests.football-data.org/765.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 5
+    },
+    {
+      "name": "卢卡库",
+      "team": "比利时",
+      "teamTla": "BEL",
+      "crest": "https://crests.football-data.org/805.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 6
+    },
+    {
+      "name": "劳塔罗",
+      "team": "阿根廷",
+      "teamTla": "ARG",
+      "crest": "https://crests.football-data.org/762.png",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 1,
+      "playedMatches": 8
+    },
+    {
+      "name": "Charles De Ketelaere",
+      "team": "比利时",
+      "teamTla": "BEL",
+      "crest": "https://crests.football-data.org/805.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 6
+    },
+    {
+      "name": "萨卡",
+      "team": "英格兰",
+      "teamTla": "ENG",
+      "crest": "https://crests.football-data.org/770.svg",
+      "goals": 3,
+      "assists": 3,
+      "penalties": 1,
+      "playedMatches": 8
+    },
+    {
+      "name": "Cyle Larin",
+      "team": "加拿大",
+      "teamTla": "CAN",
+      "crest": "https://crests.football-data.org/canada.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "恩博洛",
+      "team": "瑞士",
+      "teamTla": "SUI",
+      "crest": "https://crests.football-data.org/788.svg",
+      "goals": 2,
+      "assists": 2,
+      "penalties": 1,
+      "playedMatches": 6
+    },
+    {
+      "name": "萨默维尔",
+      "team": "荷兰",
+      "teamTla": "NED",
+      "crest": "https://crests.football-data.org/8601.svg",
+      "goals": 2,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Daichi Kamada",
+      "team": "日本",
+      "teamTla": "JPN",
+      "crest": "https://crests.football-data.org/766.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Amad Diallo",
+      "team": "科特迪瓦",
+      "teamTla": "CIV",
+      "crest": "https://crests.football-data.org/787.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "Yasin Ayari",
+      "team": "瑞典",
+      "teamTla": "SWE",
+      "crest": "https://crests.football-data.org/792.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Emam Ashour",
+      "team": "埃及",
+      "teamTla": "EGY",
+      "crest": "https://crests.football-data.org/825.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "阿劳霍",
+      "team": "乌拉圭",
+      "teamTla": "URU",
+      "crest": "https://crests.football-data.org/758.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "雷扎伊安",
+      "team": "伊朗",
+      "teamTla": "IRN",
+      "crest": "https://crests.football-data.org/iran.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "Marko Arnautovic",
+      "team": "奥地利",
+      "teamTla": "AUT",
+      "crest": "https://crests.football-data.org/816.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 1,
+      "playedMatches": 4
+    },
+    {
+      "name": "Daniel Muñoz",
+      "team": "哥伦比亚",
+      "teamTla": "COL",
+      "crest": "https://crests.football-data.org/818.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "巴尔加斯",
+      "team": "瑞士",
+      "teamTla": "SUI",
+      "crest": "https://crests.football-data.org/788.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 6
+    },
+    {
+      "name": "Ermin Mahmic",
+      "team": "波黑",
+      "teamTla": "BIH",
+      "crest": "https://crests.football-data.org/bosnia.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Anthony Elanga",
+      "team": "瑞典",
+      "teamTla": "SWE",
+      "crest": "https://crests.football-data.org/792.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "上田绮世",
+      "team": "日本",
+      "teamTla": "JPN",
+      "crest": "https://crests.football-data.org/766.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "Mostafa Ziko",
+      "team": "埃及",
+      "teamTla": "EGY",
+      "crest": "https://crests.football-data.org/825.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 5
+    },
+    {
+      "name": "拉希米",
+      "team": "摩洛哥",
+      "teamTla": "MAR",
+      "crest": "https://crests.football-data.org/morocco.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 6
+    },
+    {
+      "name": "佩佩",
+      "team": "科特迪瓦",
+      "teamTla": "CIV",
+      "crest": "https://crests.football-data.org/787.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 3
+    },
+    {
+      "name": "Habib Diarra",
+      "team": "塞内加尔",
+      "teamTla": "SEN",
+      "crest": "https://crests.football-data.org/senegal.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "盖耶",
+      "team": "塞内加尔",
+      "teamTla": "SEN",
+      "crest": "https://crests.football-data.org/senegal.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0,
+      "playedMatches": 4
+    },
+    {
+      "name": "特罗萨德",
+      "team": "比利时",
+      "teamTla": "BEL",
+      "crest": "https://crests.football-data.org/805.svg",
+      "goals": 2,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 6
+    },
+    {
+      "name": "马赫雷斯",
+      "team": "阿尔及利亚",
+      "teamTla": "ALG",
+      "crest": "https://crests.football-data.org/algeria.svg",
+      "goals": 2,
+      "assists": 2,
+      "penalties": 0,
+      "playedMatches": 4
+    }
+  ],
+  "teamGoalsRank": [
+    {
+      "team": {
+        "name": "法国",
+        "shortName": "法国",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
+      },
+      "goals": 20,
+      "played": 8
+    },
+    {
+      "team": {
+        "name": "英格兰",
+        "shortName": "英格兰",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
+      },
+      "goals": 20,
+      "played": 8
+    },
+    {
+      "team": {
+        "name": "阿根廷",
+        "shortName": "阿根廷",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
+      },
+      "goals": 19,
+      "played": 8
+    },
+    {
+      "team": {
+        "name": "瑞士",
+        "shortName": "瑞士",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg"
+      },
+      "goals": 14,
+      "played": 6
+    },
+    {
+      "team": {
+        "name": "德国",
+        "shortName": "德国",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg"
+      },
+      "goals": 14,
+      "played": 4
+    },
+    {
+      "team": {
+        "name": "西班牙",
+        "shortName": "西班牙",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
+      },
+      "goals": 14,
+      "played": 8
+    },
+    {
+      "team": {
+        "name": "比利时",
+        "shortName": "比利时",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg"
+      },
+      "goals": 14,
+      "played": 6
+    },
+    {
+      "team": {
+        "name": "摩洛哥",
+        "shortName": "摩洛哥",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/morocco.svg"
+      },
+      "goals": 13,
+      "played": 6
+    },
+    {
+      "team": {
+        "name": "荷兰",
+        "shortName": "荷兰",
+        "tla": "NED",
+        "crest": "https://crests.football-data.org/8601.svg"
+      },
+      "goals": 13,
+      "played": 4
+    },
+    {
+      "team": {
+        "name": "挪威",
+        "shortName": "挪威",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg"
+      },
+      "goals": 13,
+      "played": 6
+    }
+  ]
+}

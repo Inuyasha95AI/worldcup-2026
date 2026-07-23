@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绿茵前线 · 世界杯早知道</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="2026美加墨世界杯实时资讯 - 赛程、积分榜、球员榜、赛事集锦，早知道一切">
+    <meta name="theme-color" content="#0a0e17">
+    <style>
+        :root {
+            --bg-primary: #0a0e17;
+            --bg-secondary: #111827;
+            --bg-card: #1a2332;
+            --accent-cyan: #00d4ff;
+            --accent-green: #00ff88;
+            --accent-orange: #ff6b35;
+            --accent-purple: #a855f7;
+            --text-primary: #ffffff;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-glow: rgba(0, 212, 255, 0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: 
+                linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(10, 14, 23, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-glow);
+            padding: 1rem 2rem;
+        }
+
+        .nav-content {
+            max-width: 1400px; margin: 0 auto;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem; font-weight: 900;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+        }
+
+        .logo-sub {
+            font-size: 0.7rem; color: var(--text-muted);
+            font-family: 'Noto Sans SC', sans-serif; font-weight: 300;
+        }
+
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+
+        .nav-links a {
+            color: var(--text-secondary); text-decoration: none;
+            font-size: 0.9rem; transition: all 0.3s; position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active { color: var(--accent-cyan); }
+
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -5px; left: 0;
+            width: 0; height: 2px; background: var(--accent-cyan); transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+
+        .container { max-width: 1400px; margin: 0 auto; padding: 100px 2rem 2rem; }
+
+        .hero { text-align: center; padding: 3rem 0; position: relative; }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif; font-size: 3rem; font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff, var(--accent-cyan));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle { font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; }
+
+        .live-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: rgba(255, 59, 48, 0.2); border: 1px solid rgba(255, 59, 48, 0.5);
+            padding: 0.5rem 1rem; border-radius: 20px;
+            font-size: 0.85rem; color: #ff3b30; animation: pulse 2s infinite;
+        }
+
+        .live-badge.no-live { background: rgba(0, 212, 255, 0.1); border-color: rgba(0, 212, 255, 0.3); color: var(--accent-cyan); animation: none; }
+
+        .live-dot { width: 8px; height: 8px; background: #ff3b30; border-radius: 50%; animation: blink 1s infinite; }
+
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+        .card {
+            background: var(--bg-card); border: 1px solid rgba(0, 212, 255, 0.1);
+            border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; transition: all 0.3s;
+        }
+
+        .card:hover { border-color: var(--accent-cyan); box-shadow: 0 0 30px rgba(0, 212, 255, 0.1); }
+
+        .card-header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 1rem; padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .card-title {
+            font-family: 'Orbitron', sans-serif; font-size: 1rem; font-weight: 700;
+            color: var(--accent-cyan); display: flex; align-items: center; gap: 0.5rem;
+        }
+
+        .card-title::before {
+            content: ''; width: 4px; height: 20px;
+            background: linear-gradient(180deg, var(--accent-cyan), var(--accent-green));
+            border-radius: 2px;
+        }
+
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+
+        .match-card {
+            background: var(--bg-secondary); border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px; padding: 1rem; transition: all 0.3s;
+        }
+
+        .match-card:hover { transform: translateY(-2px); border-color: var(--accent-cyan); }
+
+        .match-status {
+            font-size: 0.7rem; padding: 0.25rem 0.5rem; border-radius: 4px;
+            margin-bottom: 0.75rem; display: inline-block;
+        }
+
+        .status-live { background: rgba(255, 59, 48, 0.2); color: #ff3b30; border: 1px solid rgba(255, 59, 48, 0.5); }
+        .status-finished { background: rgba(0, 212, 255, 0.2); color: var(--accent-cyan); }
+        .status-upcoming { background: rgba(100, 116, 139, 0.2); color: var(--text-muted); }
+
+        .match-teams { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+
+        .team { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; flex: 1; }
+
+        .team-flag { width: 48px; height: 32px; border-radius: 4px; object-fit: cover; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+
+        .team-flag-sm { width: 24px; height: 16px; border-radius: 2px; object-fit: cover; vertical-align: middle; margin-right: 4px; }
+
+        .team-name { font-size: 0.85rem; font-weight: 500; text-align: center; }
+
+        .match-score {
+            font-family: 'Orbitron', sans-serif; font-size: 1.5rem; font-weight: 700;
+            color: var(--accent-green); padding: 0 1rem;
+        }
+
+        .match-time { font-size: 0.8rem; color: var(--text-muted); text-align: center; }
+
+        .match-group { font-size: 0.7rem; color: var(--accent-purple); text-align: center; margin-top: 0.5rem; }
+
+        .standings-table { width: 100%; border-collapse: collapse; }
+
+        .standings-table th, .standings-table td {
+            padding: 0.75rem 0.5rem; text-align: center; font-size: 0.85rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .standings-table th { color: var(--text-muted); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; }
+        .standings-table tr:hover { background: rgba(0, 212, 255, 0.05); }
+
+        .standings-table .team-cell { display: flex; align-items: center; gap: 0.5rem; text-align: left; }
+        .standings-table .rank { color: var(--text-muted); width: 20px; }
+        .standings-table .points { font-weight: 700; color: var(--accent-green); }
+
+        .player-item {
+            display: flex; align-items: center; gap: 1rem; padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .player-item:last-child { border-bottom: none; }
+
+        .player-rank { font-family: 'Orbitron', sans-serif; font-size: 1rem; font-weight: 700; color: var(--accent-orange); width: 30px; }
+
+        .player-avatar {
+            width: 40px; height: 40px; border-radius: 50%; background: var(--bg-secondary);
+            display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+            overflow: hidden;
+        }
+
+        .player-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+        .player-info { flex: 1; }
+        .player-name { font-weight: 500; font-size: 0.9rem; }
+        .player-team { font-size: 0.75rem; color: var(--text-muted); }
+
+        .player-stat { font-family: 'Orbitron', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--accent-cyan); }
+
+        .tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+
+        .tab {
+            padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.8rem; cursor: pointer;
+            background: var(--bg-secondary); border: 1px solid transparent;
+            color: var(--text-secondary); transition: all 0.3s;
+        }
+
+        .tab:hover { border-color: var(--accent-cyan); }
+
+        .tab.active { background: rgba(0, 212, 255, 0.2); border-color: var(--accent-cyan); color: var(--accent-cyan); }
+
+        .countdown { display: flex; gap: 1rem; justify-content: center; margin: 2rem 0; }
+        .countdown-item { text-align: center; }
+
+        .countdown-value {
+            font-family: 'Orbitron', sans-serif; font-size: 2.5rem; font-weight: 900;
+            color: var(--accent-cyan); line-height: 1;
+        }
+
+        .countdown-label { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.5rem; }
+
+        .stat-box {
+            text-align: center; padding: 1.5rem; background: var(--bg-secondary);
+            border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.1);
+        }
+
+        .stat-value {
+            font-family: 'Orbitron', sans-serif; font-size: 2rem; font-weight: 900;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem; }
+
+        .group-tag {
+            display: inline-block; padding: 0.25rem 0.5rem;
+            background: rgba(168, 85, 247, 0.2); border: 1px solid rgba(168, 85, 247, 0.5);
+            border-radius: 4px; font-size: 0.7rem; color: var(--accent-purple);
+        }
+
+        .footer {
+            text-align: center; padding: 3rem 2rem; margin-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted); font-size: 0.8rem;
+        }
+
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif; font-size: 1.2rem; font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .loading { text-align: center; padding: 3rem; color: var(--text-muted); }
+        .loading .spinner { display: inline-block; width: 40px; height: 40px; border: 3px solid var(--bg-secondary); border-top-color: var(--accent-cyan); border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 1rem; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .empty-state { text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem; }
+
+        .stage-tag {
+            display: inline-block; padding: 0.2rem 0.5rem; border-radius: 4px;
+            font-size: 0.65rem; margin-left: 0.5rem;
+        }
+        .stage-group { background: rgba(0, 212, 255, 0.15); color: var(--accent-cyan); }
+        .stage-knockout { background: rgba(255, 107, 53, 0.15); color: var(--accent-orange); }
+        .stage-final { background: rgba(168, 85, 247, 0.15); color: var(--accent-purple); }
+
+        .group-section { margin-bottom: 1.5rem; }
+        .group-section:last-child { margin-bottom: 0; }
+        .group-title { font-size: 0.85rem; color: var(--accent-purple); margin-bottom: 0.75rem; font-weight: 500; }
+
+        .update-info { text-align: center; font-size: 0.75rem; color: var(--text-muted); margin-top: 1rem; }
+
+        @media (max-width: 1024px) {
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .countdown-value { font-size: 1.5rem; }
+        }
+
+        .fade-in { animation: fadeIn 0.5s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: var(--accent-cyan); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent-green); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div>
+                <div class="logo">绿茵前线</div>
+                <div class="logo-sub">GREEN LINE FRONT · 世界杯早知道</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#schedule" class="active">赛程</a></li>
+                <li><a href="#standings">积分榜</a></li>
+                <li><a href="#players">球员榜</a></li>
+                <li><a href="#stages">赛事阶段</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="app">
+            <div class="loading">
+                <div class="spinner"></div>
+                <div>正在加载世界杯数据...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    (function() {
+        var app = document.getElementById('app');
+        var lastUpdated = '';
+
+        function renderMatchCard(m) {
+            var statusClass = m.status === 'FINISHED' ? 'status-finished' :
+                            (m.status === 'IN_PLAY' || m.status === 'PAUSED') ? 'status-live' : 'status-upcoming';
+            var statusText = m.status === 'FINISHED' ? '已结束' :
+                           (m.status === 'IN_PLAY' ? '进行中' : m.status === 'PAUSED' ? '中场' : '未开始');
+            var scoreText = (m.score.home !== null && m.score.home !== undefined) ?
+                           m.score.home + ' - ' + m.score.away : 'VS';
+
+            var penaltiesHtml = '';
+            if (m.penalties && m.status === 'FINISHED') {
+                penaltiesHtml = '<div style="font-size:0.7rem;color:var(--text-muted);margin-top:0.2rem;">点球 ' + m.penalties.home + ' - ' + m.penalties.away + '</div>';
+            }
+
+            var stageHtml = '';
+            if (m.stage && m.stage !== '小组赛') {
+                var stageClass = m.stage === '决赛' ? 'stage-final' : 'stage-knockout';
+                stageHtml = '<span class="stage-tag ' + stageClass + '">' + m.stage + '</span>';
+            } else if (m.group) {
+                stageHtml = '<span class="stage-tag stage-group">' + m.group + '</span>';
+            }
+
+            var winnerText = '';
+            if (m.status === 'FINISHED' && m.winner) {
+                var winTeam = m.winner === 'HOME_TEAM' ? m.homeTeam.shortName :
+                             m.winner === 'AWAY_TEAM' ? m.awayTeam.shortName : '';
+                if (winTeam) winnerText = '<div class="match-time">' + winTeam + ' 晋级</div>';
+            }
+
+            var timeText = m.status === 'TIMED' || m.status === 'SCHEDULED' ?
+                          m.date + ' ' + m.time + ' (北京时间)' : '';
+
+            return '<div class="match-card">' +
+                '<span class="match-status ' + statusClass + '">' + statusText + '</span>' +
+                '<div class="match-teams">' +
+                    '<div class="team">' +
+                        '<img class="team-flag" src="' + m.homeTeam.crest + '" alt="' + m.homeTeam.name + '" onerror="this.src=\'data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 48 32&quot;><rect fill=&quot;%23333&quot; width=&quot;48&quot; height=&quot;32&quot;/></svg>\'">' +
+                        '<span class="team-name">' + m.homeTeam.shortName + '</span>' +
+                    '</div>' +
+                    '<div class="match-score">' + scoreText + penaltiesHtml + '</div>' +
+                    '<div class="team">' +
+                        '<img class="team-flag" src="' + m.awayTeam.crest + '" alt="' + m.awayTeam.name + '" onerror="this.src=\'data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 48 32&quot;><rect fill=&quot;%23333&quot; width=&quot;48&quot; height=&quot;32&quot;/></svg>\'">' +
+                        '<span class="team-name">' + m.awayTeam.shortName + '</span>' +
+                    '</div>' +
+                '</div>' +
+                winnerText +
+                (timeText ? '<div class="match-time">' + timeText + '</div>' : '') +
+                '<div class="match-group">' + m.stage + (m.group ? ' · ' + m.group : '') + '</div>' +
+            '</div>';
+        }
+
+        function renderStandingsTable(teams) {
+            var html = '<table class="standings-table"><thead><tr>' +
+                '<th></th><th style="text-align:left">球队</th><th>赛</th><th>胜</th><th>平</th><th>负</th><th>净胜</th><th>积分</th>' +
+                '</tr></thead><tbody>';
+            teams.forEach(function(t) {
+                html += '<tr>' +
+                    '<td class="rank">' + t.position + '</td>' +
+                    '<td><div class="team-cell"><img class="team-flag-sm" src="' + t.team.crest + '" alt="" onerror="this.style.display=\'none\'"> ' + t.team.shortName + '</div></td>' +
+                    '<td>' + t.played + '</td>' +
+                    '<td>' + t.won + '</td>' +
+                    '<td>' + t.draw + '</td>' +
+                    '<td>' + t.lost + '</td>' +
+                    '<td>' + (t.goalDifference > 0 ? '+' : '') + t.goalDifference + '</td>' +
+                    '<td class="points">' + t.points + '</td>' +
+                '</tr>';
+            });
+            html += '</tbody></table>';
+            return html;
+        }
+
+        function renderPlayerItem(p, rank, value, valueLabel) {
+            var rankEmoji = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : rank;
+            return '<div class="player-item">' +
+                '<span class="player-rank">' + rank + '</span>' +
+                '<div class="player-avatar"><img src="' + p.crest + '" alt="" onerror="this.parentElement.textContent=\'⚽\'"></div>' +
+                '<div class="player-info">' +
+                    '<div class="player-name">' + p.name + '</div>' +
+                    '<div class="player-team"><img class="team-flag-sm" src="' + p.crest + '" alt="" onerror="this.style.display=\'none\'"> ' + p.team + '</div>' +
+                '</div>' +
+                '<div class="player-stat">' + value + (valueLabel || '') + '</div>' +
+            '</div>';
+        }
+
+        function render(data) {
+            var stages = data.stages || {};
+            var groupKeys = Object.keys(data.groups || {}).sort();
+            var totalAdvanced = 0;
+            groupKeys.forEach(function(g) {
+                var t = data.groups[g];
+                if (t && t.length >= 2) totalAdvanced += 2;
+            });
+
+            var now = new Date();
+            var bjMs = now.getTime() + 8*3600*1000;
+            var bjDate = new Date(bjMs);
+            var today = bjDate.getUTCFullYear() + '-' + String(bjDate.getUTCMonth()+1).padStart(2,'0') + '-' + String(bjDate.getUTCDate()).padStart(2,'0');
+
+            var statusBadge = '';
+            if (data.stats.liveMatches > 0) {
+                statusBadge = '<div class="live-badge"><span class="live-dot"></span><span>🔴 正在进行 ' + data.stats.liveMatches + ' 场比赛</span></div>';
+            } else {
+                var lastStage = '';
+                Object.keys(stages).forEach(function(s) {
+                    if (stages[s].finished > 0) lastStage = s;
+                });
+                var finishedCount = stages[lastStage] ? stages[lastStage].finished : 0;
+                var totalCount = stages[lastStage] ? stages[lastStage].total : 0;
+                statusBadge = '<div class="live-badge no-live">📊 ' + (lastStage || '小组赛') + ' 已结束 ' + finishedCount + '/' + totalCount + ' 场</div>';
+            }
+
+            var yesterdayHtml = '';
+            if (data.yesterdayMatches && data.yesterdayMatches.length > 0) {
+                var gridClass = data.yesterdayMatches.length >= 3 ? 'grid-3' : 'grid-2';
+                yesterdayHtml = '<section class="fade-in"><div class="card">' +
+                    '<div class="card-header"><h2 class="card-title">昨日赛果</h2></div>' +
+                    '<div class="' + gridClass + '">' +
+                    data.yesterdayMatches.map(renderMatchCard).join('') +
+                    '</div></div></section>';
+            }
+
+            var todayHtml = '';
+            if (data.todayMatches && data.todayMatches.length > 0) {
+                todayHtml = '<section class="fade-in"><div class="card">' +
+                    '<div class="card-header"><h2 class="card-title">今日赛程</h2></div>' +
+                    '<div class="grid-2">' +
+                    data.todayMatches.map(renderMatchCard).join('') +
+                    '</div></div></section>';
+            }
+
+            var upcomingHtml = '';
+            if (data.upcomingMatches && data.upcomingMatches.length > 0) {
+                upcomingHtml = '<section class="fade-in"><div class="card">' +
+                    '<div class="card-header"><h2 class="card-title">未来赛程</h2></div>' +
+                    '<div class="grid-2">' +
+                    data.upcomingMatches.map(renderMatchCard).join('') +
+                    '</div></div></section>';
+            }
+
+            var groupsHtml = '';
+            if (groupKeys.length > 0) {
+                var groupPairs = [];
+                for (var i = 0; i < groupKeys.length; i += 2) {
+                    groupPairs.push(groupKeys.slice(i, i + 2));
+                }
+                groupsHtml = '<section id="standings" class="fade-in">';
+                groupPairs.forEach(function(pair) {
+                    groupsHtml += '<div class="grid-2">';
+                    pair.forEach(function(g) {
+                        groupsHtml += '<div class="card"><div class="card-header">' +
+                            '<h2 class="card-title">' + g + '</h2></div>' +
+                            renderStandingsTable(data.groups[g]) + '</div>';
+                    });
+                    groupsHtml += '</div>';
+                });
+                groupsHtml += '</section>';
+            }
+
+            var scorersHtml = '';
+            if (data.topScorers && data.topScorers.length > 0) {
+                var playersWithAssists = data.topScorers.filter(function(p) { return p.assists > 0; })
+                    .sort(function(a, b) { return b.assists - a.assists; });
+                scorersHtml = '<section id="players" class="fade-in"><div class="grid-2">' +
+                    '<div class="card"><div class="card-header"><h2 class="card-title">射手榜</h2></div>' +
+                    data.topScorers.slice(0, 5).map(function(p, i) {
+                        return renderPlayerItem(p, i + 1, p.goals, '球');
+                    }).join('') +
+                    '</div>' +
+                    '<div class="card"><div class="card-header"><h2 class="card-title">助攻榜</h2></div>' +
+                    (playersWithAssists.length > 0 ?
+                        playersWithAssists.slice(0, 5).map(function(p, i) {
+                            return renderPlayerItem(p, i + 1, p.assists, '次');
+                        }).join('') :
+                        '<div class="empty-state">暂无助攻数据</div>'
+                    ) +
+                    '</div></div></section>';
+            }
+
+            var teamGoalsHtml = '';
+            if (data.teamGoalsRank && data.teamGoalsRank.length > 0) {
+                teamGoalsHtml = '<section class="fade-in"><div class="grid-2">' +
+                    '<div class="card"><div class="card-header"><h2 class="card-title">球队进球榜</h2></div>' +
+                    data.teamGoalsRank.slice(0, 5).map(function(t, i) {
+                        return renderPlayerItem(t.team, i + 1, t.goals, '球');
+                    }).join('') +
+                    '</div>' +
+                    '<div class="card"><div class="card-header"><h2 class="card-title">球队场均进球</h2></div>' +
+                    data.teamGoalsRank.slice().sort(function(a, b) { return (b.goals/b.played) - (a.goals/a.played); })
+                        .slice(0, 5).map(function(t, i) {
+                            return renderPlayerItem(t.team, i + 1, (t.goals/t.played).toFixed(1), '球/场');
+                        }).join('') +
+                    '</div></div></section>';
+            }
+
+            var stagesHtml = '';
+            var stageKeys = Object.keys(stages);
+            if (stageKeys.length > 0) {
+                stagesHtml = '<section id="stages" class="fade-in"><div class="card">' +
+                    '<div class="card-header"><h2 class="card-title">赛事阶段</h2></div>' +
+                    '<div class="grid-3" style="margin-bottom:1.5rem;">';
+                stageKeys.forEach(function(s) {
+                    var st = stages[s];
+                    var percent = st.total > 0 ? Math.round(st.finished / st.total * 100) : 0;
+                    stagesHtml += '<div class="stat-box">' +
+                        '<div style="font-size:1.2rem;margin-bottom:0.5rem;">' +
+                        (s === '决赛' ? '🏆' : s === '半决赛' ? '🥉' : s.indexOf('1/8') >= 0 ? '⚡' : '⚽') + '</div>' +
+                        '<div class="stat-value" style="font-size:1.5rem;">' + st.finished + '/' + st.total + '</div>' +
+                        '<div class="stat-label">' + s + ' (' + percent + '%)</div></div>';
+                });
+                stagesHtml += '</div>';
+
+                if (data.knockoutMatches && data.knockoutMatches.length > 0) {
+                    var sorted = data.knockoutMatches.slice()
+                        .filter(function(m) { return m.status === 'FINISHED'; })
+                        .sort(function(a, b) {
+                        var aToday = a.dateFull && a.dateFull.indexOf(today) >= 0 ? 0 : 2;
+                        var bToday = b.dateFull && b.dateFull.indexOf(today) >= 0 ? 0 : 2;
+                        if (aToday !== bToday) return aToday - bToday;
+                        if (a.status === 'IN_PLAY' && b.status !== 'IN_PLAY') return -1;
+                        if (b.status === 'IN_PLAY' && a.status !== 'IN_PLAY') return 1;
+                        if (a.status === 'TIMED' && b.status === 'FINISHED') return -1;
+                        if (b.status === 'TIMED' && a.status === 'FINISHED') return 1;
+                        return 0;
+                    });
+                    stagesHtml += '<div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1rem;">' +
+                        '<div style="font-size:0.85rem;color:var(--accent-orange);margin-bottom:1rem;font-weight:500;">近期淘汰赛</div>';
+                    sorted.slice(0, 8).forEach(function(m) {
+                        var isFinished = m.status === 'FINISHED';
+                        var scoreText = (m.score.home !== null) ? m.score.home + ' - ' + m.score.away : 'VS';
+                        var statusDot = isFinished ? '✅' : (m.status === 'IN_PLAY' ? '🔴' : '⏳');
+                        var evts = (data.matchEvents && (data.matchEvents[m.id] || data.matchEvents[String(m.id)])) || [];
+                        var evtHtml = '';
+                        if (evts.length > 0) {
+                            evtHtml = '<div style="margin-top:0.5rem;padding-left:1.5rem;">' +
+                                evts.map(function(e) {
+                                    var icon = e.type === 'halftime' ? '⏱' :
+                                              e.type === 'fulltime' ? '🏁' :
+                                              e.type === 'result' ? '🏆' :
+                                              e.type === 'goals' ? '⚽' :
+                                              e.type === 'cards' ? '🟨🟥' : '🔥';
+                                    return '<div style="font-size:0.75rem;color:var(--text-secondary);margin-top:0.25rem;">' + icon + ' ' + e.text + '</div>';
+                                }).join('') + '</div>';
+                        }
+                        stagesHtml += '<div style="padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">' +
+                            '<div style="display:flex;align-items:center;gap:0.75rem;">' +
+                            '<span style="font-size:0.75rem;">' + statusDot + '</span>' +
+                            '<span style="font-size:0.75rem;color:var(--text-muted);min-width:60px;">' + m.stage + '</span>' +
+                            '<span style="flex:1;font-size:0.85rem;">' + m.homeTeam.shortName + '</span>' +
+                            '<span style="font-family:Orbitron;font-size:0.9rem;font-weight:700;color:var(--accent-green);min-width:50px;text-align:center;">' + scoreText + '</span>' +
+                            '<span style="flex:1;font-size:0.85rem;text-align:right;">' + m.awayTeam.shortName + '</span>' +
+                            '<span style="font-size:0.7rem;color:var(--text-muted);min-width:70px;text-align:right;">' + (isFinished ? '' : m.date + ' ' + m.time) + '</span>' +
+                            '</div>' + evtHtml + '</div>';
+                    });
+                    stagesHtml += '</div>';
+                }
+                stagesHtml += '</div></section>';
+            }
+
+            app.innerHTML =
+                '<section class="hero fade-in">' +
+                    '<div style="font-size:4rem;margin-bottom:1rem;">⚽🏆</div>' +
+                    '<h1>2026 美加墨世界杯</h1>' +
+                    '<p class="hero-subtitle">48支球队 · 104场比赛 · 16座城市 · 历史最大规模</p>' +
+                    statusBadge +
+                    '<div class="countdown">' +
+                        '<div class="countdown-item"><div class="countdown-value" id="days">--</div><div class="countdown-label">天</div></div>' +
+                        '<div class="countdown-item"><div class="countdown-value" id="hours">--</div><div class="countdown-label">时</div></div>' +
+                        '<div class="countdown-item"><div class="countdown-value" id="minutes">--</div><div class="countdown-label">分</div></div>' +
+                        '<div class="countdown-item"><div class="countdown-value" id="seconds">--</div><div class="countdown-label">秒</div></div>' +
+                    '</div>' +
+                    '<p style="font-size:0.8rem;color:var(--text-muted);">距离决赛 · 2026年7月20日 · 纽约/新泽西</p>' +
+                '</section>' +
+
+                '<section class="grid-4 fade-in" style="margin-bottom:2rem;">' +
+                    '<div class="stat-box"><div style="font-size:1.5rem;margin-bottom:0.5rem;">⚽</div><div class="stat-value">' + data.stats.finishedMatches + '</div><div class="stat-label">已赛场次</div></div>' +
+                    '<div class="stat-box"><div style="font-size:1.5rem;margin-bottom:0.5rem;">🥅</div><div class="stat-value">' + data.stats.totalGoals + '</div><div class="stat-label">总进球数</div></div>' +
+                    '<div class="stat-box"><div style="font-size:1.5rem;margin-bottom:0.5rem;">📊</div><div class="stat-value">' + data.stats.avgGoals + '</div><div class="stat-label">场均进球</div></div>' +
+                    '<div class="stat-box"><div style="font-size:1.5rem;margin-bottom:0.5rem;">🏅</div><div class="stat-value">' + totalAdvanced + '</div><div class="stat-label">晋级球队</div></div>' +
+                '</section>' +
+
+                '<section id="schedule" class="fade-in">' + yesterdayHtml + todayHtml + upcomingHtml + '</section>' +
+
+                groupsHtml +
+                scorersHtml +
+                teamGoalsHtml +
+                stagesHtml +
+
+                '<div class="update-info">数据来源: football-data.org · 上次更新: ' + data.lastUpdatedBeijing + '</div>' +
+
+                '<footer class="footer">' +
+                    '<div style="font-size:2rem;margin-bottom:1rem;">⚽🏆</div>' +
+                    '<div class="footer-logo">绿茵前线</div>' +
+                    '<p>GREEN LINE FRONT · 世界杯早知道</p>' +
+                    '<p style="margin-top:0.5rem;">© 2026 绿茵前线 · 非FIFA官方页面</p>' +
+                '</footer>';
+
+            updateCountdown();
+        }
+
+        function updateCountdown() {
+            var finalDate = new Date('2026-07-20T03:00:00+08:00');
+            var now = new Date();
+            var diff = finalDate - now;
+            if (diff <= 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            var daysEl = document.getElementById('days');
+            var hoursEl = document.getElementById('hours');
+            var minutesEl = document.getElementById('minutes');
+            var secondsEl = document.getElementById('seconds');
+
+            if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
+            if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
+            if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
+            if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+
+        function loadData() {
+            fetch('data.json?t=' + Date.now())
+                .then(function(res) { return res.json(); })
+                .then(function(data) {
+                    if (data.lastUpdated !== lastUpdated) {
+                        lastUpdated = data.lastUpdated;
+                        render(data);
+                    }
+                })
+                .catch(function(err) {
+                    if (!lastUpdated) {
+                        app.innerHTML = '<div class="loading"><div style="font-size:2rem;margin-bottom:1rem;">⚽</div>' +
+                            '<div style="color:var(--accent-cyan);margin-bottom:0.5rem;">数据加载失败</div>' +
+                            '<div style="font-size:0.85rem;">请检查网络连接或稍后刷新重试</div></div>';
+                    }
+                });
+        }
+
+        loadData();
+        setInterval(loadData, 5 * 60 * 1000);
+
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    })();
+    </script>
+</body>
+</html>
